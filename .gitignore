@@ -340,3 +340,6 @@ ASALocalRun/
 healthchecksdb
 
 **/TourDB.db
+
+GUI/App.config
+DAL/App.config

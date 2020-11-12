@@ -1,0 +1,6 @@
+tour note
+12/11/2020
+https://bunifuframework.com/
+https://toidicodedao.com/tag/c-hay-ho/page/3/
+https://codelearn.io/sharing/ienumerable-va-ienumerator-trong-csharp
+https://www.entityframeworktutorial.net/code-first/configure-one-to-many-relationship-in-code-first.aspx

@@ -58,6 +58,10 @@
     <Compile Include="Migrations\202011110808186_Initial.designer.cs">
       <DependentUpon>202011110808186_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011150841206_AddPriceInGroup.cs" />
+    <Compile Include="Migrations\202011150841206_AddPriceInGroup.designer.cs">
+      <DependentUpon>202011150841206_AddPriceInGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaffDAL.cs" />
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011110808186_Initial.resx">
       <DependentUpon>202011110808186_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011150841206_AddPriceInGroup.resx">
+      <DependentUpon>202011150841206_AddPriceInGroup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -182,10 +182,19 @@ namespace GUI.CustomUserControls.TourGroup
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Mã đoàn",
+            "Tên đoàn",
+            "Tour",
+            "Giá tour",
+            "Ngày đi",
+            "Ngày về",
+            "Tổng phí"});
             this.comboBox1.Location = new System.Drawing.Point(229, 8);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(125, 24);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.Text = "Tên đoàn";
             // 
             // dataGridView1
             // 
@@ -848,10 +857,16 @@ namespace GUI.CustomUserControls.TourGroup
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Mã",
+            "Loại",
+            "Giá",
+            "Ghi chú"});
             this.comboBox3.Location = new System.Drawing.Point(220, 8);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(125, 24);
             this.comboBox3.TabIndex = 1;
+            this.comboBox3.Text = "Loại";
             // 
             // textBox8
             // 

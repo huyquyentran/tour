@@ -1,0 +1,12 @@
+GUI
+[còn]
++ Thống kê chi phí (1 tour, chi phí khách sạn, ăn uống trong 1 khoảng thời gian ...)
++ Doanh thu của một đoàn, của một tour trong một khoảng thời gian
++ Thống kê tình hình hoạt động theo mỗi tour (doanh số, số đoàn tham quan, ...)
++ Thống kê số lần đi tour của từng nhân viên trong khoảng thời gian
+
+[xong] 
+- Danh sách các khách hàng của 1 đoàn du lịch
+- Lập danh sách các địa điểm của 1 tour
+- Tìm kiếm thông tin về một khách hàng, về một đoàn, về một tour
+- Xem bảng giá tour hiện tại

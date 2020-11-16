@@ -4,6 +4,7 @@ namespace Core.Models
 {
     public class TourPrice
     {
+        public TourPrice () { }
         public TourPrice(int tourId, DateTime startDate, DateTime endDate, int price)
         {
             TourId = tourId;

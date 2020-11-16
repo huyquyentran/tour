@@ -5,6 +5,7 @@ namespace Core.Models
 {
     public class Group
     {
+        public Group () { }
         public Group(DateTime startDate, DateTime endDate, int tourId)
         {
             StartDate = startDate;

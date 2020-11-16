@@ -5,6 +5,7 @@ namespace Core.Models
 {
     public class Location
     {
+        public Location () { }
         public Location(string name) => Name = name ?? throw new ArgumentNullException(nameof(name));
 
         public int Id { get; set; }

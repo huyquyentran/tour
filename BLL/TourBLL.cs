@@ -1,4 +1,5 @@
-﻿using Core.Models;
+﻿using Core.Common;
+using Core.Models;
 using DAL;
 using System;
 using System.Collections.Generic;
@@ -19,19 +20,13 @@ namespace BLL
                 null,
                 new List<Expression<Func<Tour, object>>>
                 {
-                    t=> t.TourPrices,
-                    t=> t.TourLocations,
                     t=> t.TourType
                 }
             );
         }
-        public static void AddTour(Tour tour)
+        public static void Add(Tour tour)
         {
             TourDAL.Add(tour);
-        }
-        public static void AddPriceToTour(TourPrice tourPrice)
-        {
-            
         }
     }
 }

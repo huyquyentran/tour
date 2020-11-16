@@ -109,10 +109,10 @@ namespace Core.Migrations
                 IEnumerable<TourType> tourTypes = new List<TourType>
                 {
                     new TourType( "Thể loại tour 1"),
-                    new TourType( "Thể loại tour 1"),
-                    new TourType( "Thể loại tour 1"),
-                    new TourType( "Thể loại tour 1"),
-                    new TourType( "Thể loại tour 1")
+                    new TourType( "Thể loại tour 2"),
+                    new TourType( "Thể loại tour 3"),
+                    new TourType( "Thể loại tour 4"),
+                    new TourType( "Thể loại tour 5")
                 };
                 context.TourTypes.AddRange(tourTypes);
                 context.SaveChanges();

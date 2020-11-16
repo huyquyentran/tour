@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Common;
+using System;
 using System.Collections.Generic;
 
 namespace Core.Models
@@ -21,22 +22,15 @@ namespace Core.Models
             get
             {
                 if (Tour == null) return 0;
-                //Hiện tại giá tour được áp dụng vào đoạn dựa trên ngày bắt đầu của đoàn
-                //Thực tế có thể nghiệp vụ là dựa vào ngày khách hàng tham gia vào đoàn 
                 var tourPrices = Tour.TourPrices;
                 foreach(var tourPrice in tourPrices)
                 {
-                    //tourPrice.StareDate <= StartDate <= tourPrice.EndDate
-                    if (DateTime.Compare(StartDate, tourPrice.StartDate) >= 0 && 
-                        DateTime.Compare(StartDate, tourPrice.EndDate) <= 0)
+                    if (new DateRange(tourPrice.StartDate, tourPrice.EndDate).Includes(StartDate))
                     {
-                        //Return thằng đầu tiên thỏa lun
                         return tourPrice.Price;
                     }    
                 }
-                //Nếu kiếm k ra thì return về 696969 ( đáng lẽ bên Tour phải có một Giá mặc địch
-                //để return ở đay mà ông thầy đéo chịu, ai có idea gì thì bàn thêm sửa lại)
-                return 696969;
+                return Tour.CurrentPrice;
             }
             set {;} 
         }

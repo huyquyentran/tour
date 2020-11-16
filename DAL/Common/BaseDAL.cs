@@ -40,7 +40,7 @@ namespace Core.Common
                     query = query.Skip((page.Value - 1) * pageSize.Value).Take(pageSize.Value);
                 }
 
-                return query.ToList();
+                return query.AsNoTracking().ToList();
         }
         public static T GetById(int id)
         {

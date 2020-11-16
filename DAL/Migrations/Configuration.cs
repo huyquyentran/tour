@@ -147,11 +147,11 @@ namespace Core.Migrations
             {
                 IEnumerable<Tour> tours = new List<Tour>
                 {
-                    new Tour("Tour thứ 1","Mô tả tour 1",1),
-                    new Tour("Tour thứ 2","Mô tả tour 2",2),
-                    new Tour("Tour thứ 3","Mô tả tour 3",3),
-                    new Tour("Tour thứ 4","Mô tả tour 4",4),
-                    new Tour("Tour thứ 5","Mô tả tour 5",5)
+                    new Tour("Tour thứ 1",1111111,"Mô tả tour 1",1),
+                    new Tour("Tour thứ 2",2222222,"Mô tả tour 2",2),
+                    new Tour("Tour thứ 3",3333333,"Mô tả tour 3",3),
+                    new Tour("Tour thứ 4",4444444,"Mô tả tour 4",4),
+                    new Tour("Tour thứ 5",5555555,"Mô tả tour 5",5)
                 };
                 context.Tours.AddRange(tours);
                 context.SaveChanges();
@@ -160,12 +160,12 @@ namespace Core.Migrations
             {
                 IEnumerable<TourPrice> tourPrices = new List<TourPrice>
                 {
-                    new TourPrice(1, new DateTime(2020, 7, 20), new DateTime(2020, 8, 20), 3000000),
-                    new TourPrice(1, new DateTime(2020, 9, 20), new DateTime(2020, 11, 20), 4000000),
-                    new TourPrice(2, new DateTime(2020, 7, 20), new DateTime(2020, 8, 20), 2000000),
-                    new TourPrice(3, new DateTime(2020, 8, 20), new DateTime(2020, 9, 20), 5000000),
-                    new TourPrice(4, new DateTime(2020, 7, 20), new DateTime(2020, 10, 20), 1500000),
-                    new TourPrice(5, new DateTime(2020, 7, 20), new DateTime(2020, 10, 20), 1500000),
+                    new TourPrice(1, new DateTime(2020, 7, 20), new DateTime(2020, 8, 20), 3000000,"Chú thích 1"),
+                    new TourPrice(1, new DateTime(2020, 9, 20), new DateTime(2020, 11, 20), 4000000,"Chú thích 2"),
+                    new TourPrice(2, new DateTime(2020, 7, 20), new DateTime(2020, 8, 20), 2000000,"Chú thích 3"),
+                    new TourPrice(3, new DateTime(2020, 8, 20), new DateTime(2020, 9, 20), 5000000,"Chú thích 4"),
+                    new TourPrice(4, new DateTime(2020, 7, 20), new DateTime(2020, 10, 20), 1500000,"Chú thích 5"),
+                    new TourPrice(5, new DateTime(2020, 7, 20), new DateTime(2020, 10, 20), 1500000,"Chú thích 6"),
                 };
                 context.TourPrices.AddRange(tourPrices);
                 context.SaveChanges();

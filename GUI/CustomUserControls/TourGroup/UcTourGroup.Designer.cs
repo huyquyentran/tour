@@ -45,6 +45,10 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbTen = new System.Windows.Forms.TextBox();
             this.cbLoai = new System.Windows.Forms.ComboBox();
             this.btnChonLoai = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -56,10 +60,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tcChiPhiDiaDiem = new System.Windows.Forms.TabControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.tabCost = new System.Windows.Forms.TabPage();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -233,6 +234,42 @@ namespace GUI.CustomUserControls.TourGroup
             this.btnChonLoai.Text = "Chọn";
             this.btnChonLoai.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Ngày đi";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 128);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 17);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Ngày về";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd/M/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(86, 99);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(326, 22);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "dd/M/yyyy";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(86, 131);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(326, 22);
+            this.dateTimePicker2.TabIndex = 10;
+            // 
             // btnThem
             // 
             this.btnThem.Location = new System.Drawing.Point(418, 3);
@@ -314,6 +351,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.tcChiPhiDiaDiem.Controls.Add(this.tbCustomer);
             this.tcChiPhiDiaDiem.Controls.Add(this.tabStaff);
+            this.tcChiPhiDiaDiem.Controls.Add(this.tabCost);
             this.tcChiPhiDiaDiem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcChiPhiDiaDiem.Location = new System.Drawing.Point(0, 0);
             this.tcChiPhiDiaDiem.Name = "tcChiPhiDiaDiem";
@@ -339,41 +377,14 @@ namespace GUI.CustomUserControls.TourGroup
             this.panel1.Size = new System.Drawing.Size(1120, 580);
             this.panel1.TabIndex = 2;
             // 
-            // label4
+            // tabCost
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Ngày đi";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 128);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Ngày về";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dd/M/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(86, 99);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(326, 22);
-            this.dateTimePicker1.TabIndex = 9;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CustomFormat = "dd/M/yyyy";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(86, 131);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(326, 22);
-            this.dateTimePicker2.TabIndex = 10;
+            this.tabCost.Location = new System.Drawing.Point(4, 25);
+            this.tabCost.Name = "tabCost";
+            this.tabCost.Size = new System.Drawing.Size(499, 298);
+            this.tabCost.TabIndex = 2;
+            this.tabCost.Text = "Chi Phí";
+            this.tabCost.UseVisualStyleBackColor = true;
             // 
             // UcTourGroup
             // 
@@ -432,5 +443,6 @@ namespace GUI.CustomUserControls.TourGroup
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TabPage tabCost;
     }
 }

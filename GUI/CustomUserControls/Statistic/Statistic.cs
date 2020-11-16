@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI.CustomUserControls.Staff
+namespace GUI.CustomUserControls.Statistic
 {
-    public partial class UcStaff : UserControl
+    public partial class Statistic : UserControl
     {
-        public UcStaff()
+        public Statistic()
         {
             InitializeComponent();
         }

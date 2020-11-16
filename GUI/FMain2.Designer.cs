@@ -31,14 +31,22 @@ namespace GUI
         {
             this.tcMain = new System.Windows.Forms.TabControl();
             this.tpTour = new System.Windows.Forms.TabPage();
+            this.ucTour = new GUI.Tour.UcTour();
             this.tpTourGroup = new System.Windows.Forms.TabPage();
+            this.ucTourGroup1 = new GUI.CustomUserControls.TourGroup.UcTourGroup();
             this.tpLocation = new System.Windows.Forms.TabPage();
+            this.ucLocation1 = new GUI.CustomUserControls.Location.UcLocation();
             this.tpCustomer = new System.Windows.Forms.TabPage();
             this.tpStaff = new System.Windows.Forms.TabPage();
+            this.ucStaff1 = new GUI.CustomUserControls.Staff.UcStaff();
             this.tpThongKe = new System.Windows.Forms.TabPage();
-            this.ucTour1 = new GUI.Tour.UcTour();
+            this.statistic1 = new GUI.CustomUserControls.Statistic.Statistic();
             this.tcMain.SuspendLayout();
             this.tpTour.SuspendLayout();
+            this.tpTourGroup.SuspendLayout();
+            this.tpLocation.SuspendLayout();
+            this.tpStaff.SuspendLayout();
+            this.tpThongKe.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcMain
@@ -57,7 +65,7 @@ namespace GUI
             // 
             // tpTour
             // 
-            this.tpTour.Controls.Add(this.ucTour1);
+            this.tpTour.Controls.Add(this.ucTour);
             this.tpTour.Location = new System.Drawing.Point(4, 25);
             this.tpTour.Name = "tpTour";
             this.tpTour.Padding = new System.Windows.Forms.Padding(3);
@@ -66,8 +74,17 @@ namespace GUI
             this.tpTour.Text = "Quản lý Tour";
             this.tpTour.UseVisualStyleBackColor = true;
             // 
+            // ucTour
+            // 
+            this.ucTour.AutoSize = true;
+            this.ucTour.Location = new System.Drawing.Point(0, 1);
+            this.ucTour.Name = "ucTour";
+            this.ucTour.Size = new System.Drawing.Size(1126, 586);
+            this.ucTour.TabIndex = 0;
+            // 
             // tpTourGroup
             // 
+            this.tpTourGroup.Controls.Add(this.ucTourGroup1);
             this.tpTourGroup.Location = new System.Drawing.Point(4, 25);
             this.tpTourGroup.Name = "tpTourGroup";
             this.tpTourGroup.Padding = new System.Windows.Forms.Padding(3);
@@ -76,14 +93,29 @@ namespace GUI
             this.tpTourGroup.Text = "Quản lý Đoàn";
             this.tpTourGroup.UseVisualStyleBackColor = true;
             // 
+            // ucTourGroup1
+            // 
+            this.ucTourGroup1.Location = new System.Drawing.Point(7, 7);
+            this.ucTourGroup1.Name = "ucTourGroup1";
+            this.ucTourGroup1.Size = new System.Drawing.Size(1126, 586);
+            this.ucTourGroup1.TabIndex = 0;
+            // 
             // tpLocation
             // 
+            this.tpLocation.Controls.Add(this.ucLocation1);
             this.tpLocation.Location = new System.Drawing.Point(4, 25);
             this.tpLocation.Name = "tpLocation";
             this.tpLocation.Size = new System.Drawing.Size(1133, 593);
             this.tpLocation.TabIndex = 2;
             this.tpLocation.Text = "Quản lý Địa điểm";
             this.tpLocation.UseVisualStyleBackColor = true;
+            // 
+            // ucLocation1
+            // 
+            this.ucLocation1.Location = new System.Drawing.Point(4, 4);
+            this.ucLocation1.Name = "ucLocation1";
+            this.ucLocation1.Size = new System.Drawing.Size(1126, 586);
+            this.ucLocation1.TabIndex = 0;
             // 
             // tpCustomer
             // 
@@ -96,6 +128,7 @@ namespace GUI
             // 
             // tpStaff
             // 
+            this.tpStaff.Controls.Add(this.ucStaff1);
             this.tpStaff.Location = new System.Drawing.Point(4, 25);
             this.tpStaff.Name = "tpStaff";
             this.tpStaff.Size = new System.Drawing.Size(1133, 593);
@@ -103,8 +136,16 @@ namespace GUI
             this.tpStaff.Text = "Quản lý Nhân viên";
             this.tpStaff.UseVisualStyleBackColor = true;
             // 
+            // ucStaff1
+            // 
+            this.ucStaff1.Location = new System.Drawing.Point(4, 4);
+            this.ucStaff1.Name = "ucStaff1";
+            this.ucStaff1.Size = new System.Drawing.Size(1125, 587);
+            this.ucStaff1.TabIndex = 0;
+            // 
             // tpThongKe
             // 
+            this.tpThongKe.Controls.Add(this.statistic1);
             this.tpThongKe.Location = new System.Drawing.Point(4, 25);
             this.tpThongKe.Name = "tpThongKe";
             this.tpThongKe.Size = new System.Drawing.Size(1133, 593);
@@ -112,13 +153,12 @@ namespace GUI
             this.tpThongKe.Text = "Thống kê";
             this.tpThongKe.UseVisualStyleBackColor = true;
             // 
-            // ucTour1
+            // statistic1
             // 
-            this.ucTour1.AutoSize = true;
-            this.ucTour1.Location = new System.Drawing.Point(7, 7);
-            this.ucTour1.Name = "ucTour1";
-            this.ucTour1.Size = new System.Drawing.Size(1126, 586);
-            this.ucTour1.TabIndex = 0;
+            this.statistic1.Location = new System.Drawing.Point(4, 4);
+            this.statistic1.Name = "statistic1";
+            this.statistic1.Size = new System.Drawing.Size(1128, 587);
+            this.statistic1.TabIndex = 0;
             // 
             // FMain2
             // 
@@ -131,6 +171,10 @@ namespace GUI
             this.tcMain.ResumeLayout(false);
             this.tpTour.ResumeLayout(false);
             this.tpTour.PerformLayout();
+            this.tpTourGroup.ResumeLayout(false);
+            this.tpLocation.ResumeLayout(false);
+            this.tpStaff.ResumeLayout(false);
+            this.tpThongKe.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -144,6 +188,10 @@ namespace GUI
         private System.Windows.Forms.TabPage tpCustomer;
         private System.Windows.Forms.TabPage tpStaff;
         private System.Windows.Forms.TabPage tpThongKe;
-        private Tour.UcTour ucTour1;
+        private Tour.UcTour ucTour;
+        private CustomUserControls.TourGroup.UcTourGroup ucTourGroup1;
+        private CustomUserControls.Location.UcLocation ucLocation1;
+        private CustomUserControls.Staff.UcStaff ucStaff1;
+        private CustomUserControls.Statistic.Statistic statistic1;
     }
 }

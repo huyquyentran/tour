@@ -1,7 +1,7 @@
 ﻿
-namespace GUI.CustomUserControls.Staff
+namespace GUI.CustomUserControls.TourGroup
 {
-    partial class UcStaff
+    partial class UcTourGroup
     {
         /// <summary> 
         /// Required designer variable.
@@ -39,13 +39,13 @@ namespace GUI.CustomUserControls.Staff
             this.panel1.Size = new System.Drawing.Size(1120, 580);
             this.panel1.TabIndex = 1;
             // 
-            // UcStaff
+            // UcTourGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "UcStaff";
-            this.Size = new System.Drawing.Size(1125, 587);
+            this.Name = "UcTourGroup";
+            this.Size = new System.Drawing.Size(1126, 586);
             this.ResumeLayout(false);
 
         }

@@ -35,13 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libraries\Bunifu_UI_v1.52.dll</HintPath>
-    </Reference>
-    <Reference Include="MaterialSkin, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.2.2.1.3\lib\net461\MaterialSkin.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -58,11 +51,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FMain.cs">
-      <SubType>Form</SubType>
+    <Compile Include="CustomUserControls\Customer\Customer.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FMain.Designer.cs">
-      <DependentUpon>FMain.cs</DependentUpon>
+    <Compile Include="CustomUserControls\Customer\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\Location\UcLocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControls\Location\UcLocation.Designer.cs">
+      <DependentUpon>UcLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\Staff\UcStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControls\Staff\UcStaff.Designer.cs">
+      <DependentUpon>UcStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\Statistic\Statistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControls\Statistic\Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\TourGroup\UcTourGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControls\TourGroup\UcTourGroup.Designer.cs">
+      <DependentUpon>UcTourGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="FMain2.cs">
       <SubType>Form</SubType>
@@ -72,20 +89,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Staff\UcStaff.cs">
+    <Compile Include="CustomUserControls\Tour\UcTour.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Staff\UcStaff.Designer.cs">
-      <DependentUpon>UcStaff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tour\UcTour.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Tour\UcTour.Designer.cs">
+    <Compile Include="CustomUserControls\Tour\UcTour.Designer.cs">
       <DependentUpon>UcTour.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FMain.resx">
-      <DependentUpon>FMain.cs</DependentUpon>
+    <EmbeddedResource Include="CustomUserControls\Customer\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControls\Location\UcLocation.resx">
+      <DependentUpon>UcLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControls\Staff\UcStaff.resx">
+      <DependentUpon>UcStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControls\Statistic\Statistic.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControls\TourGroup\UcTourGroup.resx">
+      <DependentUpon>UcTourGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMain2.resx">
       <DependentUpon>FMain2.cs</DependentUpon>
@@ -100,10 +123,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Staff\UcStaff.resx">
-      <DependentUpon>UcStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tour\UcTour.resx">
+    <EmbeddedResource Include="CustomUserControls\Tour\UcTour.resx">
       <DependentUpon>UcTour.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
@@ -131,5 +151,6 @@
       <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

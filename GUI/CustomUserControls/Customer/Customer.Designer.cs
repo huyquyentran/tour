@@ -1,7 +1,7 @@
 ﻿
-namespace GUI.CustomUserControls.Staff
+namespace GUI.CustomUserControls.Customer
 {
-    partial class UcStaff
+    partial class Customer
     {
         /// <summary> 
         /// Required designer variable.
@@ -37,15 +37,15 @@ namespace GUI.CustomUserControls.Staff
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1120, 580);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
-            // UcStaff
+            // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "UcStaff";
-            this.Size = new System.Drawing.Size(1125, 587);
+            this.Name = "Customer";
+            this.Size = new System.Drawing.Size(1125, 586);
             this.ResumeLayout(false);
 
         }

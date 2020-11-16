@@ -47,7 +47,7 @@ namespace GUI
             this.tcMain.Controls.Add(this.tpTour);
             this.tcMain.Controls.Add(this.tpTourGroup);
             this.tcMain.Controls.Add(this.tpThongKe);
-            this.tcMain.Location = new System.Drawing.Point(13, 13);
+            this.tcMain.Location = new System.Drawing.Point(3, -1);
             this.tcMain.Name = "tcMain";
             this.tcMain.SelectedIndex = 0;
             this.tcMain.Size = new System.Drawing.Size(1141, 622);
@@ -112,8 +112,9 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1166, 647);
+            this.ClientSize = new System.Drawing.Size(1132, 606);
             this.Controls.Add(this.tcMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FMain";
             this.Text = "Quản lý Tour Du Lịch";
             this.tcMain.ResumeLayout(false);

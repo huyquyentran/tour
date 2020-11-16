@@ -64,6 +64,12 @@
     <Compile Include="FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain2.Designer.cs">
+      <DependentUpon>FMain2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Staff\UcStaff.cs">
@@ -72,8 +78,17 @@
     <Compile Include="Staff\UcStaff.Designer.cs">
       <DependentUpon>UcStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tour\UcTour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tour\UcTour.Designer.cs">
+      <DependentUpon>UcTour.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain2.resx">
+      <DependentUpon>FMain2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="Staff\UcStaff.resx">
       <DependentUpon>UcStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\UcTour.resx">
+      <DependentUpon>UcTour.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />

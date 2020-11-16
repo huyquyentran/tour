@@ -112,7 +112,7 @@ namespace GUI.Tour
             this.tbPrice.Padding = new System.Windows.Forms.Padding(3);
             this.tbPrice.Size = new System.Drawing.Size(492, 370);
             this.tbPrice.TabIndex = 0;
-            this.tbPrice.Text = "Chi phí";
+            this.tbPrice.Text = "Giá";
             this.tbPrice.UseVisualStyleBackColor = true;
             // 
             // tabLocation

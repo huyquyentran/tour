@@ -1,7 +1,7 @@
 ﻿
 namespace GUI
 {
-    partial class FMain2
+    partial class FMain
     {
         /// <summary>
         /// Required designer variable.
@@ -77,9 +77,10 @@ namespace GUI
             // ucTour
             // 
             this.ucTour.AutoSize = true;
-            this.ucTour.Location = new System.Drawing.Point(0, 1);
+            this.ucTour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucTour.Location = new System.Drawing.Point(3, 3);
             this.ucTour.Name = "ucTour";
-            this.ucTour.Size = new System.Drawing.Size(1126, 586);
+            this.ucTour.Size = new System.Drawing.Size(1127, 587);
             this.ucTour.TabIndex = 0;
             // 
             // tpTourGroup
@@ -160,14 +161,14 @@ namespace GUI
             this.statistic1.Size = new System.Drawing.Size(1128, 587);
             this.statistic1.TabIndex = 0;
             // 
-            // FMain2
+            // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1166, 647);
             this.Controls.Add(this.tcMain);
-            this.Name = "FMain2";
-            this.Text = "FMain2";
+            this.Name = "FMain";
+            this.Text = "Quản lý Tour Du Lịch";
             this.tcMain.ResumeLayout(false);
             this.tpTour.ResumeLayout(false);
             this.tpTour.PerformLayout();

@@ -48,8 +48,8 @@ namespace GUI.CustomUserControls.TourGroup
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -79,11 +79,6 @@ namespace GUI.CustomUserControls.TourGroup
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.tcChiPhiDiaDiem = new System.Windows.Forms.TabControl();
             this.tabCost = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -107,6 +102,11 @@ namespace GUI.CustomUserControls.TourGroup
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -128,11 +128,6 @@ namespace GUI.CustomUserControls.TourGroup
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tcChiPhiDiaDiem.SuspendLayout();
             this.tabCost.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel10.SuspendLayout();
             this.flowLayoutPanel11.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -141,6 +136,11 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel13.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
@@ -338,6 +338,14 @@ namespace GUI.CustomUserControls.TourGroup
             this.textBox2.Size = new System.Drawing.Size(185, 22);
             this.textBox2.TabIndex = 12;
             // 
+            // textBox3
+            // 
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox3.Location = new System.Drawing.Point(354, 102);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(185, 22);
+            this.textBox3.TabIndex = 14;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -346,14 +354,6 @@ namespace GUI.CustomUserControls.TourGroup
             this.label7.Size = new System.Drawing.Size(64, 17);
             this.label7.TabIndex = 13;
             this.label7.Text = "Tổng phí";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(354, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 22);
-            this.textBox3.TabIndex = 14;
             // 
             // btnThem
             // 
@@ -648,49 +648,6 @@ namespace GUI.CustomUserControls.TourGroup
             this.tabCost.Text = "Chi phí Đoàn";
             this.tabCost.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.panel3);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(563, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(553, 570);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.tcChiPhiDiaDiem);
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(550, 559);
-            this.panel3.TabIndex = 1;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel4);
-            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel2);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(4, 4);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1119, 579);
-            this.flowLayoutPanel3.TabIndex = 2;
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.Controls.Add(this.groupBox1);
-            this.flowLayoutPanel4.Controls.Add(this.flowLayoutPanel6);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(554, 570);
-            this.flowLayoutPanel4.TabIndex = 2;
-            // 
-            // flowLayoutPanel6
-            // 
-            this.flowLayoutPanel6.Controls.Add(this.panel4);
-            this.flowLayoutPanel6.Controls.Add(this.dataGridView1);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 208);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 354);
-            this.flowLayoutPanel6.TabIndex = 1;
-            // 
             // flowLayoutPanel10
             // 
             this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel11);
@@ -916,6 +873,49 @@ namespace GUI.CustomUserControls.TourGroup
             this.dataGridView6.Size = new System.Drawing.Size(530, 304);
             this.dataGridView6.TabIndex = 0;
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.panel3);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(563, 3);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(553, 570);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.tcChiPhiDiaDiem);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(550, 559);
+            this.panel3.TabIndex = 1;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel4);
+            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel2);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(4, 4);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1119, 579);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.groupBox1);
+            this.flowLayoutPanel4.Controls.Add(this.flowLayoutPanel6);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(554, 570);
+            this.flowLayoutPanel4.TabIndex = 2;
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.Controls.Add(this.panel4);
+            this.flowLayoutPanel6.Controls.Add(this.dataGridView1);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 208);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 354);
+            this.flowLayoutPanel6.TabIndex = 1;
+            // 
             // UcTourGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -946,11 +946,6 @@ namespace GUI.CustomUserControls.TourGroup
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tcChiPhiDiaDiem.ResumeLayout(false);
             this.tabCost.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel10.ResumeLayout(false);
             this.flowLayoutPanel11.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
@@ -961,6 +956,11 @@ namespace GUI.CustomUserControls.TourGroup
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -9,6 +9,7 @@ namespace Core.Common
 {
     public class BaseDAL<T> where T : class
     {
+        private static TourDbContext context = new TourDbContext();
         public static IEnumerable<T> Get(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
@@ -16,8 +17,6 @@ namespace Core.Common
             int? page = null,
             int? pageSize = null)
         {
-            using (var context = new TourDbContext())
-            {
                 IQueryable<T> query = context.Set<T>();
 
                 if (includeProperties != null)
@@ -42,48 +41,29 @@ namespace Core.Common
                 }
 
                 return query.ToList();
-            }
-
         }
         public static T GetById(int id)
         {
-            using (var context = new TourDbContext())
-            {
-                return context.Set<T>().Find(id);
-            }
+            return context.Set<T>().Find(id);
         }
         public static IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
-            using (var context = new TourDbContext())
-            {
-                return context.Set<T>().Where(predicate).AsNoTracking().ToList();
-            }
+            return context.Set<T>().Where(predicate).AsNoTracking().ToList();
         }
         public static void Add(T entity)
         {
-            using (var context = new TourDbContext())
-            {
-                context.Set<T>().Add(entity);
-                context.SaveChanges();
-            }
-
+            context.Set<T>().Add(entity);
+            context.SaveChanges();
         }
         public static void Remove(T entity)
         {
-            using (var context = new TourDbContext())
-            {
-                context.Set<T>().Remove(entity);
-                context.SaveChanges();
-            }
-
+            context.Set<T>().Remove(entity);
+            context.SaveChanges();
         }
         public static void Update(T entity)
         {
-            using (var context = new TourDbContext())
-            {
-                context.Entry(entity).State = EntityState.Modified;
-                context.SaveChanges();
-            }
+            context.Entry(entity).State = EntityState.Modified;
+            context.SaveChanges();
         }
     }
 }

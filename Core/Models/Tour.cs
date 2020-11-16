@@ -5,6 +5,7 @@ namespace Core.Models
 {
     public class Tour
     {
+        public Tour() { }
         public Tour(string name, string description, int tourTypeId)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));
@@ -17,7 +18,7 @@ namespace Core.Models
         public string Description { get; set; }
         public int TourTypeId { get; set; }
         public TourType TourType { get; set; }
-        public ICollection<TourPrice> TourPrices { get; set; }
-        public ICollection<TourLocations> TourLocations { get; set; }
+        public ICollection<TourPrice> TourPrices { get; set; } = new List<TourPrice>();
+        public ICollection<TourLocations> TourLocations { get; set; } = new List<TourLocations>();
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI
+namespace GUI.Tour
 {
-    public partial class FMain : Form
+    public partial class UcTour : UserControl
     {
-        public FMain()
+        public UcTour()
         {
             InitializeComponent();
         }

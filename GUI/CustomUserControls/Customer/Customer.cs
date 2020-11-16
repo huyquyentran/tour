@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI
+namespace GUI.CustomUserControls.Customer
 {
-    public partial class FMain : Form
+    public partial class Customer : UserControl
     {
-        public FMain()
+        public Customer()
         {
             InitializeComponent();
         }

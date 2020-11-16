@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI
+namespace GUI.CustomUserControls.Location
 {
-    public partial class FMain : Form
+    public partial class UcLocation : UserControl
     {
-        public FMain()
+        public UcLocation()
         {
             InitializeComponent();
         }

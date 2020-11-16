@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI
+namespace GUI.CustomUserControls.Statistic
 {
-    public partial class FMain : Form
+    public partial class Statistic : UserControl
     {
-        public FMain()
+        public Statistic()
         {
             InitializeComponent();
         }

@@ -1,4 +1,5 @@
-﻿namespace GUI
+﻿
+namespace GUI
 {
     partial class FMain
     {
@@ -28,188 +29,182 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pnlMainContent = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.tcMain = new System.Windows.Forms.TabControl();
+            this.tpTour = new System.Windows.Forms.TabPage();
+            this.tpTourGroup = new System.Windows.Forms.TabPage();
+            this.tpLocation = new System.Windows.Forms.TabPage();
+            this.tpCustomer = new System.Windows.Forms.TabPage();
+            this.tpStaff = new System.Windows.Forms.TabPage();
+            this.tpThongKe = new System.Windows.Forms.TabPage();
+            this.ucTour = new GUI.Tour.UcTour();
+            this.ucTourGroup = new GUI.CustomUserControls.TourGroup.UcTourGroup();
+            this.ucLocation = new GUI.CustomUserControls.Location.UcLocation();
+            this.ucStaff = new GUI.CustomUserControls.Staff.UcStaff();
+            this.ucStatistic = new GUI.CustomUserControls.Statistic.Statistic();
+            this.ucCustomer = new GUI.CustomUserControls.Customer.Customer();
+            this.tcMain.SuspendLayout();
+            this.tpTour.SuspendLayout();
+            this.tpTourGroup.SuspendLayout();
+            this.tpLocation.SuspendLayout();
+            this.tpCustomer.SuspendLayout();
+            this.tpStaff.SuspendLayout();
+            this.tpThongKe.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // tcMain
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(132)))));
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 655);
-            this.panel1.TabIndex = 0;
+            this.tcMain.Controls.Add(this.tpTour);
+            this.tcMain.Controls.Add(this.tpTourGroup);
+            this.tcMain.Controls.Add(this.tpLocation);
+            this.tcMain.Controls.Add(this.tpCustomer);
+            this.tcMain.Controls.Add(this.tpStaff);
+            this.tcMain.Controls.Add(this.tpThongKe);
+            this.tcMain.Location = new System.Drawing.Point(13, 13);
+            this.tcMain.Name = "tcMain";
+            this.tcMain.SelectedIndex = 0;
+            this.tcMain.Size = new System.Drawing.Size(1141, 622);
+            this.tcMain.TabIndex = 0;
             // 
-            // panel2
+            // tpTour
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(217, 78);
-            this.panel2.TabIndex = 0;
+            this.tpTour.Controls.Add(this.ucTour);
+            this.tpTour.Location = new System.Drawing.Point(4, 25);
+            this.tpTour.Name = "tpTour";
+            this.tpTour.Padding = new System.Windows.Forms.Padding(3);
+            this.tpTour.Size = new System.Drawing.Size(1133, 593);
+            this.tpTour.TabIndex = 0;
+            this.tpTour.Text = "Quản lý Tour";
+            this.tpTour.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // tpTourGroup
             // 
-            this.panel3.Controls.Add(this.bunifuFlatButton3);
-            this.panel3.Controls.Add(this.bunifuFlatButton2);
-            this.panel3.Controls.Add(this.bunifuFlatButton1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 78);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(217, 577);
-            this.panel3.TabIndex = 1;
+            this.tpTourGroup.Controls.Add(this.ucTourGroup);
+            this.tpTourGroup.Location = new System.Drawing.Point(4, 25);
+            this.tpTourGroup.Name = "tpTourGroup";
+            this.tpTourGroup.Padding = new System.Windows.Forms.Padding(3);
+            this.tpTourGroup.Size = new System.Drawing.Size(1133, 593);
+            this.tpTourGroup.TabIndex = 1;
+            this.tpTourGroup.Text = "Quản lý Đoàn";
+            this.tpTourGroup.UseVisualStyleBackColor = true;
             // 
-            // pnlMainContent
+            // tpLocation
             // 
-            this.pnlMainContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainContent.Location = new System.Drawing.Point(217, 0);
-            this.pnlMainContent.Name = "pnlMainContent";
-            this.pnlMainContent.Size = new System.Drawing.Size(807, 655);
-            this.pnlMainContent.TabIndex = 1;
+            this.tpLocation.Controls.Add(this.ucLocation);
+            this.tpLocation.Location = new System.Drawing.Point(4, 25);
+            this.tpLocation.Name = "tpLocation";
+            this.tpLocation.Size = new System.Drawing.Size(1133, 593);
+            this.tpLocation.TabIndex = 2;
+            this.tpLocation.Text = "Quản lý Địa điểm";
+            this.tpLocation.UseVisualStyleBackColor = true;
             // 
-            // bunifuFlatButton3
+            // tpCustomer
             // 
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(88)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(132)))));
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "Staff";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage")));
-            this.bunifuFlatButton3.Iconimage_right = null;
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 0;
-            this.bunifuFlatButton3.IconMarginRight = 0;
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconRightZoom = 0D;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.IconZoom = 90D;
-            this.bunifuFlatButton3.IsTab = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 96);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(132)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(88)))));
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(217, 48);
-            this.bunifuFlatButton3.TabIndex = 4;
-            this.bunifuFlatButton3.Text = "Staff";
-            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
+            this.tpCustomer.Controls.Add(this.ucCustomer);
+            this.tpCustomer.Location = new System.Drawing.Point(4, 25);
+            this.tpCustomer.Name = "tpCustomer";
+            this.tpCustomer.Size = new System.Drawing.Size(1133, 593);
+            this.tpCustomer.TabIndex = 3;
+            this.tpCustomer.Text = "Quản lý Khách hàng";
+            this.tpCustomer.UseVisualStyleBackColor = true;
             // 
-            // bunifuFlatButton2
+            // tpStaff
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(88)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(132)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Tour Type";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 48);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(132)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(88)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(217, 48);
-            this.bunifuFlatButton2.TabIndex = 3;
-            this.bunifuFlatButton2.Text = "Tour Type";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpStaff.Controls.Add(this.ucStaff);
+            this.tpStaff.Location = new System.Drawing.Point(4, 25);
+            this.tpStaff.Name = "tpStaff";
+            this.tpStaff.Size = new System.Drawing.Size(1133, 593);
+            this.tpStaff.TabIndex = 4;
+            this.tpStaff.Text = "Quản lý Nhân viên";
+            this.tpStaff.UseVisualStyleBackColor = true;
             // 
-            // bunifuFlatButton1
+            // tpThongKe
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(88)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(132)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Tour";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(132)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(88)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(217, 48);
-            this.bunifuFlatButton1.TabIndex = 1;
-            this.bunifuFlatButton1.Text = "Tour";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpThongKe.Controls.Add(this.ucStatistic);
+            this.tpThongKe.Location = new System.Drawing.Point(4, 25);
+            this.tpThongKe.Name = "tpThongKe";
+            this.tpThongKe.Size = new System.Drawing.Size(1133, 593);
+            this.tpThongKe.TabIndex = 5;
+            this.tpThongKe.Text = "Thống kê";
+            this.tpThongKe.UseVisualStyleBackColor = true;
+            // 
+            // ucTour
+            // 
+            this.ucTour.AutoSize = true;
+            this.ucTour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucTour.Location = new System.Drawing.Point(3, 3);
+            this.ucTour.Name = "ucTour";
+            this.ucTour.Size = new System.Drawing.Size(1127, 587);
+            this.ucTour.TabIndex = 0;
+            // 
+            // ucTourGroup
+            // 
+            this.ucTourGroup.Location = new System.Drawing.Point(7, 7);
+            this.ucTourGroup.Name = "ucTourGroup";
+            this.ucTourGroup.Size = new System.Drawing.Size(1126, 586);
+            this.ucTourGroup.TabIndex = 0;
+            // 
+            // ucLocation
+            // 
+            this.ucLocation.Location = new System.Drawing.Point(4, 4);
+            this.ucLocation.Name = "ucLocation";
+            this.ucLocation.Size = new System.Drawing.Size(1126, 586);
+            this.ucLocation.TabIndex = 0;
+            // 
+            // ucStaff
+            // 
+            this.ucStaff.Location = new System.Drawing.Point(4, 4);
+            this.ucStaff.Name = "ucStaff";
+            this.ucStaff.Size = new System.Drawing.Size(1125, 587);
+            this.ucStaff.TabIndex = 0;
+            // 
+            // ucStatistic
+            // 
+            this.ucStatistic.Location = new System.Drawing.Point(4, 4);
+            this.ucStatistic.Name = "ucStatistic";
+            this.ucStatistic.Size = new System.Drawing.Size(1128, 587);
+            this.ucStatistic.TabIndex = 0;
+            // 
+            // ucCustomer
+            // 
+            this.ucCustomer.Location = new System.Drawing.Point(4, 4);
+            this.ucCustomer.Name = "ucCustomer";
+            this.ucCustomer.Size = new System.Drawing.Size(1125, 586);
+            this.ucCustomer.TabIndex = 0;
             // 
             // FMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1024, 655);
-            this.Controls.Add(this.pnlMainContent);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1166, 647);
+            this.Controls.Add(this.tcMain);
             this.Name = "FMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main";
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.Text = "Quản lý Tour Du Lịch";
+            this.tcMain.ResumeLayout(false);
+            this.tpTour.ResumeLayout(false);
+            this.tpTour.PerformLayout();
+            this.tpTourGroup.ResumeLayout(false);
+            this.tpLocation.ResumeLayout(false);
+            this.tpCustomer.ResumeLayout(false);
+            this.tpStaff.ResumeLayout(false);
+            this.tpThongKe.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private System.Windows.Forms.Panel pnlMainContent;
+        private System.Windows.Forms.TabControl tcMain;
+        private System.Windows.Forms.TabPage tpTour;
+        private System.Windows.Forms.TabPage tpTourGroup;
+        private System.Windows.Forms.TabPage tpLocation;
+        private System.Windows.Forms.TabPage tpCustomer;
+        private System.Windows.Forms.TabPage tpStaff;
+        private System.Windows.Forms.TabPage tpThongKe;
+        private Tour.UcTour ucTour;
+        private CustomUserControls.TourGroup.UcTourGroup ucTourGroup;
+        private CustomUserControls.Location.UcLocation ucLocation;
+        private CustomUserControls.Staff.UcStaff ucStaff;
+        private CustomUserControls.Statistic.Statistic ucStatistic;
+        private CustomUserControls.Customer.Customer ucCustomer;
     }
 }

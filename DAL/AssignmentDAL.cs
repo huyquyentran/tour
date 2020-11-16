@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class TourDAL : BaseDAL<Tour>
+    public class AssignmentDAL : BaseDAL<Assignment>
     {
-
     }
 }

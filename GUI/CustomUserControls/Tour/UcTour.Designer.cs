@@ -120,7 +120,7 @@ namespace GUI.Tour
             this.tabLocation.Location = new System.Drawing.Point(4, 25);
             this.tabLocation.Name = "tabLocation";
             this.tabLocation.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLocation.Size = new System.Drawing.Size(492, 370);
+            this.tabLocation.Size = new System.Drawing.Size(490, 370);
             this.tabLocation.TabIndex = 1;
             this.tabLocation.Text = "Địa điểm";
             this.tabLocation.UseVisualStyleBackColor = true;
@@ -179,7 +179,7 @@ namespace GUI.Tour
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
@@ -225,29 +225,29 @@ namespace GUI.Tour
             // 
             // tbMa
             // 
-            this.tbMa.Location = new System.Drawing.Point(65, 3);
+            this.tbMa.Location = new System.Drawing.Point(64, 3);
             this.tbMa.Name = "tbMa";
-            this.tbMa.Size = new System.Drawing.Size(345, 22);
+            this.tbMa.Size = new System.Drawing.Size(344, 22);
             this.tbMa.TabIndex = 3;
             // 
             // tbTen
             // 
-            this.tbTen.Location = new System.Drawing.Point(65, 32);
+            this.tbTen.Location = new System.Drawing.Point(64, 32);
             this.tbTen.Name = "tbTen";
-            this.tbTen.Size = new System.Drawing.Size(345, 22);
+            this.tbTen.Size = new System.Drawing.Size(344, 22);
             this.tbTen.TabIndex = 4;
             // 
             // cbLoai
             // 
             this.cbLoai.FormattingEnabled = true;
-            this.cbLoai.Location = new System.Drawing.Point(65, 61);
+            this.cbLoai.Location = new System.Drawing.Point(64, 61);
             this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(345, 24);
+            this.cbLoai.Size = new System.Drawing.Size(344, 24);
             this.cbLoai.TabIndex = 5;
             // 
             // btnChonLoai
             // 
-            this.btnChonLoai.Location = new System.Drawing.Point(416, 61);
+            this.btnChonLoai.Location = new System.Drawing.Point(414, 61);
             this.btnChonLoai.Name = "btnChonLoai";
             this.btnChonLoai.Size = new System.Drawing.Size(75, 23);
             this.btnChonLoai.TabIndex = 6;

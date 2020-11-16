@@ -491,7 +491,7 @@ namespace GUI.Tour
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(548, 162);
+            this.groupBox1.Size = new System.Drawing.Size(548, 188);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin Tour";
@@ -501,15 +501,15 @@ namespace GUI.Tour
             this.flowLayoutPanel1.Controls.Add(this.btnThem);
             this.flowLayoutPanel1.Controls.Add(this.btnSua);
             this.flowLayoutPanel1.Controls.Add(this.btnXoa);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 119);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 136);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(542, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(539, 47);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(464, 3);
+            this.btnThem.Location = new System.Drawing.Point(461, 3);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 30);
             this.btnThem.TabIndex = 0;
@@ -518,7 +518,7 @@ namespace GUI.Tour
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(383, 3);
+            this.btnSua.Location = new System.Drawing.Point(380, 3);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 30);
             this.btnSua.TabIndex = 1;
@@ -527,7 +527,7 @@ namespace GUI.Tour
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(302, 3);
+            this.btnXoa.Location = new System.Drawing.Point(299, 3);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 30);
             this.btnXoa.TabIndex = 2;
@@ -557,7 +557,7 @@ namespace GUI.Tour
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(542, 91);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(539, 108);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -572,15 +572,15 @@ namespace GUI.Tour
             // tbMa
             // 
             this.tbMa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbMa.Location = new System.Drawing.Point(84, 3);
+            this.tbMa.Location = new System.Drawing.Point(83, 3);
             this.tbMa.Name = "tbMa";
-            this.tbMa.Size = new System.Drawing.Size(183, 22);
+            this.tbMa.Size = new System.Drawing.Size(182, 22);
             this.tbMa.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(273, 0);
+            this.label2.Location = new System.Drawing.Point(271, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 17);
             this.label2.TabIndex = 1;
@@ -588,7 +588,7 @@ namespace GUI.Tour
             // 
             // tbTen
             // 
-            this.tbTen.Location = new System.Drawing.Point(354, 3);
+            this.tbTen.Location = new System.Drawing.Point(351, 3);
             this.tbTen.Name = "tbTen";
             this.tbTen.Size = new System.Drawing.Size(185, 22);
             this.tbTen.TabIndex = 4;
@@ -596,7 +596,7 @@ namespace GUI.Tour
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 30);
+            this.label3.Location = new System.Drawing.Point(3, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 17);
             this.label3.TabIndex = 2;
@@ -605,15 +605,15 @@ namespace GUI.Tour
             // cbLoai
             // 
             this.cbLoai.FormattingEnabled = true;
-            this.cbLoai.Location = new System.Drawing.Point(84, 33);
+            this.cbLoai.Location = new System.Drawing.Point(83, 39);
             this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(183, 24);
+            this.cbLoai.Size = new System.Drawing.Size(182, 24);
             this.cbLoai.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(273, 30);
+            this.label4.Location = new System.Drawing.Point(271, 36);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 17);
             this.label4.TabIndex = 6;
@@ -622,7 +622,7 @@ namespace GUI.Tour
             // textBox2
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(354, 33);
+            this.textBox2.Location = new System.Drawing.Point(351, 39);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(185, 22);
             this.textBox2.TabIndex = 7;
@@ -630,7 +630,7 @@ namespace GUI.Tour
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 60);
+            this.label5.Location = new System.Drawing.Point(3, 72);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 17);
             this.label5.TabIndex = 8;
@@ -640,9 +640,9 @@ namespace GUI.Tour
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 3);
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(84, 63);
+            this.textBox3.Location = new System.Drawing.Point(83, 75);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(455, 22);
+            this.textBox3.Size = new System.Drawing.Size(453, 22);
             this.textBox3.TabIndex = 9;
             // 
             // tcChiPhiDiaDiem
@@ -695,16 +695,16 @@ namespace GUI.Tour
             this.flowLayoutPanel5.Controls.Add(this.groupBox1);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(551, 165);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(551, 196);
             this.flowLayoutPanel5.TabIndex = 0;
             // 
             // flowLayoutPanel6
             // 
             this.flowLayoutPanel6.Controls.Add(this.panel4);
             this.flowLayoutPanel6.Controls.Add(this.dataGridView1);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 174);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 205);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 396);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 357);
             this.flowLayoutPanel6.TabIndex = 1;
             // 
             // panel4
@@ -768,7 +768,7 @@ namespace GUI.Tour
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(548, 342);
+            this.dataGridView1.Size = new System.Drawing.Size(548, 304);
             this.dataGridView1.TabIndex = 0;
             // 
             // UcTour

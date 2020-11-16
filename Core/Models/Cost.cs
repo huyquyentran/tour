@@ -4,6 +4,7 @@ namespace Core.Models
 {
     public class Cost
     {
+        public Cost () { }
         public int Id { get; set; }
         public int CostTypeId { get; set; }
         public CostType CostType { get; set; }

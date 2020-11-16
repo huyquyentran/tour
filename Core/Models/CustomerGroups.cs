@@ -4,6 +4,7 @@ namespace Core.Models
 {
     public class CustomerGroups
     {
+        public CustomerGroups () { }
         public CustomerGroups(int groupId, int customerId, DateTime joinDate)
         {
             GroupId = groupId;

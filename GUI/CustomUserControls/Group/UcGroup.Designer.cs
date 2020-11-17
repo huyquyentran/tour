@@ -107,6 +107,8 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbGroupRevenue = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupList)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -239,6 +241,8 @@ namespace GUI.CustomUserControls.TourGroup
             this.tableLayoutPanel1.Controls.Add(this.tbGroupPrice, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.tbGroupTotalCost, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.label7, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tbGroupRevenue, 1, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 22);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -361,9 +365,9 @@ namespace GUI.CustomUserControls.TourGroup
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(273, 99);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 17);
+            this.label7.Size = new System.Drawing.Size(51, 17);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Tổng phí";
+            this.label7.Text = "Chi phí";
             // 
             // btnGroupAdd
             // 
@@ -933,6 +937,23 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 354);
             this.flowLayoutPanel6.TabIndex = 1;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 99);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 17);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Doanh thu";
+            // 
+            // tbGroupRevenue
+            // 
+            this.tbGroupRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupRevenue.Location = new System.Drawing.Point(84, 102);
+            this.tbGroupRevenue.Name = "tbGroupRevenue";
+            this.tbGroupRevenue.Size = new System.Drawing.Size(183, 22);
+            this.tbGroupRevenue.TabIndex = 16;
+            // 
             // UcTourGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1062,5 +1083,7 @@ namespace GUI.CustomUserControls.TourGroup
         private System.Windows.Forms.ComboBox cbGroupCostSearchBy;
         private System.Windows.Forms.TextBox tbGroupCostSearch;
         private System.Windows.Forms.DataGridView dgvGroupCostList;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tbGroupRevenue;
     }
 }

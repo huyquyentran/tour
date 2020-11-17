@@ -24,9 +24,49 @@ namespace BLL
                 }
             );
         }
+        public static void IsValid(Tour tour)
+        {
+            if (String.IsNullOrWhiteSpace(tour.Name))
+                throw new Exception("Tên không được bỏ trống");
+            if (String.IsNullOrWhiteSpace(tour.Description))
+                throw new Exception("Mô tả không được bỏ trống");
+            if (tour.CurrentPrice < 0)
+                throw new Exception("Giá phải lớn hơn 0");
+            if(TourTypeDAL.GetById(tour.TourTypeId) == null)
+                throw new Exception("Không tồn tại thể loại tour này");
+        }
         public static void Add(Tour tour)
         {
-            TourDAL.Add(tour);
+            try
+            {
+                IsValid(tour);
+                TourDAL.Add(tour);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
+        }
+        public static void Update(int id, Tour tour)
+        {
+            try
+            {
+                IsValid(tour);
+
+                var sourceTour = TourDAL.GetById(id);
+                if (sourceTour == null) throw new Exception("Mã tour không tồn tại");
+
+                sourceTour.Name = tour.Name;
+                sourceTour.Description = tour.Description;
+                sourceTour.CurrentPrice = tour.CurrentPrice;
+                sourceTour.TourTypeId = tour.TourTypeId;
+                TourDAL.Update(sourceTour);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

@@ -186,6 +186,7 @@ namespace GUI.Tour
             this.btnTourPriceAdd.TabIndex = 0;
             this.btnTourPriceAdd.Text = "+ Thêm";
             this.btnTourPriceAdd.UseVisualStyleBackColor = true;
+            this.btnTourPriceAdd.Click += new System.EventHandler(this.btnTourPriceAdd_Click);
             // 
             // btnTourPriceEdit
             // 
@@ -195,6 +196,7 @@ namespace GUI.Tour
             this.btnTourPriceEdit.TabIndex = 1;
             this.btnTourPriceEdit.Text = "Sửa ✎";
             this.btnTourPriceEdit.UseVisualStyleBackColor = true;
+            this.btnTourPriceEdit.Click += new System.EventHandler(this.btnTourPriceEdit_Click);
             // 
             // btnTourPriceDelete
             // 
@@ -377,6 +379,7 @@ namespace GUI.Tour
             this.dgvTourPriceList.RowTemplate.Height = 24;
             this.dgvTourPriceList.Size = new System.Drawing.Size(530, 304);
             this.dgvTourPriceList.TabIndex = 0;
+            this.dgvTourPriceList.SelectionChanged += new System.EventHandler(this.dgvTourPriceList_SelectionChanged);
             // 
             // tabLocation
             // 
@@ -546,6 +549,7 @@ namespace GUI.Tour
             this.btnTourAdd.TabIndex = 0;
             this.btnTourAdd.Text = "+ Thêm";
             this.btnTourAdd.UseVisualStyleBackColor = true;
+            this.btnTourAdd.Click += new System.EventHandler(this.btnTourAdd_Click);
             // 
             // btnTourEdit
             // 
@@ -555,6 +559,7 @@ namespace GUI.Tour
             this.btnTourEdit.TabIndex = 1;
             this.btnTourEdit.Text = "Sửa ✎";
             this.btnTourEdit.UseVisualStyleBackColor = true;
+            this.btnTourEdit.Click += new System.EventHandler(this.btnTourEdit_Click);
             // 
             // btnTourDelete
             // 
@@ -801,6 +806,7 @@ namespace GUI.Tour
             this.dgvTourList.RowTemplate.Height = 24;
             this.dgvTourList.Size = new System.Drawing.Size(548, 304);
             this.dgvTourList.TabIndex = 0;
+            this.dgvTourList.SelectionChanged += new System.EventHandler(this.dgvTourList_SelectionChanged);
             // 
             // UcTour
             // 

@@ -32,5 +32,10 @@ namespace BLL
             }
             TourPriceDAL.Add(tourPrice);
         }
+
+        public static void Update(TourPrice tourPrice)
+        {
+
+        }
     }
 }

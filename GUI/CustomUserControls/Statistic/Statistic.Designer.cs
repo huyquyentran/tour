@@ -30,14 +30,257 @@ namespace GUI.CustomUserControls.Statistic
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tpOverview = new System.Windows.Forms.TabPage();
+            this.tpTour = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tpOverview.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1120, 580);
             this.panel1.TabIndex = 2;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tpOverview);
+            this.tabControl1.Controls.Add(this.tpTour);
+            this.tabControl1.Location = new System.Drawing.Point(4, 4);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1113, 573);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tpOverview
+            // 
+            this.tpOverview.Controls.Add(this.tableLayoutPanel1);
+            this.tpOverview.Location = new System.Drawing.Point(4, 25);
+            this.tpOverview.Name = "tpOverview";
+            this.tpOverview.Padding = new System.Windows.Forms.Padding(3);
+            this.tpOverview.Size = new System.Drawing.Size(1105, 544);
+            this.tpOverview.TabIndex = 0;
+            this.tpOverview.Text = "Tổng quan";
+            this.tpOverview.UseVisualStyleBackColor = true;
+            // 
+            // tpTour
+            // 
+            this.tpTour.Location = new System.Drawing.Point(4, 25);
+            this.tpTour.Name = "tpTour";
+            this.tpTour.Padding = new System.Windows.Forms.Padding(3);
+            this.tpTour.Size = new System.Drawing.Size(1105, 544);
+            this.tpTour.TabIndex = 1;
+            this.tpTour.Text = "Tour";
+            this.tpTour.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 7);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1095, 120);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(67)))), ((int)(((byte)(53)))));
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(276, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(267, 114);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(140)))), ((int)(((byte)(245)))));
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(267, 114);
+            this.panel3.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(181, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 48);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "120";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(180, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 48);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "120";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(193)))), ((int)(((byte)(22)))));
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Location = new System.Drawing.Point(549, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(267, 114);
+            this.panel5.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(180, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 48);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "120";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(177)))), ((int)(((byte)(100)))));
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(822, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(267, 114);
+            this.panel4.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(180, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 48);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "120";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(267, 62);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Tour";
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label6.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(267, 62);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Đoàn";
+            // 
+            // label7
+            // 
+            this.label7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label7.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(267, 62);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Nhân viên";
+            // 
+            // label8
+            // 
+            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label8.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(267, 62);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Khách hàng";
+            // 
+            // label12
+            // 
+            this.label12.Image = global::GUI.Properties.Resources.icons8_user_groups_50px;
+            this.label12.Location = new System.Drawing.Point(3, 50);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(60, 60);
+            this.label12.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.Image = global::GUI.Properties.Resources.icons8_management_50px;
+            this.label11.Location = new System.Drawing.Point(3, 50);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 60);
+            this.label11.TabIndex = 4;
+            // 
+            // label10
+            // 
+            this.label10.Image = global::GUI.Properties.Resources.icons8_baby_footprint_50px;
+            this.label10.Location = new System.Drawing.Point(3, 50);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 60);
+            this.label10.TabIndex = 4;
+            // 
+            // label9
+            // 
+            this.label9.Image = global::GUI.Properties.Resources.icons8_adventure_50px;
+            this.label9.Location = new System.Drawing.Point(3, 50);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(60, 60);
+            this.label9.TabIndex = 3;
             // 
             // Statistic
             // 
@@ -46,6 +289,14 @@ namespace GUI.CustomUserControls.Statistic
             this.Controls.Add(this.panel1);
             this.Name = "Statistic";
             this.Size = new System.Drawing.Size(1128, 587);
+            this.panel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tpOverview.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -53,5 +304,25 @@ namespace GUI.CustomUserControls.Statistic
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tpOverview;
+        private System.Windows.Forms.TabPage tpTour;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
     }
 }

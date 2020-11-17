@@ -29,103 +29,103 @@ namespace GUI.CustomUserControls.TourGroup
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnGroupRefresh = new System.Windows.Forms.Button();
+            this.btnGroupSearch = new System.Windows.Forms.Button();
+            this.tbGroupSearchInput = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cbGroupSearchBy = new System.Windows.Forms.ComboBox();
+            this.dgvGroupList = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tbMa = new System.Windows.Forms.TextBox();
+            this.tbGroupID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbTen = new System.Windows.Forms.TextBox();
+            this.tbGroupName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbLoai = new System.Windows.Forms.ComboBox();
+            this.cbGroupTour = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpGroupStartDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpGroupEndDate = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbGroupPrice = new System.Windows.Forms.TextBox();
+            this.tbGroupTotalCost = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.btnGroupAdd = new System.Windows.Forms.Button();
+            this.btnGroupEdit = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnGroupDelete = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbCustomer = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgvGroupCustomerList = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnGroupCustomerRemove = new System.Windows.Forms.Button();
+            this.btnGroupCustomerAdd = new System.Windows.Forms.Button();
+            this.btnGroupCustomerSave = new System.Windows.Forms.Button();
+            this.btnGroupCustomerCancel = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvGroupCustomerListAll = new System.Windows.Forms.DataGridView();
             this.tabStaff = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dgvGroupStaffList = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnGroupStaffRemove = new System.Windows.Forms.Button();
+            this.btnGroupStaffAdd = new System.Windows.Forms.Button();
+            this.btnGroupStaffSave = new System.Windows.Forms.Button();
+            this.btnGroupStaffCancel = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dgvGroupStaffListAll = new System.Windows.Forms.DataGridView();
             this.tcChiPhiDiaDiem = new System.Windows.Forms.TabControl();
             this.tabCost = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btnGroupCostAdd = new System.Windows.Forms.Button();
+            this.btnGroupCostEdit = new System.Windows.Forms.Button();
+            this.btnGroupCostDelete = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbGroupCostID = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbGroupCostType = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbGroupCostValue = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbGroupCostNote = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.btnGroupCostRefresh = new System.Windows.Forms.Button();
+            this.btnGroupCostSearch = new System.Windows.Forms.Button();
+            this.cbGroupCostSearchBy = new System.Windows.Forms.ComboBox();
+            this.tbGroupCostSearch = new System.Windows.Forms.TextBox();
+            this.dgvGroupCostList = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupList)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tbCustomer.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupCustomerList)).BeginInit();
             this.flowLayoutPanel7.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupCustomerListAll)).BeginInit();
             this.tabStaff.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupStaffList)).BeginInit();
             this.flowLayoutPanel9.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupStaffListAll)).BeginInit();
             this.tcChiPhiDiaDiem.SuspendLayout();
             this.tabCost.SuspendLayout();
             this.flowLayoutPanel10.SuspendLayout();
@@ -135,7 +135,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tableLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel13.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupCostList)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -143,46 +143,46 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button2
+            // btnGroupRefresh
             // 
-            this.button2.Location = new System.Drawing.Point(441, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Làm mới 🗘";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGroupRefresh.Location = new System.Drawing.Point(441, 4);
+            this.btnGroupRefresh.Name = "btnGroupRefresh";
+            this.btnGroupRefresh.Size = new System.Drawing.Size(95, 30);
+            this.btnGroupRefresh.TabIndex = 3;
+            this.btnGroupRefresh.Text = "Làm mới 🗘";
+            this.btnGroupRefresh.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnGroupSearch
             // 
-            this.button1.Location = new System.Drawing.Point(360, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tìm ⌕";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGroupSearch.Location = new System.Drawing.Point(360, 4);
+            this.btnGroupSearch.Name = "btnGroupSearch";
+            this.btnGroupSearch.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupSearch.TabIndex = 2;
+            this.btnGroupSearch.Text = "Tìm ⌕";
+            this.btnGroupSearch.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tbGroupSearchInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(4, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 22);
-            this.textBox1.TabIndex = 0;
+            this.tbGroupSearchInput.Location = new System.Drawing.Point(4, 8);
+            this.tbGroupSearchInput.Name = "tbGroupSearchInput";
+            this.tbGroupSearchInput.Size = new System.Drawing.Size(219, 22);
+            this.tbGroupSearchInput.TabIndex = 0;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.comboBox1);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.btnGroupRefresh);
+            this.panel4.Controls.Add(this.btnGroupSearch);
+            this.panel4.Controls.Add(this.cbGroupSearchBy);
+            this.panel4.Controls.Add(this.tbGroupSearchInput);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(539, 37);
             this.panel4.TabIndex = 0;
             // 
-            // comboBox1
+            // cbGroupSearchBy
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbGroupSearchBy.FormattingEnabled = true;
+            this.cbGroupSearchBy.Items.AddRange(new object[] {
             "Mã đoàn",
             "Tên đoàn",
             "Tour",
@@ -190,24 +190,24 @@ namespace GUI.CustomUserControls.TourGroup
             "Ngày đi",
             "Ngày về",
             "Tổng phí"});
-            this.comboBox1.Location = new System.Drawing.Point(229, 8);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 24);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Tên đoàn";
+            this.cbGroupSearchBy.Location = new System.Drawing.Point(229, 8);
+            this.cbGroupSearchBy.Name = "cbGroupSearchBy";
+            this.cbGroupSearchBy.Size = new System.Drawing.Size(125, 24);
+            this.cbGroupSearchBy.TabIndex = 1;
+            this.cbGroupSearchBy.Text = "Tên đoàn";
             // 
-            // dataGridView1
+            // dgvGroupList
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 46);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(545, 304);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvGroupList.AllowUserToAddRows = false;
+            this.dgvGroupList.AllowUserToDeleteRows = false;
+            this.dgvGroupList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGroupList.Location = new System.Drawing.Point(3, 46);
+            this.dgvGroupList.Name = "dgvGroupList";
+            this.dgvGroupList.ReadOnly = true;
+            this.dgvGroupList.RowHeadersWidth = 51;
+            this.dgvGroupList.RowTemplate.Height = 24;
+            this.dgvGroupList.Size = new System.Drawing.Size(545, 304);
+            this.dgvGroupList.TabIndex = 0;
             // 
             // label1
             // 
@@ -226,18 +226,18 @@ namespace GUI.CustomUserControls.TourGroup
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tbMa, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tbGroupID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tbTen, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tbGroupName, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.cbLoai, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbGroupTour, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dtpGroupStartDate, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label5, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker2, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dtpGroupEndDate, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.label6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tbGroupPrice, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tbGroupTotalCost, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.label7, 2, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 22);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -250,13 +250,13 @@ namespace GUI.CustomUserControls.TourGroup
             this.tableLayoutPanel1.Size = new System.Drawing.Size(542, 133);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // tbMa
+            // tbGroupID
             // 
-            this.tbMa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbMa.Location = new System.Drawing.Point(84, 3);
-            this.tbMa.Name = "tbMa";
-            this.tbMa.Size = new System.Drawing.Size(183, 22);
-            this.tbMa.TabIndex = 3;
+            this.tbGroupID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupID.Location = new System.Drawing.Point(84, 3);
+            this.tbGroupID.Name = "tbGroupID";
+            this.tbGroupID.Size = new System.Drawing.Size(183, 22);
+            this.tbGroupID.TabIndex = 3;
             // 
             // label2
             // 
@@ -267,13 +267,13 @@ namespace GUI.CustomUserControls.TourGroup
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên";
             // 
-            // tbTen
+            // tbGroupName
             // 
-            this.tbTen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbTen.Location = new System.Drawing.Point(354, 3);
-            this.tbTen.Name = "tbTen";
-            this.tbTen.Size = new System.Drawing.Size(185, 22);
-            this.tbTen.TabIndex = 4;
+            this.tbGroupName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupName.Location = new System.Drawing.Point(354, 3);
+            this.tbGroupName.Name = "tbGroupName";
+            this.tbGroupName.Size = new System.Drawing.Size(185, 22);
+            this.tbGroupName.TabIndex = 4;
             // 
             // label3
             // 
@@ -284,13 +284,14 @@ namespace GUI.CustomUserControls.TourGroup
             this.label3.TabIndex = 2;
             this.label3.Text = "Tour";
             // 
-            // cbLoai
+            // cbGroupTour
             // 
-            this.cbLoai.FormattingEnabled = true;
-            this.cbLoai.Location = new System.Drawing.Point(84, 36);
-            this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(183, 24);
-            this.cbLoai.TabIndex = 5;
+            this.cbGroupTour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbGroupTour.FormattingEnabled = true;
+            this.cbGroupTour.Location = new System.Drawing.Point(84, 36);
+            this.cbGroupTour.Name = "cbGroupTour";
+            this.cbGroupTour.Size = new System.Drawing.Size(183, 24);
+            this.cbGroupTour.TabIndex = 5;
             // 
             // label4
             // 
@@ -301,15 +302,15 @@ namespace GUI.CustomUserControls.TourGroup
             this.label4.TabIndex = 7;
             this.label4.Text = "Ngày đi";
             // 
-            // dateTimePicker1
+            // dtpGroupStartDate
             // 
-            this.dateTimePicker1.CustomFormat = "dd/M/yyyy";
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(84, 69);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(183, 22);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dtpGroupStartDate.CustomFormat = "dd/M/yyyy";
+            this.dtpGroupStartDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpGroupStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpGroupStartDate.Location = new System.Drawing.Point(84, 69);
+            this.dtpGroupStartDate.Name = "dtpGroupStartDate";
+            this.dtpGroupStartDate.Size = new System.Drawing.Size(183, 22);
+            this.dtpGroupStartDate.TabIndex = 9;
             // 
             // label5
             // 
@@ -320,40 +321,40 @@ namespace GUI.CustomUserControls.TourGroup
             this.label5.TabIndex = 8;
             this.label5.Text = "Ngày về";
             // 
-            // dateTimePicker2
+            // dtpGroupEndDate
             // 
-            this.dateTimePicker2.CustomFormat = "dd/M/yyyy";
-            this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(354, 69);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(185, 22);
-            this.dateTimePicker2.TabIndex = 10;
+            this.dtpGroupEndDate.CustomFormat = "dd/M/yyyy";
+            this.dtpGroupEndDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpGroupEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpGroupEndDate.Location = new System.Drawing.Point(354, 69);
+            this.dtpGroupEndDate.Name = "dtpGroupEndDate";
+            this.dtpGroupEndDate.Size = new System.Drawing.Size(185, 22);
+            this.dtpGroupEndDate.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(273, 33);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 17);
+            this.label6.Size = new System.Drawing.Size(49, 17);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Giá tour";
+            this.label6.Text = "Giá vé";
             // 
-            // textBox2
+            // tbGroupPrice
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(354, 36);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 22);
-            this.textBox2.TabIndex = 12;
+            this.tbGroupPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupPrice.Location = new System.Drawing.Point(354, 36);
+            this.tbGroupPrice.Name = "tbGroupPrice";
+            this.tbGroupPrice.Size = new System.Drawing.Size(185, 22);
+            this.tbGroupPrice.TabIndex = 12;
             // 
-            // textBox3
+            // tbGroupTotalCost
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(354, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 22);
-            this.textBox3.TabIndex = 14;
+            this.tbGroupTotalCost.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupTotalCost.Location = new System.Drawing.Point(354, 102);
+            this.tbGroupTotalCost.Name = "tbGroupTotalCost";
+            this.tbGroupTotalCost.Size = new System.Drawing.Size(185, 22);
+            this.tbGroupTotalCost.TabIndex = 14;
             // 
             // label7
             // 
@@ -364,43 +365,43 @@ namespace GUI.CustomUserControls.TourGroup
             this.label7.TabIndex = 13;
             this.label7.Text = "Tổng phí";
             // 
-            // btnThem
+            // btnGroupAdd
             // 
-            this.btnThem.Location = new System.Drawing.Point(464, 3);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 30);
-            this.btnThem.TabIndex = 0;
-            this.btnThem.Text = "+ Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnGroupAdd.Location = new System.Drawing.Point(464, 3);
+            this.btnGroupAdd.Name = "btnGroupAdd";
+            this.btnGroupAdd.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupAdd.TabIndex = 0;
+            this.btnGroupAdd.Text = "+ Thêm";
+            this.btnGroupAdd.UseVisualStyleBackColor = true;
             // 
-            // btnSua
+            // btnGroupEdit
             // 
-            this.btnSua.Location = new System.Drawing.Point(383, 3);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 30);
-            this.btnSua.TabIndex = 1;
-            this.btnSua.Text = "Sửa ✎";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnGroupEdit.Location = new System.Drawing.Point(383, 3);
+            this.btnGroupEdit.Name = "btnGroupEdit";
+            this.btnGroupEdit.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupEdit.TabIndex = 1;
+            this.btnGroupEdit.Text = "Sửa ✎";
+            this.btnGroupEdit.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.btnThem);
-            this.flowLayoutPanel1.Controls.Add(this.btnSua);
-            this.flowLayoutPanel1.Controls.Add(this.btnXoa);
+            this.flowLayoutPanel1.Controls.Add(this.btnGroupAdd);
+            this.flowLayoutPanel1.Controls.Add(this.btnGroupEdit);
+            this.flowLayoutPanel1.Controls.Add(this.btnGroupDelete);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 161);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(542, 38);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // btnXoa
+            // btnGroupDelete
             // 
-            this.btnXoa.Location = new System.Drawing.Point(302, 3);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 30);
-            this.btnXoa.TabIndex = 2;
-            this.btnXoa.Text = "Xóa 🗑";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnGroupDelete.Location = new System.Drawing.Point(302, 3);
+            this.btnGroupDelete.Name = "btnGroupDelete";
+            this.btnGroupDelete.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupDelete.TabIndex = 2;
+            this.btnGroupDelete.Text = "Xóa 🗑";
+            this.btnGroupDelete.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -436,7 +437,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView3);
+            this.groupBox2.Controls.Add(this.dgvGroupCustomerList);
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(526, 243);
@@ -444,68 +445,68 @@ namespace GUI.CustomUserControls.TourGroup
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách Khách trong Đoàn";
             // 
-            // dataGridView3
+            // dgvGroupCustomerList
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 18);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(520, 222);
-            this.dataGridView3.TabIndex = 1;
+            this.dgvGroupCustomerList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGroupCustomerList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGroupCustomerList.Location = new System.Drawing.Point(3, 18);
+            this.dgvGroupCustomerList.Name = "dgvGroupCustomerList";
+            this.dgvGroupCustomerList.RowHeadersWidth = 51;
+            this.dgvGroupCustomerList.RowTemplate.Height = 24;
+            this.dgvGroupCustomerList.Size = new System.Drawing.Size(520, 222);
+            this.dgvGroupCustomerList.TabIndex = 1;
             // 
             // flowLayoutPanel7
             // 
-            this.flowLayoutPanel7.Controls.Add(this.button3);
-            this.flowLayoutPanel7.Controls.Add(this.button4);
-            this.flowLayoutPanel7.Controls.Add(this.button5);
-            this.flowLayoutPanel7.Controls.Add(this.button6);
+            this.flowLayoutPanel7.Controls.Add(this.btnGroupCustomerRemove);
+            this.flowLayoutPanel7.Controls.Add(this.btnGroupCustomerAdd);
+            this.flowLayoutPanel7.Controls.Add(this.btnGroupCustomerSave);
+            this.flowLayoutPanel7.Controls.Add(this.btnGroupCustomerCancel);
             this.flowLayoutPanel7.Location = new System.Drawing.Point(3, 252);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel7.Size = new System.Drawing.Size(523, 39);
             this.flowLayoutPanel7.TabIndex = 4;
             // 
-            // button3
+            // btnGroupCustomerRemove
             // 
-            this.button3.Location = new System.Drawing.Point(445, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 30);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "↓ Xuống";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnGroupCustomerRemove.Location = new System.Drawing.Point(445, 3);
+            this.btnGroupCustomerRemove.Name = "btnGroupCustomerRemove";
+            this.btnGroupCustomerRemove.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupCustomerRemove.TabIndex = 0;
+            this.btnGroupCustomerRemove.Text = "↓ Xóa";
+            this.btnGroupCustomerRemove.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnGroupCustomerAdd
             // 
-            this.button4.Location = new System.Drawing.Point(364, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 30);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "↑ Lên";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnGroupCustomerAdd.Location = new System.Drawing.Point(364, 3);
+            this.btnGroupCustomerAdd.Name = "btnGroupCustomerAdd";
+            this.btnGroupCustomerAdd.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupCustomerAdd.TabIndex = 1;
+            this.btnGroupCustomerAdd.Text = "↑ Thêm";
+            this.btnGroupCustomerAdd.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnGroupCustomerSave
             // 
-            this.button5.Location = new System.Drawing.Point(240, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(118, 30);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Lưu thay đổi 🖫";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnGroupCustomerSave.Location = new System.Drawing.Point(240, 3);
+            this.btnGroupCustomerSave.Name = "btnGroupCustomerSave";
+            this.btnGroupCustomerSave.Size = new System.Drawing.Size(118, 30);
+            this.btnGroupCustomerSave.TabIndex = 2;
+            this.btnGroupCustomerSave.Text = "Lưu thay đổi 🖫";
+            this.btnGroupCustomerSave.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnGroupCustomerCancel
             // 
-            this.button6.Location = new System.Drawing.Point(106, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(128, 30);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Hủy thay đổi 🗙";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnGroupCustomerCancel.Location = new System.Drawing.Point(106, 3);
+            this.btnGroupCustomerCancel.Name = "btnGroupCustomerCancel";
+            this.btnGroupCustomerCancel.Size = new System.Drawing.Size(128, 30);
+            this.btnGroupCustomerCancel.TabIndex = 3;
+            this.btnGroupCustomerCancel.Text = "Hủy thay đổi 🗙";
+            this.btnGroupCustomerCancel.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView2);
+            this.groupBox3.Controls.Add(this.dgvGroupCustomerListAll);
             this.groupBox3.Location = new System.Drawing.Point(3, 297);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(526, 220);
@@ -513,16 +514,16 @@ namespace GUI.CustomUserControls.TourGroup
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách tất cả Khách";
             // 
-            // dataGridView2
+            // dgvGroupCustomerListAll
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 18);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(520, 199);
-            this.dataGridView2.TabIndex = 0;
+            this.dgvGroupCustomerListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGroupCustomerListAll.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGroupCustomerListAll.Location = new System.Drawing.Point(3, 18);
+            this.dgvGroupCustomerListAll.Name = "dgvGroupCustomerListAll";
+            this.dgvGroupCustomerListAll.RowHeadersWidth = 51;
+            this.dgvGroupCustomerListAll.RowTemplate.Height = 24;
+            this.dgvGroupCustomerListAll.Size = new System.Drawing.Size(520, 199);
+            this.dgvGroupCustomerListAll.TabIndex = 0;
             // 
             // tabStaff
             // 
@@ -547,7 +548,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.dataGridView4);
+            this.groupBox4.Controls.Add(this.dgvGroupStaffList);
             this.groupBox4.Location = new System.Drawing.Point(3, 3);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(526, 243);
@@ -555,68 +556,68 @@ namespace GUI.CustomUserControls.TourGroup
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Danh sách Nhân viên theo Đoàn";
             // 
-            // dataGridView4
+            // dgvGroupStaffList
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 18);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(520, 222);
-            this.dataGridView4.TabIndex = 1;
+            this.dgvGroupStaffList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGroupStaffList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGroupStaffList.Location = new System.Drawing.Point(3, 18);
+            this.dgvGroupStaffList.Name = "dgvGroupStaffList";
+            this.dgvGroupStaffList.RowHeadersWidth = 51;
+            this.dgvGroupStaffList.RowTemplate.Height = 24;
+            this.dgvGroupStaffList.Size = new System.Drawing.Size(520, 222);
+            this.dgvGroupStaffList.TabIndex = 1;
             // 
             // flowLayoutPanel9
             // 
-            this.flowLayoutPanel9.Controls.Add(this.button7);
-            this.flowLayoutPanel9.Controls.Add(this.button8);
-            this.flowLayoutPanel9.Controls.Add(this.button9);
-            this.flowLayoutPanel9.Controls.Add(this.button10);
+            this.flowLayoutPanel9.Controls.Add(this.btnGroupStaffRemove);
+            this.flowLayoutPanel9.Controls.Add(this.btnGroupStaffAdd);
+            this.flowLayoutPanel9.Controls.Add(this.btnGroupStaffSave);
+            this.flowLayoutPanel9.Controls.Add(this.btnGroupStaffCancel);
             this.flowLayoutPanel9.Location = new System.Drawing.Point(3, 252);
             this.flowLayoutPanel9.Name = "flowLayoutPanel9";
             this.flowLayoutPanel9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel9.Size = new System.Drawing.Size(523, 39);
             this.flowLayoutPanel9.TabIndex = 4;
             // 
-            // button7
+            // btnGroupStaffRemove
             // 
-            this.button7.Location = new System.Drawing.Point(445, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 30);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "↓ Xuống";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnGroupStaffRemove.Location = new System.Drawing.Point(445, 3);
+            this.btnGroupStaffRemove.Name = "btnGroupStaffRemove";
+            this.btnGroupStaffRemove.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupStaffRemove.TabIndex = 0;
+            this.btnGroupStaffRemove.Text = "↓ Xóa";
+            this.btnGroupStaffRemove.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnGroupStaffAdd
             // 
-            this.button8.Location = new System.Drawing.Point(364, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 30);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "↑ Lên";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnGroupStaffAdd.Location = new System.Drawing.Point(364, 3);
+            this.btnGroupStaffAdd.Name = "btnGroupStaffAdd";
+            this.btnGroupStaffAdd.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupStaffAdd.TabIndex = 1;
+            this.btnGroupStaffAdd.Text = "↑ Thêm";
+            this.btnGroupStaffAdd.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnGroupStaffSave
             // 
-            this.button9.Location = new System.Drawing.Point(240, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(118, 30);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "Lưu thay đổi 🖫";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnGroupStaffSave.Location = new System.Drawing.Point(240, 3);
+            this.btnGroupStaffSave.Name = "btnGroupStaffSave";
+            this.btnGroupStaffSave.Size = new System.Drawing.Size(118, 30);
+            this.btnGroupStaffSave.TabIndex = 2;
+            this.btnGroupStaffSave.Text = "Lưu thay đổi 🖫";
+            this.btnGroupStaffSave.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnGroupStaffCancel
             // 
-            this.button10.Location = new System.Drawing.Point(106, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(128, 30);
-            this.button10.TabIndex = 3;
-            this.button10.Text = "Hủy thay đổi 🗙";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnGroupStaffCancel.Location = new System.Drawing.Point(106, 3);
+            this.btnGroupStaffCancel.Name = "btnGroupStaffCancel";
+            this.btnGroupStaffCancel.Size = new System.Drawing.Size(128, 30);
+            this.btnGroupStaffCancel.TabIndex = 3;
+            this.btnGroupStaffCancel.Text = "Hủy thay đổi 🗙";
+            this.btnGroupStaffCancel.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.dataGridView5);
+            this.groupBox5.Controls.Add(this.dgvGroupStaffListAll);
             this.groupBox5.Location = new System.Drawing.Point(3, 297);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(526, 220);
@@ -624,16 +625,16 @@ namespace GUI.CustomUserControls.TourGroup
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Danh sách tất cả Nhân viên";
             // 
-            // dataGridView5
+            // dgvGroupStaffListAll
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(3, 18);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.RowHeadersWidth = 51;
-            this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(520, 199);
-            this.dataGridView5.TabIndex = 0;
+            this.dgvGroupStaffListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGroupStaffListAll.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGroupStaffListAll.Location = new System.Drawing.Point(3, 18);
+            this.dgvGroupStaffListAll.Name = "dgvGroupStaffListAll";
+            this.dgvGroupStaffListAll.RowHeadersWidth = 51;
+            this.dgvGroupStaffListAll.RowTemplate.Height = 24;
+            this.dgvGroupStaffListAll.Size = new System.Drawing.Size(520, 199);
+            this.dgvGroupStaffListAll.TabIndex = 0;
             // 
             // tcChiPhiDiaDiem
             // 
@@ -687,41 +688,41 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // flowLayoutPanel12
             // 
-            this.flowLayoutPanel12.Controls.Add(this.button11);
-            this.flowLayoutPanel12.Controls.Add(this.button12);
-            this.flowLayoutPanel12.Controls.Add(this.button13);
+            this.flowLayoutPanel12.Controls.Add(this.btnGroupCostAdd);
+            this.flowLayoutPanel12.Controls.Add(this.btnGroupCostEdit);
+            this.flowLayoutPanel12.Controls.Add(this.btnGroupCostDelete);
             this.flowLayoutPanel12.Location = new System.Drawing.Point(0, 119);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
             this.flowLayoutPanel12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel12.Size = new System.Drawing.Size(527, 38);
             this.flowLayoutPanel12.TabIndex = 2;
             // 
-            // button11
+            // btnGroupCostAdd
             // 
-            this.button11.Location = new System.Drawing.Point(449, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 30);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "+ Thêm";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnGroupCostAdd.Location = new System.Drawing.Point(449, 3);
+            this.btnGroupCostAdd.Name = "btnGroupCostAdd";
+            this.btnGroupCostAdd.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupCostAdd.TabIndex = 0;
+            this.btnGroupCostAdd.Text = "+ Thêm";
+            this.btnGroupCostAdd.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // btnGroupCostEdit
             // 
-            this.button12.Location = new System.Drawing.Point(368, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 30);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "Sửa ✎";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnGroupCostEdit.Location = new System.Drawing.Point(368, 3);
+            this.btnGroupCostEdit.Name = "btnGroupCostEdit";
+            this.btnGroupCostEdit.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupCostEdit.TabIndex = 1;
+            this.btnGroupCostEdit.Text = "Sửa ✎";
+            this.btnGroupCostEdit.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnGroupCostDelete
             // 
-            this.button13.Location = new System.Drawing.Point(287, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 30);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "Xóa 🗑";
-            this.button13.UseVisualStyleBackColor = true;
+            this.btnGroupCostDelete.Location = new System.Drawing.Point(287, 3);
+            this.btnGroupCostDelete.Name = "btnGroupCostDelete";
+            this.btnGroupCostDelete.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupCostDelete.TabIndex = 2;
+            this.btnGroupCostDelete.Text = "Xóa 🗑";
+            this.btnGroupCostDelete.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -731,13 +732,13 @@ namespace GUI.CustomUserControls.TourGroup
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tbGroupCostID, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.cbGroupCostType, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label11, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.tbGroupCostValue, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.label12, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox7, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.tbGroupCostNote, 1, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 22);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -756,13 +757,13 @@ namespace GUI.CustomUserControls.TourGroup
             this.label8.TabIndex = 0;
             this.label8.Text = "Mã";
             // 
-            // textBox4
+            // tbGroupCostID
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(82, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 22);
-            this.textBox4.TabIndex = 3;
+            this.tbGroupCostID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupCostID.Location = new System.Drawing.Point(82, 3);
+            this.tbGroupCostID.Name = "tbGroupCostID";
+            this.tbGroupCostID.Size = new System.Drawing.Size(178, 22);
+            this.tbGroupCostID.TabIndex = 3;
             // 
             // label10
             // 
@@ -773,13 +774,14 @@ namespace GUI.CustomUserControls.TourGroup
             this.label10.TabIndex = 2;
             this.label10.Text = "Loại";
             // 
-            // comboBox2
+            // cbGroupCostType
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(82, 33);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(178, 24);
-            this.comboBox2.TabIndex = 5;
+            this.cbGroupCostType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbGroupCostType.FormattingEnabled = true;
+            this.cbGroupCostType.Location = new System.Drawing.Point(82, 33);
+            this.cbGroupCostType.Name = "cbGroupCostType";
+            this.cbGroupCostType.Size = new System.Drawing.Size(178, 24);
+            this.cbGroupCostType.TabIndex = 5;
             // 
             // label11
             // 
@@ -790,13 +792,13 @@ namespace GUI.CustomUserControls.TourGroup
             this.label11.TabIndex = 6;
             this.label11.Text = "Giá";
             // 
-            // textBox6
+            // tbGroupCostValue
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Location = new System.Drawing.Point(345, 33);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(179, 22);
-            this.textBox6.TabIndex = 7;
+            this.tbGroupCostValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupCostValue.Location = new System.Drawing.Point(345, 33);
+            this.tbGroupCostValue.Name = "tbGroupCostValue";
+            this.tbGroupCostValue.Size = new System.Drawing.Size(179, 22);
+            this.tbGroupCostValue.TabIndex = 7;
             // 
             // label12
             // 
@@ -807,19 +809,19 @@ namespace GUI.CustomUserControls.TourGroup
             this.label12.TabIndex = 8;
             this.label12.Text = "Ghi chú";
             // 
-            // textBox7
+            // tbGroupCostNote
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.textBox7, 3);
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Location = new System.Drawing.Point(82, 63);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(442, 22);
-            this.textBox7.TabIndex = 9;
+            this.tableLayoutPanel2.SetColumnSpan(this.tbGroupCostNote, 3);
+            this.tbGroupCostNote.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupCostNote.Location = new System.Drawing.Point(82, 63);
+            this.tbGroupCostNote.Name = "tbGroupCostNote";
+            this.tbGroupCostNote.Size = new System.Drawing.Size(442, 22);
+            this.tbGroupCostNote.TabIndex = 9;
             // 
             // flowLayoutPanel13
             // 
             this.flowLayoutPanel13.Controls.Add(this.panel1);
-            this.flowLayoutPanel13.Controls.Add(this.dataGridView6);
+            this.flowLayoutPanel13.Controls.Add(this.dgvGroupCostList);
             this.flowLayoutPanel13.Location = new System.Drawing.Point(3, 174);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
             this.flowLayoutPanel13.Size = new System.Drawing.Size(533, 350);
@@ -827,66 +829,66 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button15);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.btnGroupCostRefresh);
+            this.panel1.Controls.Add(this.btnGroupCostSearch);
+            this.panel1.Controls.Add(this.cbGroupCostSearchBy);
+            this.panel1.Controls.Add(this.tbGroupCostSearch);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(530, 37);
             this.panel1.TabIndex = 1;
             // 
-            // button14
+            // btnGroupCostRefresh
             // 
-            this.button14.Location = new System.Drawing.Point(432, 4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(95, 30);
-            this.button14.TabIndex = 3;
-            this.button14.Text = "Làm mới 🗘";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnGroupCostRefresh.Location = new System.Drawing.Point(432, 4);
+            this.btnGroupCostRefresh.Name = "btnGroupCostRefresh";
+            this.btnGroupCostRefresh.Size = new System.Drawing.Size(95, 30);
+            this.btnGroupCostRefresh.TabIndex = 3;
+            this.btnGroupCostRefresh.Text = "Làm mới 🗘";
+            this.btnGroupCostRefresh.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // btnGroupCostSearch
             // 
-            this.button15.Location = new System.Drawing.Point(351, 4);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 30);
-            this.button15.TabIndex = 2;
-            this.button15.Text = "Tìm ⌕";
-            this.button15.UseVisualStyleBackColor = true;
+            this.btnGroupCostSearch.Location = new System.Drawing.Point(351, 4);
+            this.btnGroupCostSearch.Name = "btnGroupCostSearch";
+            this.btnGroupCostSearch.Size = new System.Drawing.Size(75, 30);
+            this.btnGroupCostSearch.TabIndex = 2;
+            this.btnGroupCostSearch.Text = "Tìm ⌕";
+            this.btnGroupCostSearch.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // cbGroupCostSearchBy
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbGroupCostSearchBy.FormattingEnabled = true;
+            this.cbGroupCostSearchBy.Items.AddRange(new object[] {
             "Mã",
             "Loại",
             "Giá",
             "Ghi chú"});
-            this.comboBox3.Location = new System.Drawing.Point(220, 8);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(125, 24);
-            this.comboBox3.TabIndex = 1;
-            this.comboBox3.Text = "Loại";
+            this.cbGroupCostSearchBy.Location = new System.Drawing.Point(220, 8);
+            this.cbGroupCostSearchBy.Name = "cbGroupCostSearchBy";
+            this.cbGroupCostSearchBy.Size = new System.Drawing.Size(125, 24);
+            this.cbGroupCostSearchBy.TabIndex = 1;
+            this.cbGroupCostSearchBy.Text = "Loại";
             // 
-            // textBox8
+            // tbGroupCostSearch
             // 
-            this.textBox8.Location = new System.Drawing.Point(4, 8);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(210, 22);
-            this.textBox8.TabIndex = 0;
+            this.tbGroupCostSearch.Location = new System.Drawing.Point(4, 8);
+            this.tbGroupCostSearch.Name = "tbGroupCostSearch";
+            this.tbGroupCostSearch.Size = new System.Drawing.Size(210, 22);
+            this.tbGroupCostSearch.TabIndex = 0;
             // 
-            // dataGridView6
+            // dgvGroupCostList
             // 
-            this.dataGridView6.AllowUserToAddRows = false;
-            this.dataGridView6.AllowUserToDeleteRows = false;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(3, 46);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.ReadOnly = true;
-            this.dataGridView6.RowHeadersWidth = 51;
-            this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(530, 304);
-            this.dataGridView6.TabIndex = 0;
+            this.dgvGroupCostList.AllowUserToAddRows = false;
+            this.dgvGroupCostList.AllowUserToDeleteRows = false;
+            this.dgvGroupCostList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGroupCostList.Location = new System.Drawing.Point(3, 46);
+            this.dgvGroupCostList.Name = "dgvGroupCostList";
+            this.dgvGroupCostList.ReadOnly = true;
+            this.dgvGroupCostList.RowHeadersWidth = 51;
+            this.dgvGroupCostList.RowTemplate.Height = 24;
+            this.dgvGroupCostList.Size = new System.Drawing.Size(530, 304);
+            this.dgvGroupCostList.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
@@ -925,7 +927,7 @@ namespace GUI.CustomUserControls.TourGroup
             // flowLayoutPanel6
             // 
             this.flowLayoutPanel6.Controls.Add(this.panel4);
-            this.flowLayoutPanel6.Controls.Add(this.dataGridView1);
+            this.flowLayoutPanel6.Controls.Add(this.dgvGroupList);
             this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 208);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 354);
@@ -940,7 +942,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.Size = new System.Drawing.Size(1126, 586);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupList)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -948,17 +950,17 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbCustomer.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupCustomerList)).EndInit();
             this.flowLayoutPanel7.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupCustomerListAll)).EndInit();
             this.tabStaff.ResumeLayout(false);
             this.flowLayoutPanel8.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupStaffList)).EndInit();
             this.flowLayoutPanel9.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupStaffListAll)).EndInit();
             this.tcChiPhiDiaDiem.ResumeLayout(false);
             this.tabCost.ResumeLayout(false);
             this.flowLayoutPanel10.ResumeLayout(false);
@@ -970,7 +972,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel13.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGroupCostList)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
@@ -982,31 +984,31 @@ namespace GUI.CustomUserControls.TourGroup
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnGroupRefresh;
+        private System.Windows.Forms.Button btnGroupSearch;
+        private System.Windows.Forms.TextBox tbGroupSearchInput;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbGroupSearchBy;
+        private System.Windows.Forms.DataGridView dgvGroupList;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbMa;
-        private System.Windows.Forms.TextBox tbTen;
-        private System.Windows.Forms.ComboBox cbLoai;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.TextBox tbGroupID;
+        private System.Windows.Forms.TextBox tbGroupName;
+        private System.Windows.Forms.ComboBox cbGroupTour;
+        private System.Windows.Forms.Button btnGroupAdd;
+        private System.Windows.Forms.Button btnGroupEdit;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnGroupDelete;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TabPage tbCustomer;
         private System.Windows.Forms.TabPage tabStaff;
         private System.Windows.Forms.TabControl tcChiPhiDiaDiem;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpGroupStartDate;
+        private System.Windows.Forms.DateTimePicker dtpGroupEndDate;
         private System.Windows.Forms.TabPage tabCost;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel3;
@@ -1014,51 +1016,51 @@ namespace GUI.CustomUserControls.TourGroup
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbGroupPrice;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbGroupTotalCost;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvGroupCustomerList;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnGroupCustomerRemove;
+        private System.Windows.Forms.Button btnGroupCustomerAdd;
+        private System.Windows.Forms.Button btnGroupCustomerSave;
+        private System.Windows.Forms.Button btnGroupCustomerCancel;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvGroupCustomerListAll;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dgvGroupStaffList;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnGroupStaffRemove;
+        private System.Windows.Forms.Button btnGroupStaffAdd;
+        private System.Windows.Forms.Button btnGroupStaffSave;
+        private System.Windows.Forms.Button btnGroupStaffCancel;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dgvGroupStaffListAll;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnGroupCostAdd;
+        private System.Windows.Forms.Button btnGroupCostEdit;
+        private System.Windows.Forms.Button btnGroupCostDelete;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbGroupCostID;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbGroupCostType;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbGroupCostValue;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tbGroupCostNote;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel13;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.Button btnGroupCostRefresh;
+        private System.Windows.Forms.Button btnGroupCostSearch;
+        private System.Windows.Forms.ComboBox cbGroupCostSearchBy;
+        private System.Windows.Forms.TextBox tbGroupCostSearch;
+        private System.Windows.Forms.DataGridView dgvGroupCostList;
     }
 }

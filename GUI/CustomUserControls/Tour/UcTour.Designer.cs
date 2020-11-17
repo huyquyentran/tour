@@ -34,54 +34,57 @@ namespace GUI.Tour
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btnTourPriceAdd = new System.Windows.Forms.Button();
+            this.btnTourPriceEdit = new System.Windows.Forms.Button();
+            this.btnTourPriceDelete = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbTourPriceID = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.tbTourPriceNote = new System.Windows.Forms.TextBox();
+            this.dtpTourPriceStartDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpTourPriceEndDate = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbTourPriceValue = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.dtpTourPriceSearch = new System.Windows.Forms.DateTimePicker();
+            this.btnTourPriceRefresh = new System.Windows.Forms.Button();
+            this.btnTourPriceSearch = new System.Windows.Forms.Button();
+            this.dgvTourPriceList = new System.Windows.Forms.DataGridView();
             this.tabLocation = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnTourLocationMoveUp = new System.Windows.Forms.Button();
+            this.btnTourLocationMoveDown = new System.Windows.Forms.Button();
+            this.dgvTourLocationList = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnTourLocationRemove = new System.Windows.Forms.Button();
+            this.btnTourLocationAdd = new System.Windows.Forms.Button();
+            this.btnTourLocationSave = new System.Windows.Forms.Button();
+            this.btnTourLocationCancel = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvTourLocationListAll = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnTourAdd = new System.Windows.Forms.Button();
+            this.btnTourEdit = new System.Windows.Forms.Button();
+            this.btnTourDelete = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbMa = new System.Windows.Forms.TextBox();
+            this.tbTourID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbTen = new System.Windows.Forms.TextBox();
+            this.tbTourName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbLoai = new System.Windows.Forms.ComboBox();
+            this.cbTourType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbTourPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.tcChiPhiDiaDiem = new System.Windows.Forms.TabControl();
+            this.tbTourDescription = new System.Windows.Forms.TextBox();
+            this.tcTourPriceLocation = new System.Windows.Forms.TabControl();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
@@ -89,11 +92,11 @@ namespace GUI.Tour
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnTourListRefresh = new System.Windows.Forms.Button();
+            this.btnTourSearch = new System.Windows.Forms.Button();
+            this.cbTourSearchBy = new System.Windows.Forms.ComboBox();
+            this.tbTourSearchInput = new System.Windows.Forms.TextBox();
+            this.dgvTourList = new System.Windows.Forms.DataGridView();
             this.tbPrice.SuspendLayout();
             this.flowLayoutPanel10.SuspendLayout();
             this.flowLayoutPanel11.SuspendLayout();
@@ -102,18 +105,19 @@ namespace GUI.Tour
             this.tableLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel13.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTourPriceList)).BeginInit();
             this.tabLocation.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.flowLayoutPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTourLocationList)).BeginInit();
             this.flowLayoutPanel8.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTourLocationListAll)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tcChiPhiDiaDiem.SuspendLayout();
+            this.tcTourPriceLocation.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -121,7 +125,7 @@ namespace GUI.Tour
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTourList)).BeginInit();
             this.SuspendLayout();
             // 
             // tbPrice
@@ -165,41 +169,41 @@ namespace GUI.Tour
             // 
             // flowLayoutPanel12
             // 
-            this.flowLayoutPanel12.Controls.Add(this.button11);
-            this.flowLayoutPanel12.Controls.Add(this.button12);
-            this.flowLayoutPanel12.Controls.Add(this.button13);
+            this.flowLayoutPanel12.Controls.Add(this.btnTourPriceAdd);
+            this.flowLayoutPanel12.Controls.Add(this.btnTourPriceEdit);
+            this.flowLayoutPanel12.Controls.Add(this.btnTourPriceDelete);
             this.flowLayoutPanel12.Location = new System.Drawing.Point(0, 119);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
             this.flowLayoutPanel12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel12.Size = new System.Drawing.Size(527, 38);
             this.flowLayoutPanel12.TabIndex = 2;
             // 
-            // button11
+            // btnTourPriceAdd
             // 
-            this.button11.Location = new System.Drawing.Point(449, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 30);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "+ Thêm";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnTourPriceAdd.Location = new System.Drawing.Point(449, 3);
+            this.btnTourPriceAdd.Name = "btnTourPriceAdd";
+            this.btnTourPriceAdd.Size = new System.Drawing.Size(75, 30);
+            this.btnTourPriceAdd.TabIndex = 0;
+            this.btnTourPriceAdd.Text = "+ Thêm";
+            this.btnTourPriceAdd.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // btnTourPriceEdit
             // 
-            this.button12.Location = new System.Drawing.Point(368, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 30);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "Sửa ✎";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnTourPriceEdit.Location = new System.Drawing.Point(368, 3);
+            this.btnTourPriceEdit.Name = "btnTourPriceEdit";
+            this.btnTourPriceEdit.Size = new System.Drawing.Size(75, 30);
+            this.btnTourPriceEdit.TabIndex = 1;
+            this.btnTourPriceEdit.Text = "Sửa ✎";
+            this.btnTourPriceEdit.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnTourPriceDelete
             // 
-            this.button13.Location = new System.Drawing.Point(287, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 30);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "Xóa 🗑";
-            this.button13.UseVisualStyleBackColor = true;
+            this.btnTourPriceDelete.Location = new System.Drawing.Point(287, 3);
+            this.btnTourPriceDelete.Name = "btnTourPriceDelete";
+            this.btnTourPriceDelete.Size = new System.Drawing.Size(75, 30);
+            this.btnTourPriceDelete.TabIndex = 2;
+            this.btnTourPriceDelete.Text = "Xóa 🗑";
+            this.btnTourPriceDelete.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -209,15 +213,15 @@ namespace GUI.Tour
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tbTourPriceID, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label11, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.label12, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox7, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker1, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker2, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.tbTourPriceNote, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.dtpTourPriceStartDate, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dtpTourPriceEndDate, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.label6, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox5, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tbTourPriceValue, 3, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 22);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -236,13 +240,13 @@ namespace GUI.Tour
             this.label8.TabIndex = 0;
             this.label8.Text = "Mã";
             // 
-            // textBox4
+            // tbTourPriceID
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(82, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 22);
-            this.textBox4.TabIndex = 3;
+            this.tbTourPriceID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbTourPriceID.Location = new System.Drawing.Point(82, 3);
+            this.tbTourPriceID.Name = "tbTourPriceID";
+            this.tbTourPriceID.Size = new System.Drawing.Size(178, 22);
+            this.tbTourPriceID.TabIndex = 3;
             // 
             // label10
             // 
@@ -271,32 +275,32 @@ namespace GUI.Tour
             this.label12.TabIndex = 8;
             this.label12.Text = "Ghi chú";
             // 
-            // textBox7
+            // tbTourPriceNote
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.textBox7, 3);
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Location = new System.Drawing.Point(82, 63);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(442, 22);
-            this.textBox7.TabIndex = 9;
+            this.tableLayoutPanel2.SetColumnSpan(this.tbTourPriceNote, 3);
+            this.tbTourPriceNote.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbTourPriceNote.Location = new System.Drawing.Point(82, 63);
+            this.tbTourPriceNote.Name = "tbTourPriceNote";
+            this.tbTourPriceNote.Size = new System.Drawing.Size(442, 22);
+            this.tbTourPriceNote.TabIndex = 9;
             // 
-            // dateTimePicker1
+            // dtpTourPriceStartDate
             // 
-            this.dateTimePicker1.CustomFormat = "dd/M/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(82, 33);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(178, 22);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtpTourPriceStartDate.CustomFormat = "dd/M/yyyy";
+            this.dtpTourPriceStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTourPriceStartDate.Location = new System.Drawing.Point(82, 33);
+            this.dtpTourPriceStartDate.Name = "dtpTourPriceStartDate";
+            this.dtpTourPriceStartDate.Size = new System.Drawing.Size(178, 22);
+            this.dtpTourPriceStartDate.TabIndex = 10;
             // 
-            // dateTimePicker2
+            // dtpTourPriceEndDate
             // 
-            this.dateTimePicker2.CustomFormat = "dd/M/yyyy";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(345, 33);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(179, 22);
-            this.dateTimePicker2.TabIndex = 11;
+            this.dtpTourPriceEndDate.CustomFormat = "dd/M/yyyy";
+            this.dtpTourPriceEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTourPriceEndDate.Location = new System.Drawing.Point(345, 33);
+            this.dtpTourPriceEndDate.Name = "dtpTourPriceEndDate";
+            this.dtpTourPriceEndDate.Size = new System.Drawing.Size(179, 22);
+            this.dtpTourPriceEndDate.TabIndex = 11;
             // 
             // label6
             // 
@@ -307,18 +311,18 @@ namespace GUI.Tour
             this.label6.TabIndex = 12;
             this.label6.Text = "Giá trị";
             // 
-            // textBox5
+            // tbTourPriceValue
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(345, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 22);
-            this.textBox5.TabIndex = 13;
+            this.tbTourPriceValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbTourPriceValue.Location = new System.Drawing.Point(345, 3);
+            this.tbTourPriceValue.Name = "tbTourPriceValue";
+            this.tbTourPriceValue.Size = new System.Drawing.Size(179, 22);
+            this.tbTourPriceValue.TabIndex = 13;
             // 
             // flowLayoutPanel13
             // 
             this.flowLayoutPanel13.Controls.Add(this.panel1);
-            this.flowLayoutPanel13.Controls.Add(this.dataGridView6);
+            this.flowLayoutPanel13.Controls.Add(this.dgvTourPriceList);
             this.flowLayoutPanel13.Location = new System.Drawing.Point(3, 174);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
             this.flowLayoutPanel13.Size = new System.Drawing.Size(533, 350);
@@ -326,53 +330,53 @@ namespace GUI.Tour
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dateTimePicker3);
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button15);
+            this.panel1.Controls.Add(this.dtpTourPriceSearch);
+            this.panel1.Controls.Add(this.btnTourPriceRefresh);
+            this.panel1.Controls.Add(this.btnTourPriceSearch);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(530, 37);
             this.panel1.TabIndex = 1;
             // 
-            // dateTimePicker3
+            // dtpTourPriceSearch
             // 
-            this.dateTimePicker3.CustomFormat = "dd/M/yyyy";
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(5, 8);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker3.TabIndex = 4;
+            this.dtpTourPriceSearch.CustomFormat = "dd/M/yyyy";
+            this.dtpTourPriceSearch.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTourPriceSearch.Location = new System.Drawing.Point(5, 8);
+            this.dtpTourPriceSearch.Name = "dtpTourPriceSearch";
+            this.dtpTourPriceSearch.Size = new System.Drawing.Size(200, 22);
+            this.dtpTourPriceSearch.TabIndex = 4;
             // 
-            // button14
+            // btnTourPriceRefresh
             // 
-            this.button14.Location = new System.Drawing.Point(426, 4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(95, 30);
-            this.button14.TabIndex = 3;
-            this.button14.Text = "Làm mới 🗘";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnTourPriceRefresh.Location = new System.Drawing.Point(426, 4);
+            this.btnTourPriceRefresh.Name = "btnTourPriceRefresh";
+            this.btnTourPriceRefresh.Size = new System.Drawing.Size(95, 30);
+            this.btnTourPriceRefresh.TabIndex = 3;
+            this.btnTourPriceRefresh.Text = "Làm mới 🗘";
+            this.btnTourPriceRefresh.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // btnTourPriceSearch
             // 
-            this.button15.Location = new System.Drawing.Point(211, 4);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 30);
-            this.button15.TabIndex = 2;
-            this.button15.Text = "Tìm ⌕";
-            this.button15.UseVisualStyleBackColor = true;
+            this.btnTourPriceSearch.Location = new System.Drawing.Point(211, 4);
+            this.btnTourPriceSearch.Name = "btnTourPriceSearch";
+            this.btnTourPriceSearch.Size = new System.Drawing.Size(75, 30);
+            this.btnTourPriceSearch.TabIndex = 2;
+            this.btnTourPriceSearch.Text = "Tìm ⌕";
+            this.btnTourPriceSearch.UseVisualStyleBackColor = true;
             // 
-            // dataGridView6
+            // dgvTourPriceList
             // 
-            this.dataGridView6.AllowUserToAddRows = false;
-            this.dataGridView6.AllowUserToDeleteRows = false;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(3, 46);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.ReadOnly = true;
-            this.dataGridView6.RowHeadersWidth = 51;
-            this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(530, 304);
-            this.dataGridView6.TabIndex = 0;
+            this.dgvTourPriceList.AllowUserToAddRows = false;
+            this.dgvTourPriceList.AllowUserToDeleteRows = false;
+            this.dgvTourPriceList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTourPriceList.Location = new System.Drawing.Point(3, 46);
+            this.dgvTourPriceList.Name = "dgvTourPriceList";
+            this.dgvTourPriceList.ReadOnly = true;
+            this.dgvTourPriceList.RowHeadersWidth = 51;
+            this.dgvTourPriceList.RowTemplate.Height = 24;
+            this.dgvTourPriceList.Size = new System.Drawing.Size(530, 304);
+            this.dgvTourPriceList.TabIndex = 0;
             // 
             // tabLocation
             // 
@@ -397,7 +401,8 @@ namespace GUI.Tour
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView3);
+            this.groupBox2.Controls.Add(this.flowLayoutPanel9);
+            this.groupBox2.Controls.Add(this.dgvTourLocationList);
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(526, 243);
@@ -405,68 +410,94 @@ namespace GUI.Tour
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách Địa điểm của Tour";
             // 
-            // dataGridView3
+            // flowLayoutPanel9
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 18);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(520, 222);
-            this.dataGridView3.TabIndex = 1;
+            this.flowLayoutPanel9.Controls.Add(this.btnTourLocationMoveUp);
+            this.flowLayoutPanel9.Controls.Add(this.btnTourLocationMoveDown);
+            this.flowLayoutPanel9.Location = new System.Drawing.Point(474, 18);
+            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            this.flowLayoutPanel9.Size = new System.Drawing.Size(46, 219);
+            this.flowLayoutPanel9.TabIndex = 2;
+            // 
+            // btnTourLocationMoveUp
+            // 
+            this.btnTourLocationMoveUp.Location = new System.Drawing.Point(3, 3);
+            this.btnTourLocationMoveUp.Name = "btnTourLocationMoveUp";
+            this.btnTourLocationMoveUp.Size = new System.Drawing.Size(40, 40);
+            this.btnTourLocationMoveUp.TabIndex = 0;
+            this.btnTourLocationMoveUp.Text = "↑";
+            this.btnTourLocationMoveUp.UseVisualStyleBackColor = true;
+            // 
+            // btnTourLocationMoveDown
+            // 
+            this.btnTourLocationMoveDown.Location = new System.Drawing.Point(3, 49);
+            this.btnTourLocationMoveDown.Name = "btnTourLocationMoveDown";
+            this.btnTourLocationMoveDown.Size = new System.Drawing.Size(40, 40);
+            this.btnTourLocationMoveDown.TabIndex = 1;
+            this.btnTourLocationMoveDown.Text = "↓";
+            this.btnTourLocationMoveDown.UseVisualStyleBackColor = true;
+            // 
+            // dgvTourLocationList
+            // 
+            this.dgvTourLocationList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTourLocationList.Location = new System.Drawing.Point(3, 18);
+            this.dgvTourLocationList.Name = "dgvTourLocationList";
+            this.dgvTourLocationList.RowHeadersWidth = 51;
+            this.dgvTourLocationList.RowTemplate.Height = 24;
+            this.dgvTourLocationList.Size = new System.Drawing.Size(465, 222);
+            this.dgvTourLocationList.TabIndex = 1;
             // 
             // flowLayoutPanel8
             // 
-            this.flowLayoutPanel8.Controls.Add(this.button3);
-            this.flowLayoutPanel8.Controls.Add(this.button4);
-            this.flowLayoutPanel8.Controls.Add(this.button5);
-            this.flowLayoutPanel8.Controls.Add(this.button6);
+            this.flowLayoutPanel8.Controls.Add(this.btnTourLocationRemove);
+            this.flowLayoutPanel8.Controls.Add(this.btnTourLocationAdd);
+            this.flowLayoutPanel8.Controls.Add(this.btnTourLocationSave);
+            this.flowLayoutPanel8.Controls.Add(this.btnTourLocationCancel);
             this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 252);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel8.Size = new System.Drawing.Size(523, 39);
             this.flowLayoutPanel8.TabIndex = 4;
             // 
-            // button3
+            // btnTourLocationRemove
             // 
-            this.button3.Location = new System.Drawing.Point(445, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 30);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "↓ Xuống";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTourLocationRemove.Location = new System.Drawing.Point(445, 3);
+            this.btnTourLocationRemove.Name = "btnTourLocationRemove";
+            this.btnTourLocationRemove.Size = new System.Drawing.Size(75, 30);
+            this.btnTourLocationRemove.TabIndex = 0;
+            this.btnTourLocationRemove.Text = "↓ Xóa";
+            this.btnTourLocationRemove.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnTourLocationAdd
             // 
-            this.button4.Location = new System.Drawing.Point(364, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 30);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "↑ Lên";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnTourLocationAdd.Location = new System.Drawing.Point(364, 3);
+            this.btnTourLocationAdd.Name = "btnTourLocationAdd";
+            this.btnTourLocationAdd.Size = new System.Drawing.Size(75, 30);
+            this.btnTourLocationAdd.TabIndex = 1;
+            this.btnTourLocationAdd.Text = "↑ Thêm";
+            this.btnTourLocationAdd.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnTourLocationSave
             // 
-            this.button5.Location = new System.Drawing.Point(240, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(118, 30);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Lưu thay đổi 🖫";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnTourLocationSave.Location = new System.Drawing.Point(240, 3);
+            this.btnTourLocationSave.Name = "btnTourLocationSave";
+            this.btnTourLocationSave.Size = new System.Drawing.Size(118, 30);
+            this.btnTourLocationSave.TabIndex = 2;
+            this.btnTourLocationSave.Text = "Lưu thay đổi 🖫";
+            this.btnTourLocationSave.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnTourLocationCancel
             // 
-            this.button6.Location = new System.Drawing.Point(106, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(128, 30);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Hủy thay đổi 🗙";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnTourLocationCancel.Location = new System.Drawing.Point(106, 3);
+            this.btnTourLocationCancel.Name = "btnTourLocationCancel";
+            this.btnTourLocationCancel.Size = new System.Drawing.Size(128, 30);
+            this.btnTourLocationCancel.TabIndex = 3;
+            this.btnTourLocationCancel.Text = "Hủy thay đổi 🗙";
+            this.btnTourLocationCancel.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView2);
+            this.groupBox3.Controls.Add(this.dgvTourLocationListAll);
             this.groupBox3.Location = new System.Drawing.Point(3, 297);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(526, 220);
@@ -474,16 +505,16 @@ namespace GUI.Tour
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách tất cả Địa điểm";
             // 
-            // dataGridView2
+            // dgvTourLocationListAll
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 18);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(520, 199);
-            this.dataGridView2.TabIndex = 0;
+            this.dgvTourLocationListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTourLocationListAll.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTourLocationListAll.Location = new System.Drawing.Point(3, 18);
+            this.dgvTourLocationListAll.Name = "dgvTourLocationListAll";
+            this.dgvTourLocationListAll.RowHeadersWidth = 51;
+            this.dgvTourLocationListAll.RowTemplate.Height = 24;
+            this.dgvTourLocationListAll.Size = new System.Drawing.Size(520, 199);
+            this.dgvTourLocationListAll.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -498,41 +529,41 @@ namespace GUI.Tour
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.btnThem);
-            this.flowLayoutPanel1.Controls.Add(this.btnSua);
-            this.flowLayoutPanel1.Controls.Add(this.btnXoa);
+            this.flowLayoutPanel1.Controls.Add(this.btnTourAdd);
+            this.flowLayoutPanel1.Controls.Add(this.btnTourEdit);
+            this.flowLayoutPanel1.Controls.Add(this.btnTourDelete);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 136);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(539, 47);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
-            // btnThem
+            // btnTourAdd
             // 
-            this.btnThem.Location = new System.Drawing.Point(461, 3);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 30);
-            this.btnThem.TabIndex = 0;
-            this.btnThem.Text = "+ Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnTourAdd.Location = new System.Drawing.Point(461, 3);
+            this.btnTourAdd.Name = "btnTourAdd";
+            this.btnTourAdd.Size = new System.Drawing.Size(75, 30);
+            this.btnTourAdd.TabIndex = 0;
+            this.btnTourAdd.Text = "+ Thêm";
+            this.btnTourAdd.UseVisualStyleBackColor = true;
             // 
-            // btnSua
+            // btnTourEdit
             // 
-            this.btnSua.Location = new System.Drawing.Point(380, 3);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 30);
-            this.btnSua.TabIndex = 1;
-            this.btnSua.Text = "Sửa ✎";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnTourEdit.Location = new System.Drawing.Point(380, 3);
+            this.btnTourEdit.Name = "btnTourEdit";
+            this.btnTourEdit.Size = new System.Drawing.Size(75, 30);
+            this.btnTourEdit.TabIndex = 1;
+            this.btnTourEdit.Text = "Sửa ✎";
+            this.btnTourEdit.UseVisualStyleBackColor = true;
             // 
-            // btnXoa
+            // btnTourDelete
             // 
-            this.btnXoa.Location = new System.Drawing.Point(299, 3);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 30);
-            this.btnXoa.TabIndex = 2;
-            this.btnXoa.Text = "Xóa 🗑";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnTourDelete.Location = new System.Drawing.Point(299, 3);
+            this.btnTourDelete.Name = "btnTourDelete";
+            this.btnTourDelete.Size = new System.Drawing.Size(75, 30);
+            this.btnTourDelete.TabIndex = 2;
+            this.btnTourDelete.Text = "Xóa 🗑";
+            this.btnTourDelete.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -542,15 +573,15 @@ namespace GUI.Tour
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tbMa, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tbTourID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tbTen, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tbTourName, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.cbLoai, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbTourType, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tbTourPrice, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tbTourDescription, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 22);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -569,13 +600,13 @@ namespace GUI.Tour
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã";
             // 
-            // tbMa
+            // tbTourID
             // 
-            this.tbMa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbMa.Location = new System.Drawing.Point(83, 3);
-            this.tbMa.Name = "tbMa";
-            this.tbMa.Size = new System.Drawing.Size(182, 22);
-            this.tbMa.TabIndex = 3;
+            this.tbTourID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbTourID.Location = new System.Drawing.Point(83, 3);
+            this.tbTourID.Name = "tbTourID";
+            this.tbTourID.Size = new System.Drawing.Size(182, 22);
+            this.tbTourID.TabIndex = 3;
             // 
             // label2
             // 
@@ -586,12 +617,12 @@ namespace GUI.Tour
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên";
             // 
-            // tbTen
+            // tbTourName
             // 
-            this.tbTen.Location = new System.Drawing.Point(351, 3);
-            this.tbTen.Name = "tbTen";
-            this.tbTen.Size = new System.Drawing.Size(185, 22);
-            this.tbTen.TabIndex = 4;
+            this.tbTourName.Location = new System.Drawing.Point(351, 3);
+            this.tbTourName.Name = "tbTourName";
+            this.tbTourName.Size = new System.Drawing.Size(185, 22);
+            this.tbTourName.TabIndex = 4;
             // 
             // label3
             // 
@@ -602,13 +633,13 @@ namespace GUI.Tour
             this.label3.TabIndex = 2;
             this.label3.Text = "Loại";
             // 
-            // cbLoai
+            // cbTourType
             // 
-            this.cbLoai.FormattingEnabled = true;
-            this.cbLoai.Location = new System.Drawing.Point(83, 39);
-            this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(182, 24);
-            this.cbLoai.TabIndex = 5;
+            this.cbTourType.FormattingEnabled = true;
+            this.cbTourType.Location = new System.Drawing.Point(83, 39);
+            this.cbTourType.Name = "cbTourType";
+            this.cbTourType.Size = new System.Drawing.Size(182, 24);
+            this.cbTourType.TabIndex = 5;
             // 
             // label4
             // 
@@ -619,13 +650,13 @@ namespace GUI.Tour
             this.label4.TabIndex = 6;
             this.label4.Text = "Giá gốc";
             // 
-            // textBox2
+            // tbTourPrice
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(351, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 22);
-            this.textBox2.TabIndex = 7;
+            this.tbTourPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbTourPrice.Location = new System.Drawing.Point(351, 39);
+            this.tbTourPrice.Name = "tbTourPrice";
+            this.tbTourPrice.Size = new System.Drawing.Size(185, 22);
+            this.tbTourPrice.TabIndex = 7;
             // 
             // label5
             // 
@@ -636,25 +667,25 @@ namespace GUI.Tour
             this.label5.TabIndex = 8;
             this.label5.Text = "Đặc điểm";
             // 
-            // textBox3
+            // tbTourDescription
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 3);
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(83, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(453, 22);
-            this.textBox3.TabIndex = 9;
+            this.tableLayoutPanel1.SetColumnSpan(this.tbTourDescription, 3);
+            this.tbTourDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbTourDescription.Location = new System.Drawing.Point(83, 75);
+            this.tbTourDescription.Name = "tbTourDescription";
+            this.tbTourDescription.Size = new System.Drawing.Size(453, 22);
+            this.tbTourDescription.TabIndex = 9;
             // 
-            // tcChiPhiDiaDiem
+            // tcTourPriceLocation
             // 
-            this.tcChiPhiDiaDiem.Controls.Add(this.tbPrice);
-            this.tcChiPhiDiaDiem.Controls.Add(this.tabLocation);
-            this.tcChiPhiDiaDiem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcChiPhiDiaDiem.Location = new System.Drawing.Point(0, 0);
-            this.tcChiPhiDiaDiem.Name = "tcChiPhiDiaDiem";
-            this.tcChiPhiDiaDiem.SelectedIndex = 0;
-            this.tcChiPhiDiaDiem.Size = new System.Drawing.Size(550, 559);
-            this.tcChiPhiDiaDiem.TabIndex = 0;
+            this.tcTourPriceLocation.Controls.Add(this.tbPrice);
+            this.tcTourPriceLocation.Controls.Add(this.tabLocation);
+            this.tcTourPriceLocation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcTourPriceLocation.Location = new System.Drawing.Point(0, 0);
+            this.tcTourPriceLocation.Name = "tcTourPriceLocation";
+            this.tcTourPriceLocation.SelectedIndex = 0;
+            this.tcTourPriceLocation.Size = new System.Drawing.Size(550, 559);
+            this.tcTourPriceLocation.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
@@ -666,7 +697,7 @@ namespace GUI.Tour
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.tcChiPhiDiaDiem);
+            this.panel3.Controls.Add(this.tcTourPriceLocation);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(550, 559);
@@ -701,7 +732,7 @@ namespace GUI.Tour
             // flowLayoutPanel6
             // 
             this.flowLayoutPanel6.Controls.Add(this.panel4);
-            this.flowLayoutPanel6.Controls.Add(this.dataGridView1);
+            this.flowLayoutPanel6.Controls.Add(this.dgvTourList);
             this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 205);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 357);
@@ -709,67 +740,67 @@ namespace GUI.Tour
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.comboBox1);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.btnTourListRefresh);
+            this.panel4.Controls.Add(this.btnTourSearch);
+            this.panel4.Controls.Add(this.cbTourSearchBy);
+            this.panel4.Controls.Add(this.tbTourSearchInput);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(539, 37);
             this.panel4.TabIndex = 1;
             // 
-            // button2
+            // btnTourListRefresh
             // 
-            this.button2.Location = new System.Drawing.Point(441, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Làm mới 🗘";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnTourListRefresh.Location = new System.Drawing.Point(441, 4);
+            this.btnTourListRefresh.Name = "btnTourListRefresh";
+            this.btnTourListRefresh.Size = new System.Drawing.Size(95, 30);
+            this.btnTourListRefresh.TabIndex = 3;
+            this.btnTourListRefresh.Text = "Làm mới 🗘";
+            this.btnTourListRefresh.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnTourSearch
             // 
-            this.button1.Location = new System.Drawing.Point(360, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tìm ⌕";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTourSearch.Location = new System.Drawing.Point(360, 4);
+            this.btnTourSearch.Name = "btnTourSearch";
+            this.btnTourSearch.Size = new System.Drawing.Size(75, 30);
+            this.btnTourSearch.TabIndex = 2;
+            this.btnTourSearch.Text = "Tìm ⌕";
+            this.btnTourSearch.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cbTourSearchBy
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbTourSearchBy.FormattingEnabled = true;
+            this.cbTourSearchBy.Items.AddRange(new object[] {
             "Mã tour",
             "Tên tour",
             "Loại tour",
             "Giá gốc",
             "Đặc điểm"});
-            this.comboBox1.Location = new System.Drawing.Point(229, 8);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 24);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Tên tour";
+            this.cbTourSearchBy.Location = new System.Drawing.Point(229, 8);
+            this.cbTourSearchBy.Name = "cbTourSearchBy";
+            this.cbTourSearchBy.Size = new System.Drawing.Size(125, 24);
+            this.cbTourSearchBy.TabIndex = 1;
+            this.cbTourSearchBy.Text = "Tên tour";
             // 
-            // textBox1
+            // tbTourSearchInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(4, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 22);
-            this.textBox1.TabIndex = 0;
+            this.tbTourSearchInput.Location = new System.Drawing.Point(4, 8);
+            this.tbTourSearchInput.Name = "tbTourSearchInput";
+            this.tbTourSearchInput.Size = new System.Drawing.Size(219, 22);
+            this.tbTourSearchInput.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgvTourList
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 46);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(548, 304);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvTourList.AllowUserToAddRows = false;
+            this.dgvTourList.AllowUserToDeleteRows = false;
+            this.dgvTourList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTourList.Location = new System.Drawing.Point(3, 46);
+            this.dgvTourList.Name = "dgvTourList";
+            this.dgvTourList.ReadOnly = true;
+            this.dgvTourList.RowHeadersWidth = 51;
+            this.dgvTourList.RowTemplate.Height = 24;
+            this.dgvTourList.Size = new System.Drawing.Size(548, 304);
+            this.dgvTourList.TabIndex = 0;
             // 
             // UcTour
             // 
@@ -788,19 +819,20 @@ namespace GUI.Tour
             this.tableLayoutPanel2.PerformLayout();
             this.flowLayoutPanel13.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTourPriceList)).EndInit();
             this.tabLocation.ResumeLayout(false);
             this.flowLayoutPanel7.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.flowLayoutPanel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTourLocationList)).EndInit();
             this.flowLayoutPanel8.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTourLocationListAll)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tcChiPhiDiaDiem.ResumeLayout(false);
+            this.tcTourPriceLocation.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
@@ -809,7 +841,7 @@ namespace GUI.Tour
             this.flowLayoutPanel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTourList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -822,63 +854,66 @@ namespace GUI.Tour
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbMa;
-        private System.Windows.Forms.TextBox tbTen;
-        private System.Windows.Forms.ComboBox cbLoai;
-        private System.Windows.Forms.TabControl tcChiPhiDiaDiem;
+        private System.Windows.Forms.TextBox tbTourID;
+        private System.Windows.Forms.TextBox tbTourName;
+        private System.Windows.Forms.ComboBox cbTourType;
+        private System.Windows.Forms.TabControl tcTourPriceLocation;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvTourList;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbTourPrice;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnTourListRefresh;
+        private System.Windows.Forms.Button btnTourSearch;
+        private System.Windows.Forms.ComboBox cbTourSearchBy;
+        private System.Windows.Forms.TextBox tbTourSearchInput;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btnTourAdd;
+        private System.Windows.Forms.Button btnTourEdit;
+        private System.Windows.Forms.Button btnTourDelete;
+        private System.Windows.Forms.TextBox tbTourDescription;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnTourLocationRemove;
+        private System.Windows.Forms.Button btnTourLocationAdd;
+        private System.Windows.Forms.Button btnTourLocationSave;
+        private System.Windows.Forms.Button btnTourLocationCancel;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvTourLocationListAll;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnTourPriceAdd;
+        private System.Windows.Forms.Button btnTourPriceEdit;
+        private System.Windows.Forms.Button btnTourPriceDelete;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbTourPriceID;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox tbTourPriceNote;
+        private System.Windows.Forms.DateTimePicker dtpTourPriceStartDate;
+        private System.Windows.Forms.DateTimePicker dtpTourPriceEndDate;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel13;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.Button btnTourPriceRefresh;
+        private System.Windows.Forms.Button btnTourPriceSearch;
+        private System.Windows.Forms.DataGridView dgvTourPriceList;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.TextBox tbTourPriceValue;
+        private System.Windows.Forms.DateTimePicker dtpTourPriceSearch;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
+        private System.Windows.Forms.DataGridView dgvTourLocationList;
+        private System.Windows.Forms.Button btnTourLocationMoveUp;
+        private System.Windows.Forms.Button btnTourLocationMoveDown;
     }
 }

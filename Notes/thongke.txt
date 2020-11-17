@@ -1,8 +1,8 @@
 GUI
 [còn]
-+ Thống kê chi phí (1 tour, chi phí khách sạn, ăn uống trong 1 khoảng thời gian ...)
-+ Doanh thu của một đoàn, của một tour trong một khoảng thời gian
-+ Thống kê tình hình hoạt động theo mỗi tour (doanh số, số đoàn tham quan, ...)
++ Thống kê Tour: 
+	- Doanh thu, số đoàn tham quan, ... (Tình hình hoạt động theo mỗi tour )
+	- Chi phí (1 tour, chi phí khách sạn, ăn uống trong 1 khoảng thời gian ...)
 + Thống kê số lần đi tour của từng nhân viên trong khoảng thời gian
 
 [xong] 

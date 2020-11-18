@@ -31,7 +31,7 @@ namespace BLL
         }
         public static void AddPriceToTour(TourPrice tourPrice)
         {
-            
+
         }
     }
 }

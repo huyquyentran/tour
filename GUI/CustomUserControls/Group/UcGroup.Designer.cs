@@ -50,6 +50,8 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupPrice = new System.Windows.Forms.TextBox();
             this.tbGroupTotalCost = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbGroupRevenue = new System.Windows.Forms.TextBox();
             this.btnGroupAdd = new System.Windows.Forms.Button();
             this.btnGroupEdit = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -107,8 +109,6 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tbGroupRevenue = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupList)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -369,6 +369,23 @@ namespace GUI.CustomUserControls.TourGroup
             this.label7.TabIndex = 13;
             this.label7.Text = "Chi phí";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 99);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 17);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Doanh thu";
+            // 
+            // tbGroupRevenue
+            // 
+            this.tbGroupRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupRevenue.Location = new System.Drawing.Point(84, 102);
+            this.tbGroupRevenue.Name = "tbGroupRevenue";
+            this.tbGroupRevenue.Size = new System.Drawing.Size(183, 22);
+            this.tbGroupRevenue.TabIndex = 16;
+            // 
             // btnGroupAdd
             // 
             this.btnGroupAdd.Location = new System.Drawing.Point(464, 3);
@@ -400,6 +417,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // btnGroupDelete
             // 
+            this.btnGroupDelete.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnGroupDelete.Location = new System.Drawing.Point(302, 3);
             this.btnGroupDelete.Name = "btnGroupDelete";
             this.btnGroupDelete.Size = new System.Drawing.Size(75, 30);
@@ -936,23 +954,6 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 354);
             this.flowLayoutPanel6.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 99);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Doanh thu";
-            // 
-            // tbGroupRevenue
-            // 
-            this.tbGroupRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbGroupRevenue.Location = new System.Drawing.Point(84, 102);
-            this.tbGroupRevenue.Name = "tbGroupRevenue";
-            this.tbGroupRevenue.Size = new System.Drawing.Size(183, 22);
-            this.tbGroupRevenue.TabIndex = 16;
             // 
             // UcTourGroup
             // 

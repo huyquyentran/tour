@@ -109,6 +109,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupList)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -153,6 +154,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.btnGroupRefresh.TabIndex = 3;
             this.btnGroupRefresh.Text = "Làm mới 🗘";
             this.btnGroupRefresh.UseVisualStyleBackColor = true;
+            this.btnGroupRefresh.Click += new System.EventHandler(this.btnGroupRefresh_Click);
             // 
             // btnGroupSearch
             // 
@@ -202,21 +204,25 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.dgvGroupList.AllowUserToAddRows = false;
             this.dgvGroupList.AllowUserToDeleteRows = false;
+            this.dgvGroupList.BackgroundColor = System.Drawing.Color.White;
             this.dgvGroupList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroupList.Location = new System.Drawing.Point(3, 46);
             this.dgvGroupList.Name = "dgvGroupList";
             this.dgvGroupList.ReadOnly = true;
+            this.dgvGroupList.RowHeadersVisible = false;
             this.dgvGroupList.RowHeadersWidth = 51;
             this.dgvGroupList.RowTemplate.Height = 24;
+            this.dgvGroupList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvGroupList.Size = new System.Drawing.Size(545, 304);
             this.dgvGroupList.TabIndex = 0;
+            this.dgvGroupList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGroupList_CellClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 17);
+            this.label1.Size = new System.Drawing.Size(27, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã";
             // 
@@ -257,6 +263,7 @@ namespace GUI.CustomUserControls.TourGroup
             // tbGroupID
             // 
             this.tbGroupID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupID.Enabled = false;
             this.tbGroupID.Location = new System.Drawing.Point(84, 3);
             this.tbGroupID.Name = "tbGroupID";
             this.tbGroupID.Size = new System.Drawing.Size(183, 22);
@@ -267,13 +274,14 @@ namespace GUI.CustomUserControls.TourGroup
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(273, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 17);
+            this.label2.Size = new System.Drawing.Size(32, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên";
             // 
             // tbGroupName
             // 
             this.tbGroupName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupName.Enabled = false;
             this.tbGroupName.Location = new System.Drawing.Point(354, 3);
             this.tbGroupName.Name = "tbGroupName";
             this.tbGroupName.Size = new System.Drawing.Size(185, 22);
@@ -284,13 +292,15 @@ namespace GUI.CustomUserControls.TourGroup
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 17);
+            this.label3.Size = new System.Drawing.Size(36, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tour";
             // 
             // cbGroupTour
             // 
             this.cbGroupTour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbGroupTour.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbGroupTour.Enabled = false;
             this.cbGroupTour.FormattingEnabled = true;
             this.cbGroupTour.Location = new System.Drawing.Point(84, 36);
             this.cbGroupTour.Name = "cbGroupTour";
@@ -302,7 +312,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 66);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 17);
+            this.label4.Size = new System.Drawing.Size(55, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Ngày đi";
             // 
@@ -310,6 +320,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.dtpGroupStartDate.CustomFormat = "dd/M/yyyy";
             this.dtpGroupStartDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpGroupStartDate.Enabled = false;
             this.dtpGroupStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpGroupStartDate.Location = new System.Drawing.Point(84, 69);
             this.dtpGroupStartDate.Name = "dtpGroupStartDate";
@@ -321,7 +332,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(273, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 17);
+            this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "Ngày về";
             // 
@@ -329,6 +340,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.dtpGroupEndDate.CustomFormat = "dd/M/yyyy";
             this.dtpGroupEndDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpGroupEndDate.Enabled = false;
             this.dtpGroupEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpGroupEndDate.Location = new System.Drawing.Point(354, 69);
             this.dtpGroupEndDate.Name = "dtpGroupEndDate";
@@ -340,13 +352,14 @@ namespace GUI.CustomUserControls.TourGroup
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(273, 33);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 17);
+            this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 11;
             this.label6.Text = "Giá vé";
             // 
             // tbGroupPrice
             // 
             this.tbGroupPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupPrice.Enabled = false;
             this.tbGroupPrice.Location = new System.Drawing.Point(354, 36);
             this.tbGroupPrice.Name = "tbGroupPrice";
             this.tbGroupPrice.Size = new System.Drawing.Size(185, 22);
@@ -355,6 +368,7 @@ namespace GUI.CustomUserControls.TourGroup
             // tbGroupTotalCost
             // 
             this.tbGroupTotalCost.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupTotalCost.Enabled = false;
             this.tbGroupTotalCost.Location = new System.Drawing.Point(354, 102);
             this.tbGroupTotalCost.Name = "tbGroupTotalCost";
             this.tbGroupTotalCost.Size = new System.Drawing.Size(185, 22);
@@ -365,7 +379,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(273, 99);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 17);
+            this.label7.Size = new System.Drawing.Size(48, 16);
             this.label7.TabIndex = 13;
             this.label7.Text = "Chi phí";
             // 
@@ -374,13 +388,14 @@ namespace GUI.CustomUserControls.TourGroup
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 99);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 17);
+            this.label9.Size = new System.Drawing.Size(68, 16);
             this.label9.TabIndex = 15;
             this.label9.Text = "Doanh thu";
             // 
             // tbGroupRevenue
             // 
             this.tbGroupRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGroupRevenue.Enabled = false;
             this.tbGroupRevenue.Location = new System.Drawing.Point(84, 102);
             this.tbGroupRevenue.Name = "tbGroupRevenue";
             this.tbGroupRevenue.Size = new System.Drawing.Size(183, 22);
@@ -394,6 +409,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.btnGroupAdd.TabIndex = 0;
             this.btnGroupAdd.Text = "+ Thêm";
             this.btnGroupAdd.UseVisualStyleBackColor = true;
+            this.btnGroupAdd.Click += new System.EventHandler(this.btnGroupAdd_Click);
             // 
             // btnGroupEdit
             // 
@@ -403,12 +419,14 @@ namespace GUI.CustomUserControls.TourGroup
             this.btnGroupEdit.TabIndex = 1;
             this.btnGroupEdit.Text = "Sửa ✎";
             this.btnGroupEdit.UseVisualStyleBackColor = true;
+            this.btnGroupEdit.Click += new System.EventHandler(this.btnGroupEdit_Click);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.btnGroupAdd);
             this.flowLayoutPanel1.Controls.Add(this.btnGroupEdit);
             this.flowLayoutPanel1.Controls.Add(this.btnGroupDelete);
+            this.flowLayoutPanel1.Controls.Add(this.btnCancel);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 161);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -424,6 +442,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.btnGroupDelete.TabIndex = 2;
             this.btnGroupDelete.Text = "Xóa 🗑";
             this.btnGroupDelete.UseVisualStyleBackColor = true;
+            this.btnGroupDelete.Click += new System.EventHandler(this.btnGroupDelete_Click);
             // 
             // groupBox1
             // 
@@ -469,12 +488,15 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // dgvGroupCustomerList
             // 
+            this.dgvGroupCustomerList.BackgroundColor = System.Drawing.Color.White;
             this.dgvGroupCustomerList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroupCustomerList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGroupCustomerList.Location = new System.Drawing.Point(3, 18);
             this.dgvGroupCustomerList.Name = "dgvGroupCustomerList";
+            this.dgvGroupCustomerList.RowHeadersVisible = false;
             this.dgvGroupCustomerList.RowHeadersWidth = 51;
             this.dgvGroupCustomerList.RowTemplate.Height = 24;
+            this.dgvGroupCustomerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvGroupCustomerList.Size = new System.Drawing.Size(520, 222);
             this.dgvGroupCustomerList.TabIndex = 1;
             // 
@@ -507,6 +529,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.btnGroupCustomerAdd.TabIndex = 1;
             this.btnGroupCustomerAdd.Text = "↑ Thêm";
             this.btnGroupCustomerAdd.UseVisualStyleBackColor = true;
+            this.btnGroupCustomerAdd.Click += new System.EventHandler(this.btnGroupCustomerAdd_Click);
             // 
             // btnGroupCustomerSave
             // 
@@ -538,12 +561,17 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // dgvGroupCustomerListAll
             // 
+            this.dgvGroupCustomerListAll.AllowUserToAddRows = false;
+            this.dgvGroupCustomerListAll.AllowUserToDeleteRows = false;
+            this.dgvGroupCustomerListAll.BackgroundColor = System.Drawing.Color.White;
             this.dgvGroupCustomerListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroupCustomerListAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGroupCustomerListAll.Location = new System.Drawing.Point(3, 18);
             this.dgvGroupCustomerListAll.Name = "dgvGroupCustomerListAll";
+            this.dgvGroupCustomerListAll.RowHeadersVisible = false;
             this.dgvGroupCustomerListAll.RowHeadersWidth = 51;
             this.dgvGroupCustomerListAll.RowTemplate.Height = 24;
+            this.dgvGroupCustomerListAll.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvGroupCustomerListAll.Size = new System.Drawing.Size(520, 199);
             this.dgvGroupCustomerListAll.TabIndex = 0;
             // 
@@ -775,7 +803,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(3, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(27, 17);
+            this.label8.Size = new System.Drawing.Size(27, 16);
             this.label8.TabIndex = 0;
             this.label8.Text = "Mã";
             // 
@@ -792,7 +820,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 30);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 17);
+            this.label10.Size = new System.Drawing.Size(34, 16);
             this.label10.TabIndex = 2;
             this.label10.Text = "Loại";
             // 
@@ -810,7 +838,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(266, 30);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(30, 17);
+            this.label11.Size = new System.Drawing.Size(29, 16);
             this.label11.TabIndex = 6;
             this.label11.Text = "Giá";
             // 
@@ -827,7 +855,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(3, 60);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 17);
+            this.label12.Size = new System.Drawing.Size(52, 16);
             this.label12.TabIndex = 8;
             this.label12.Text = "Ghi chú";
             // 
@@ -955,6 +983,18 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel6.Size = new System.Drawing.Size(551, 354);
             this.flowLayoutPanel6.TabIndex = 1;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnCancel.Location = new System.Drawing.Point(221, 3);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 30);
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "Hủy";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // UcTourGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -962,6 +1002,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.Controls.Add(this.flowLayoutPanel3);
             this.Name = "UcTourGroup";
             this.Size = new System.Drawing.Size(1126, 586);
+            this.Load += new System.EventHandler(this.UcTourGroup_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupList)).EndInit();
@@ -1086,5 +1127,6 @@ namespace GUI.CustomUserControls.TourGroup
         private System.Windows.Forms.DataGridView dgvGroupCostList;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbGroupRevenue;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

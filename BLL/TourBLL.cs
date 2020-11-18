@@ -54,7 +54,6 @@ namespace BLL
             {
                 throw ex;
             }
-
         }
         public static void Update(int id, Tour tour)
         {

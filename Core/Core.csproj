@@ -46,6 +46,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Common\DateRange.cs" />
     <Compile Include="Enums\Gender.cs" />
+    <Compile Include="Enums\OperationType.cs" />
     <Compile Include="Enums\Position.cs" />
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Models\Cost.cs" />

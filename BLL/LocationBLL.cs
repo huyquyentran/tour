@@ -11,16 +11,14 @@ namespace BLL
 {
     public class LocationBLL
     {
-        public static IEnumerable<Location> ListLocations(int? TourId)
+        public static IEnumerable<Location> ListLocations()
         {
-            return LocationDAL.Get(
-                t => t.TourLocations.Any(tl => !TourId.HasValue || tl.TourId == TourId),
-                null,
-                new List<Expression<Func<Location, object>>>
-                {
-                    t=> t.TourLocations
-                }
-            );
+            return LocationDAL.Get();
+        }
+
+        public static Location LocationById(int id)
+        {
+            return LocationDAL.GetById(id);
         }
     }
 }

@@ -430,6 +430,7 @@ namespace GUI.Tour
             this.btnTourLocationMoveUp.TabIndex = 0;
             this.btnTourLocationMoveUp.Text = "↑";
             this.btnTourLocationMoveUp.UseVisualStyleBackColor = true;
+            this.btnTourLocationMoveUp.Click += new System.EventHandler(this.btnTourLocationMoveUp_Click);
             // 
             // btnTourLocationMoveDown
             // 
@@ -439,6 +440,7 @@ namespace GUI.Tour
             this.btnTourLocationMoveDown.TabIndex = 1;
             this.btnTourLocationMoveDown.Text = "↓";
             this.btnTourLocationMoveDown.UseVisualStyleBackColor = true;
+            this.btnTourLocationMoveDown.Click += new System.EventHandler(this.btnTourLocationMoveDown_Click);
             // 
             // dgvTourLocationList
             // 
@@ -470,6 +472,7 @@ namespace GUI.Tour
             this.btnTourLocationRemove.TabIndex = 0;
             this.btnTourLocationRemove.Text = "↓ Xóa";
             this.btnTourLocationRemove.UseVisualStyleBackColor = true;
+            this.btnTourLocationRemove.Click += new System.EventHandler(this.btnTourLocationRemove_Click);
             // 
             // btnTourLocationAdd
             // 
@@ -479,6 +482,7 @@ namespace GUI.Tour
             this.btnTourLocationAdd.TabIndex = 1;
             this.btnTourLocationAdd.Text = "↑ Thêm";
             this.btnTourLocationAdd.UseVisualStyleBackColor = true;
+            this.btnTourLocationAdd.Click += new System.EventHandler(this.btnTourLocationAdd_Click);
             // 
             // btnTourLocationSave
             // 
@@ -488,6 +492,7 @@ namespace GUI.Tour
             this.btnTourLocationSave.TabIndex = 2;
             this.btnTourLocationSave.Text = "Lưu thay đổi 🖫";
             this.btnTourLocationSave.UseVisualStyleBackColor = true;
+            this.btnTourLocationSave.Click += new System.EventHandler(this.btnTourLocationSave_Click);
             // 
             // btnTourLocationCancel
             // 
@@ -497,6 +502,7 @@ namespace GUI.Tour
             this.btnTourLocationCancel.TabIndex = 3;
             this.btnTourLocationCancel.Text = "Hủy thay đổi 🗙";
             this.btnTourLocationCancel.UseVisualStyleBackColor = true;
+            this.btnTourLocationCancel.Click += new System.EventHandler(this.btnTourLocationCancel_Click);
             // 
             // groupBox3
             // 
@@ -771,16 +777,11 @@ namespace GUI.Tour
             this.btnTourSearch.TabIndex = 2;
             this.btnTourSearch.Text = "Tìm ⌕";
             this.btnTourSearch.UseVisualStyleBackColor = true;
+            this.btnTourSearch.Click += new System.EventHandler(this.btnTourSearch_Click);
             // 
             // cbTourSearchBy
             // 
             this.cbTourSearchBy.FormattingEnabled = true;
-            this.cbTourSearchBy.Items.AddRange(new object[] {
-            "Mã tour",
-            "Tên tour",
-            "Loại tour",
-            "Giá gốc",
-            "Đặc điểm"});
             this.cbTourSearchBy.Location = new System.Drawing.Point(229, 8);
             this.cbTourSearchBy.Name = "cbTourSearchBy";
             this.cbTourSearchBy.Size = new System.Drawing.Size(125, 24);

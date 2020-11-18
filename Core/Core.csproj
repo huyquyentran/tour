@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Common\DateRange.cs" />
+    <Compile Include="Common\ListExtensionMethod.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\Position.cs" />
     <Compile Include="Models\Assignment.cs" />

@@ -48,7 +48,7 @@ namespace Core.Common
         }
         public static IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
-            return context.Set<T>().Where(predicate).AsNoTracking().ToList();
+            return context.Set<T>().Where(predicate).ToList();
         }
         public static void Add(T entity)
         {
@@ -58,6 +58,16 @@ namespace Core.Common
         public static void Remove(T entity)
         {
             context.Set<T>().Remove(entity);
+            context.SaveChanges();
+        }
+        public static void AddRange(IEnumerable<T> entities)
+        {
+            context.Set<T>().AddRange(entities);
+            context.SaveChanges();
+        }
+        public static void RemoveRange(IEnumerable<T> entities)
+        {
+            context.Set<T>().RemoveRange(entities);
             context.SaveChanges();
         }
         public static void Update(T entity)

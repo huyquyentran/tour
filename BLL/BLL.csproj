@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaffBLL.cs" />
     <Compile Include="TourBLL.cs" />
+    <Compile Include="TourLocationBLL.cs" />
     <Compile Include="TourPriceBLL.cs" />
     <Compile Include="TourTypeBLL.cs" />
   </ItemGroup>

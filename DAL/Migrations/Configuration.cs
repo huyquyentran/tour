@@ -227,18 +227,18 @@ namespace Core.Migrations
             {
                 IEnumerable<Group> groups = new List<Group>
                 {
-                    new Group(new DateTime(2020, 7, 20), new DateTime(2020, 7, 24), 1),
-                    new Group(new DateTime(2020, 8, 11), new DateTime(2020, 8, 15), 1),
-                    new Group(new DateTime(2020, 7, 25), new DateTime(2020, 7, 29), 2),
-                    new Group(new DateTime(2020, 10, 11), new DateTime(2020, 10, 15), 2),
-                    new Group(new DateTime(2020, 11, 1), new DateTime(2020, 11, 2), 2),
-                    new Group(new DateTime(2020, 7, 30), new DateTime(2020, 8, 5), 3),
-                    new Group(new DateTime(2020, 7, 20), new DateTime(2020, 7, 22), 4),
-                    new Group(new DateTime(2020, 11, 5), new DateTime(2020, 10, 8), 4),
-                    new Group(new DateTime(2020, 11, 5), new DateTime(2020, 11, 8), 4),
-                    new Group(new DateTime(2020, 7, 20), new DateTime(2020, 7, 27), 5),
-                    new Group(new DateTime(2020, 9, 20), new DateTime(2020, 9, 21), 5),
-                    new Group(new DateTime(2020,11, 1), new DateTime(2020, 11, 6), 5),
+                    new Group("Đoàn 1", new DateTime(2020, 7, 20), new DateTime(2020, 7, 24), 1),
+                    new Group("Đoàn 2", new DateTime(2020, 8, 11), new DateTime(2020, 8, 15), 1),
+                    new Group("Đoàn 3", new DateTime(2020, 7, 25), new DateTime(2020, 7, 29), 2),
+                    new Group("Đoàn 4", new DateTime(2020, 10, 11), new DateTime(2020, 10, 15), 2),
+                    new Group("Đoàn 5", new DateTime(2020, 11, 1), new DateTime(2020, 11, 2), 2),
+                    new Group("Đoàn 6", new DateTime(2020, 7, 30), new DateTime(2020, 8, 5), 3),
+                    new Group("Đoàn 7", new DateTime(2020, 7, 20), new DateTime(2020, 7, 22), 4),
+                    new Group("Đoàn 8", new DateTime(2020, 11, 5), new DateTime(2020, 10, 8), 4),
+                    new Group("Đoàn 9", new DateTime(2020, 11, 5), new DateTime(2020, 11, 8), 4),
+                    new Group("Đoàn 10", new DateTime(2020, 7, 20), new DateTime(2020, 7, 27), 5),
+                    new Group("Đoàn 11", new DateTime(2020, 9, 20), new DateTime(2020, 9, 21), 5),
+                    new Group("Đoàn 12", new DateTime(2020,11, 1), new DateTime(2020, 11, 6), 5),
                 };
                 context.Groups.AddRange(groups);
                 context.SaveChanges();

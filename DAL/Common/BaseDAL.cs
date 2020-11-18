@@ -17,30 +17,30 @@ namespace Core.Common
             int? page = null,
             int? pageSize = null)
         {
-                IQueryable<T> query = context.Set<T>();
+            IQueryable<T> query = context.Set<T>();
 
-                if (includeProperties != null)
-                {
-                    includeProperties.ForEach(i => query = query.Include(i));
-                }
+            if (includeProperties != null)
+            {
+                includeProperties.ForEach(i => query = query.Include(i));
+            }
 
-                if (filter != null)
-                {
-                    query = query.Where(filter);
-                }
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
 
-                if (orderBy != null)
-                {
-                    query = orderBy(query);
+            if (orderBy != null)
+            {
+                query = orderBy(query);
 
-                }
+            }
 
-                if (page != null && pageSize != null)
-                {
-                    query = query.Skip((page.Value - 1) * pageSize.Value).Take(pageSize.Value);
-                }
+            if (page != null && pageSize != null)
+            {
+                query = query.Skip((page.Value - 1) * pageSize.Value).Take(pageSize.Value);
+            }
 
-                return query.AsNoTracking().ToList();
+            return query.AsNoTracking().ToList();
         }
         public static T GetById(int id)
         {

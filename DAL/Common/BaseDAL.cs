@@ -18,30 +18,30 @@ namespace Core.Common
         {
             using(var context = new TourDbContext())
             {
-            IQueryable<T> query = context.Set<T>();
+                IQueryable<T> query = context.Set<T>();
 
-            if (includeProperties != null)
-            {
-                includeProperties.ForEach(i => query = query.Include(i));
-            }
+                if (includeProperties != null)
+                {
+                    includeProperties.ForEach(i => query = query.Include(i));
+                }
 
-            if (filter != null)
-            {
-                query = query.Where(filter);
-            }
+                if (filter != null)
+                {
+                    query = query.Where(filter);
+                }
 
-            if (orderBy != null)
-            {
-                query = orderBy(query);
+                if (orderBy != null)
+                {
+                    query = orderBy(query);
 
-            }
+                }
 
-            if (page != null && pageSize != null)
-            {
-                query = query.Skip((page.Value - 1) * pageSize.Value).Take(pageSize.Value);
-            }
+                if (page != null && pageSize != null)
+                {
+                    query = query.Skip((page.Value - 1) * pageSize.Value).Take(pageSize.Value);
+                }
 
-            return query.AsNoTracking().ToList();
+                return query.AsNoTracking().ToList();
             }    
         }
         public static T GetById(int id)
@@ -64,45 +64,50 @@ namespace Core.Common
         {
             using (var context = new TourDbContext())
             {
-
+                context.Entry(entity).State = EntityState.Added;
                 context.Set<T>().Add(entity);
-            context.SaveChanges();
+                context.SaveChanges();
             }    
         }
         public static void Remove(T entity)
         {
             using (var context = new TourDbContext())
             {
-
+                context.Entry(entity).State = EntityState.Deleted;
                 context.Set<T>().Remove(entity);
-            context.SaveChanges();
+                context.SaveChanges();
             }    
         }
         public static void AddRange(IEnumerable<T> entities)
         {
             using (var context = new TourDbContext())
             {
-
+                foreach (T entity in entities)
+                {
+                    context.Entry(entity).State = EntityState.Added;
+                }
                 context.Set<T>().AddRange(entities);
-            context.SaveChanges();
+                context.SaveChanges();
             }    
         }
         public static void RemoveRange(IEnumerable<T> entities)
         {
             using (var context = new TourDbContext())
             {
-
+                foreach(T entity in entities)
+                {
+                    context.Entry(entity).State = EntityState.Deleted;
+                }    
                 context.Set<T>().RemoveRange(entities);
-            context.SaveChanges();
+                context.SaveChanges();
             }    
         }
         public static void Update(T entity)
         {
             using (var context = new TourDbContext())
             {
-
                 context.Entry(entity).State = EntityState.Modified;
-            context.SaveChanges();
+                context.SaveChanges();
             }    
         }
     }

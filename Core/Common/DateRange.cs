@@ -19,7 +19,7 @@ namespace Core.Common
     {
         public DateRange(DateTime start, DateTime end)
         {
-            if(end < start) throw new Exception("DateStart should be less than DateEnd0");
+            if(end < start) throw new Exception("Thời gian bắt đầu phải trước thời gian kết thúc");
             Start = start;
             End = end;
         }

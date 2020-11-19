@@ -15,7 +15,7 @@ namespace BLL
         {
             return TourLocationDAL.Get(
                 t => !TourId.HasValue || t.TourId == TourId,
-                null,
+                t => t.OrderBy(to => to.Order),
                 new List<Expression<Func<TourLocations, object>>>
                 {
                     t=> t.Location

@@ -11,23 +11,24 @@ namespace BLL
 {
     public class TourPriceBLL
     {
-        public static IEnumerable<TourPrice> ListTourPrices (int? TourId)
+        public static IEnumerable<TourPrice> ListTourPrices (int? TourId, DateTime? StartDate = null)
         {
             return TourPriceDAL.Get(
-                tp => (!TourId.HasValue || tp.TourId == TourId)
+                tp => (!TourId.HasValue || tp.TourId == TourId) && (!StartDate.HasValue || tp.StartDate >= StartDate),
+                tp => tp.OrderBy(tpo => tpo.StartDate)
             );
         }
         public static void IsValid(TourPrice tourPrice, int? Id = null)
         {
             var inputDateRange = new DateRange(tourPrice.StartDate, tourPrice.EndDate);
             var tour = TourDAL.GetById(tourPrice.TourId);
-            if (tour == null) throw new Exception("Tour NotFound");
+            if (tour == null) throw new Exception("Không tìm thấy tour");
 
             var tourPrices = TourPriceDAL.Find(tp => (tp.TourId == tour.Id) && (!Id.HasValue || tp.Id != Id));
             foreach (var x in tourPrices)
             {
                 var sourceDateRange = new DateRange(x.StartDate, x.EndDate);
-                if (!inputDateRange.BeforeOrAfter(sourceDateRange)) throw new Exception("Invalid StartDate or Enddatte");
+                if (!inputDateRange.BeforeOrAfter(sourceDateRange)) throw new Exception("Khoảng thời gian không phù hợp");
             }
         }
         public static void Add(TourPrice tourPrice)

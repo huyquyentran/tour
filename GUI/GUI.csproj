@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\GUIExtensionMethod.cs" />
     <Compile Include="CustomUserControls\Statistic\Statistic.cs">
       <SubType>UserControl</SubType>
     </Compile>

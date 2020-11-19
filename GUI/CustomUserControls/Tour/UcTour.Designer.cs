@@ -357,6 +357,7 @@ namespace GUI.Tour
             this.btnTourPriceRefresh.TabIndex = 3;
             this.btnTourPriceRefresh.Text = "Làm mới 🗘";
             this.btnTourPriceRefresh.UseVisualStyleBackColor = true;
+            this.btnTourPriceRefresh.Click += new System.EventHandler(this.btnTourPriceRefresh_Click);
             // 
             // btnTourPriceSearch
             // 
@@ -366,6 +367,7 @@ namespace GUI.Tour
             this.btnTourPriceSearch.TabIndex = 2;
             this.btnTourPriceSearch.Text = "Tìm ⌕";
             this.btnTourPriceSearch.UseVisualStyleBackColor = true;
+            this.btnTourPriceSearch.Click += new System.EventHandler(this.btnTourPriceSearch_Click);
             // 
             // dgvTourPriceList
             // 
@@ -768,6 +770,7 @@ namespace GUI.Tour
             this.btnTourListRefresh.TabIndex = 3;
             this.btnTourListRefresh.Text = "Làm mới 🗘";
             this.btnTourListRefresh.UseVisualStyleBackColor = true;
+            this.btnTourListRefresh.Click += new System.EventHandler(this.btnTourListRefresh_Click);
             // 
             // btnTourSearch
             // 
@@ -817,6 +820,7 @@ namespace GUI.Tour
             this.Controls.Add(this.flowLayoutPanel3);
             this.Name = "UcTour";
             this.Size = new System.Drawing.Size(1126, 586);
+            this.Load += new System.EventHandler(this.UcTour_Load);
             this.tbPrice.ResumeLayout(false);
             this.flowLayoutPanel10.ResumeLayout(false);
             this.flowLayoutPanel11.ResumeLayout(false);

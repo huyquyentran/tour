@@ -9,8 +9,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUI.Common;
 
 namespace GUI.Tour
 {
@@ -26,14 +28,20 @@ namespace GUI.Tour
             {"Id", "Mã"},
             {"Name", "Tên"},
             {"Description", "Mô tả"},
+            {"TourTypeName", "Thể loại Tour" }
         };
         public UcTour()
         {
-            //UseEffect no dependency
             InitializeComponent();
-            LoadTourDataGridView();
-            LoadAllLocationDataGridView();
-            LoadComboBoxTourType();
+        }
+        private void UcTour_Load(object sender, EventArgs e)
+        {
+            Thread threadLoadTourDataGridView = new Thread(new ThreadStart(()=>LoadTourDataGridView()));
+            threadLoadTourDataGridView.Start();
+            Thread threadLoadComboBoxTourType = new Thread(new ThreadStart(() => LoadComboBoxTourType()));
+            threadLoadComboBoxTourType.Start();
+            Thread threadLoadAllLocationDataGridView = new Thread(new ThreadStart(() => LoadAllLocationDataGridView()));
+            threadLoadAllLocationDataGridView.Start();
             LoadComboBoxSearchBy();
             tcTourPriceLocation.Enabled = false;
             tbTourID.Enabled = false;
@@ -42,6 +50,13 @@ namespace GUI.Tour
         // Handle Event Tour
         public void LoadTourDataGridView(string type = null, string value = null)
         {
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() =>
+                {
+                    dgvTourList.ShowLoading(true);
+                }));
+            }
             var tourData = TourBLL.ListTours(type, value);
             var dataSource = tourData.Select(t => new TourDataSource(
                                         t.Id,
@@ -50,15 +65,22 @@ namespace GUI.Tour
                                         t.Description,
                                         t.TourType.Name,
                                         t.TourTypeId)).ToList();
-            dgvTourList.DataSource = dataSource;
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() =>
+                {
+                    dgvTourList.ShowLoading(false);
+                    dgvTourList.DataSource = dataSource;
+                    //ConfigTourDataGridView
+                    dgvTourList.Columns["Id"].Visible = false;
+                    dgvTourList.Columns["TourTypeId"].Visible = false;
+                    dgvTourList.Columns["Name"].HeaderText = "Tên";
+                    dgvTourList.Columns["CurrentPrice"].HeaderText = "Giá gốc";
+                    dgvTourList.Columns["TourTypeName"].HeaderText = "Loại";
+                    dgvTourList.Columns["Description"].HeaderText = "Mô tả";
+                }));
+            }
 
-            //ConfigTourDataGridView
-            dgvTourList.Columns["Id"].Visible = false;
-            dgvTourList.Columns["TourTypeId"].Visible = false;
-            dgvTourList.Columns["Name"].HeaderText = "Tên";
-            dgvTourList.Columns["CurrentPrice"].HeaderText = "Giá gốc";
-            dgvTourList.Columns["TourTypeName"].HeaderText = "Loại";
-            dgvTourList.Columns["Description"].HeaderText = "Mô tả";
         }
         public void LoadTourForm(TourDataSource data)
         {
@@ -84,9 +106,22 @@ namespace GUI.Tour
         }
         public void LoadComboBoxTourType()
         {
-            cbTourType.DataSource = TourTypeBLL.ListTourTypes();
-            cbTourType.DisplayMember = "Name";
-            cbTourType.ValueMember = "Id";
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() => {
+                    cbTourType.Text = "Loading ...";
+                }));
+            }
+            var tourTypes = TourTypeBLL.ListTourTypes();
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() =>{
+            
+                    cbTourType.DataSource = tourTypes;
+                    cbTourType.DisplayMember = "Name";
+                    cbTourType.ValueMember = "Id";
+                }));
+            }
         }
         public void LoadComboBoxSearchBy()
         {
@@ -98,7 +133,13 @@ namespace GUI.Tour
         {
             var type = ((KeyValuePair<string, string>)cbTourSearchBy.SelectedItem).Key;
             string value = tbTourSearchInput.Text;
-            LoadTourDataGridView(type, value);
+            Thread threadLoadTourDataGridView = new Thread(new ThreadStart(() => LoadTourDataGridView(type, value)));
+            threadLoadTourDataGridView.Start();
+        }
+        private void btnTourListRefresh_Click(object sender, EventArgs e)
+        {
+            Thread threadLoadTourDataGridView = new Thread(new ThreadStart(() => LoadTourDataGridView()));
+            threadLoadTourDataGridView.Start();
         }
         private void dgvTourList_SelectionChanged(object sender, EventArgs e)
         {
@@ -107,9 +148,11 @@ namespace GUI.Tour
                 var row = dgvTourList.SelectedRows[0];
                 var data = (TourDataSource)row.DataBoundItem;
                 TourId = data.Id;
+                Thread threadLoadLocationDataGridView = new Thread(new ThreadStart(() => LoadLocationDataGridView()));
+                threadLoadLocationDataGridView.Start();
+                Thread threadLoadTourPriceDataGridView = new Thread(new ThreadStart(() => LoadTourPriceDataGridView()));
+                threadLoadTourPriceDataGridView.Start();
                 LoadTourForm(data);
-                LoadTourPriceDataGridView();
-                LoadLocationDataGridView();
                 tcTourPriceLocation.Enabled = true;
             }
         }
@@ -122,7 +165,8 @@ namespace GUI.Tour
                                                     tbTourDescription.Text,
                                                     Int32.Parse(cbTourType.SelectedValue.ToString()));
                 TourBLL.Add(tour);
-                LoadTourDataGridView();
+                Thread threadLoadTourDataGridView = new Thread(new ThreadStart(() => LoadTourDataGridView()));
+                threadLoadTourDataGridView.Start();
             }
             catch (FormatException)
             {
@@ -138,12 +182,14 @@ namespace GUI.Tour
             try
             {
                 var tour = new Core.Models.Tour(tbTourName.Text,
-                                                    Int32.Parse(tbTourPrice.Text),
+                                                    Int32.Parse(tbTourPrice.Text == "" ? "-1" : tbTourPrice.Text),
                                                     tbTourDescription.Text,
                                                     Int32.Parse(cbTourType.SelectedValue.ToString()));
                 int id = Int32.Parse(tbTourID.Text);
                 TourBLL.Update(id, tour);
-                LoadTourDataGridView();
+
+                Thread threadLoadTourDataGridView = new Thread(new ThreadStart(() => LoadTourDataGridView()));
+                threadLoadTourDataGridView.Start();
             }
             catch (FormatException)
             {
@@ -155,21 +201,37 @@ namespace GUI.Tour
             }
         }
         // Handle Event Price
-        public void LoadTourPriceDataGridView()
+        public void LoadTourPriceDataGridView(DateTime? StartDate = null)
         {
             if (dgvTourList.SelectedRows.Count > 0 && TourId > 0)
             {
-                var tourPriceData = TourPriceBLL.ListTourPrices(TourId);
-                dgvTourPriceList.DataSource = tourPriceData.ToList();
+                if (InvokeRequired)
+                {
+                    Invoke(new Action(() =>
+                    {
+                        dgvTourPriceList.ShowLoading(true);
+                    }));
+                }
+                var tourPriceData = TourPriceBLL.ListTourPrices(TourId, StartDate).ToList();
+                if (InvokeRequired)
+                {
+                    Invoke(new Action(() =>
+                    {
+                        dgvTourPriceList.ShowLoading(false);
+                        dgvTourPriceList.DataSource = tourPriceData;
 
-                dgvTourPriceList.Columns["Id"].Visible = false;
-                dgvTourPriceList.Columns["TourId"].Visible = false;
-                dgvTourPriceList.Columns["Tour"].Visible = false;
+                        dgvTourPriceList.Columns["Id"].Visible = false;
+                        dgvTourPriceList.Columns["TourId"].Visible = false;
+                        dgvTourPriceList.Columns["Tour"].Visible = false;
 
-                dgvTourPriceList.Columns["StartDate"].HeaderText = "Bắt đầu";
-                dgvTourPriceList.Columns["EndDate"].HeaderText = "Kết thúc";
-                dgvTourPriceList.Columns["Price"].HeaderText = "Giá";
-                dgvTourPriceList.Columns["Note"].HeaderText = "Ghi chú";
+                        dgvTourPriceList.Columns["StartDate"].HeaderText = "Bắt đầu";
+                        dgvTourPriceList.Columns["EndDate"].HeaderText = "Kết thúc";
+                        dgvTourPriceList.Columns["Price"].HeaderText = "Giá";
+                        dgvTourPriceList.Columns["Note"].HeaderText = "Ghi chú";
+                    }));
+                }
+               
+                
             }
             else
             {
@@ -197,6 +259,11 @@ namespace GUI.Tour
             }
 
         }
+        private void btnTourPriceRefresh_Click(object sender, EventArgs e)
+        {
+            Thread threadLoadTourPriceDataGridView = new Thread(new ThreadStart(() => LoadTourPriceDataGridView()));
+            threadLoadTourPriceDataGridView.Start();
+        }
         public void LoadTourPriceForm(TourPrice data)
         {
             TourPriceId = data.Id;
@@ -206,6 +273,11 @@ namespace GUI.Tour
 
             dtpTourPriceStartDate.Value = data.StartDate;
             dtpTourPriceEndDate.Value = data.EndDate;
+        }
+        private void btnTourPriceSearch_Click(object sender, EventArgs e)
+        {
+            Thread threadLoadTourPriceDataGridView = new Thread(new ThreadStart(() => LoadTourPriceDataGridView(dtpTourPriceSearch.Value)));
+            threadLoadTourPriceDataGridView.Start();
         }
         private void btnTourPriceAdd_Click(object sender, EventArgs e)
         {
@@ -219,7 +291,8 @@ namespace GUI.Tour
                         tbTourPriceNote.Text
                     );
                 TourPriceBLL.Add(tourPrice);
-                LoadTourPriceDataGridView();
+                Thread threadLoadTourPriceDataGridView = new Thread(new ThreadStart(() => LoadTourPriceDataGridView()));
+                threadLoadTourPriceDataGridView.Start();
             }
             catch (Exception ex)
             {
@@ -238,7 +311,8 @@ namespace GUI.Tour
                         tbTourPriceNote.Text
                     );
                 TourPriceBLL.Update(TourPriceId, tourPrice);
-                LoadTourPriceDataGridView();
+                Thread threadLoadTourPriceDataGridView = new Thread(new ThreadStart(() => LoadTourPriceDataGridView()));
+                threadLoadTourPriceDataGridView.Start();
             }
             catch (Exception ex)
             {
@@ -248,32 +322,62 @@ namespace GUI.Tour
         // Handle Event Tour Location
         public void LoadAllLocationDataGridView()
         {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() =>
+                {
+                    dgvTourLocationListAll.ShowLoading(true);
+                }));
+            }
             var locationsData = LocationBLL.ListLocations();
             locations = locationsData.ToList();
-            dgvTourLocationListAll.DataSource = locations;
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() =>
+                {
+                    dgvTourLocationListAll.ShowLoading(false);
+                    dgvTourLocationListAll.DataSource = locations;
 
-            dgvTourLocationListAll.Columns["Id"].Visible = false;
-            dgvTourLocationListAll.Columns["TourLocations"].Visible = false;
+                    dgvTourLocationListAll.Columns["Id"].Visible = false;
+                    dgvTourLocationListAll.Columns["TourLocations"].Visible = false;
 
-            dgvTourLocationListAll.Columns["Name"].HeaderText = "Tên";
+                    dgvTourLocationListAll.Columns["Name"].HeaderText = "Tên";
+                }));
+            }
         }
         public void LoadLocationDataGridView()
         {
             if (dgvTourList.SelectedRows.Count > 0 && TourId > 0)
             {
+                if (InvokeRequired)
+                {
+                    Invoke(new Action(() =>
+                    {
+                        dgvTourLocationList.ShowLoading(true);
+                    }));
+                }
                 var tourLocationsData = TourLocationBLL.ListTourLocationsByTourId(TourId);
                 tourLocations = tourLocationsData.ToList();
                 var dataSource = tourLocationsData.Select(t => new TourLocationDataSource(
                                         t.TourId,
                                         t.LocationId,
                                         t.Location.Name,
-                                        t.Order)).OrderBy(t => t.Order).ToList();
-                dgvTourLocationList.DataSource = dataSource;
+                                        t.Order)).ToList();
+                if (InvokeRequired)
+                {
+                    Invoke(new Action(() =>
+                    {
+                        dgvTourLocationList.ShowLoading(false);
+                        dgvTourLocationList.DataSource = dataSource;
 
-                dgvTourLocationList.Columns["LocationId"].Visible = false;
-                dgvTourLocationList.Columns["TourId"].Visible = false;
-                dgvTourLocationList.Columns["Order"].HeaderText = "Thứ tự";
-                dgvTourLocationList.Columns["Name"].HeaderText = "Tên";
+                        dgvTourLocationList.Columns["LocationId"].Visible = false;
+                        dgvTourLocationList.Columns["TourId"].Visible = false;
+                        dgvTourLocationList.Columns["Order"].HeaderText = "Thứ tự";
+                        dgvTourLocationList.Columns["Name"].HeaderText = "Tên";
+                    }));
+                }
+
+
             }
             else
             {
@@ -282,7 +386,8 @@ namespace GUI.Tour
         }
         private void btnTourLocationCancel_Click(object sender, EventArgs e)
         {
-            LoadLocationDataGridView();
+            Thread threadLoadLocationDataGridView = new Thread(new ThreadStart(() => LoadLocationDataGridView()));
+            threadLoadLocationDataGridView.Start();
         }
         private void btnTourLocationAdd_Click(object sender, EventArgs e)
         {
@@ -402,11 +507,9 @@ namespace GUI.Tour
                 Order = i + 1,
             }).ToList();
             TourLocationBLL.UpdateRange(TourId, dataUpdate);
-            LoadLocationDataGridView();
-            MessageBox.Show("Lưu thành công");
+            Thread threadLoadLocationDataGridView = new Thread(new ThreadStart(() => LoadLocationDataGridView()));
+            threadLoadLocationDataGridView.Start();
         }
-
-
     }
 
     public class TourDataSource

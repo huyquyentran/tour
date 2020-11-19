@@ -32,16 +32,21 @@ namespace BLL
         }
         public static void IsValid(Tour tour, int? Id = null)
         {
+            Exception ex = new Exception("Validate excption");
             if (String.IsNullOrWhiteSpace(tour.Name))
-                throw new Exception("Tên không được bỏ trống");
+                ex.Data.Add("Tên", "Tên tour không được bỏ trống");
             if (String.IsNullOrWhiteSpace(tour.Description))
-                throw new Exception("Mô tả không được bỏ trống");
+                ex.Data.Add("Mô tả", "Mô tả không được bỏ trống");
             if (tour.CurrentPrice < 0)
-                throw new Exception("Giá phải lớn hơn 0");
+                ex.Data.Add("Giá", "Giá tiền phải lớn 0");
             if (TourTypeDAL.GetById(tour.TourTypeId) == null)
-                throw new Exception("Không tồn tại thể loại tour này");
+                ex.Data.Add("Thể Loại Tour", "Thể loại tour không tồn tại");
             if (TourDAL.Find(t => t.Name == tour.Name && (!Id.HasValue || t.Id != Id)).FirstOrDefault() != null)
-                throw new Exception("Tên tour đã tồn tại");
+                ex.Data.Add("Tên", "Tên tour đã tồn tại");
+            if (ex.Data.Count > 0)
+            {
+                throw ex;
+            }
         }
         public static void Add(Tour tour)
         {

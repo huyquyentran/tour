@@ -161,7 +161,7 @@ namespace GUI.Tour
             try
             {
                 var tour = new Core.Models.Tour(tbTourName.Text,
-                                                    Int32.Parse(tbTourPrice.Text),
+                                                    Int32.Parse(tbTourPrice.Text.Equals("") ? "-1" : tbTourPrice.Text),
                                                     tbTourDescription.Text,
                                                     Int32.Parse(cbTourType.SelectedValue.ToString()));
                 TourBLL.Add(tour);
@@ -170,11 +170,11 @@ namespace GUI.Tour
             }
             catch (FormatException)
             {
-                MessageBox.Show("Giá tour không được chứa chữ");
+                MessageBox.Show("Giá tiền không được để số");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                GUIExtensionMethod.HandleError(ex);
             }
         }
         private void btnTourEdit_Click(object sender, EventArgs e)
@@ -197,7 +197,7 @@ namespace GUI.Tour
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                GUIExtensionMethod.HandleError(ex);
             }
         }
         // Handle Event Price
@@ -207,7 +207,7 @@ namespace GUI.Tour
             {
                 if (InvokeRequired)
                 {
-                    Invoke(new Action(() =>
+                    BeginInvoke(new Action(() =>
                     {
                         dgvTourPriceList.ShowLoading(true);
                     }));
@@ -215,7 +215,7 @@ namespace GUI.Tour
                 var tourPriceData = TourPriceBLL.ListTourPrices(TourId, StartDate).ToList();
                 if (InvokeRequired)
                 {
-                    Invoke(new Action(() =>
+                    BeginInvoke(new Action(() =>
                     {
                         dgvTourPriceList.ShowLoading(false);
                         dgvTourPriceList.DataSource = tourPriceData;
@@ -287,16 +287,20 @@ namespace GUI.Tour
                         TourId.Value,
                         dtpTourPriceStartDate.Value,
                         dtpTourPriceEndDate.Value,
-                        Int32.Parse(tbTourPriceValue.Text),
+                        Int32.Parse(tbTourPriceValue.Text.Equals("") ? "-1" : tbTourPriceValue.Text),
                         tbTourPriceNote.Text
                     );
                 TourPriceBLL.Add(tourPrice);
                 Thread threadLoadTourPriceDataGridView = new Thread(new ThreadStart(() => LoadTourPriceDataGridView()));
                 threadLoadTourPriceDataGridView.Start();
             }
+            catch (FormatException)
+            {
+                MessageBox.Show("Giá tiền không được để số");
+            }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                GUIExtensionMethod.HandleError(ex);
             }
         }
         private void btnTourPriceEdit_Click(object sender, EventArgs e)
@@ -316,7 +320,7 @@ namespace GUI.Tour
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                GUIExtensionMethod.HandleError(ex);
             }
         }
         // Handle Event Tour Location

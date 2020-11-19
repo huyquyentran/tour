@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -26,6 +27,16 @@ namespace GUI.Common
             }    
 
             return dgv;
+        }
+        public static void HandleError(Exception ex)
+        {
+            string message = "";
+            foreach (DictionaryEntry item in ex.Data)
+            {
+                message += item.Value?.ToString();
+                message += Environment.NewLine;
+            }
+            MessageBox.Show(message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

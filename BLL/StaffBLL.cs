@@ -4,16 +4,31 @@ using DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class StaffBLL
+    public static class StaffBLL
     {
-        public static IList<Staff> ListStaff()
+        public static IList<Staff> ListStaffsNotInGroup(int groupId)
         {
-            return StaffDAL.Get().ToList();
+            return StaffDAL.Get(
+                s => s.Assignments.All(a => a.GroupId != groupId)
+                ).ToList();
+        }
+
+        public static IList<Staff> ListStaffsInGroup(int groupId)
+        {
+            return StaffDAL.Get(
+                s => s.Assignments.Any(a => a.GroupId == groupId),
+                null,
+                new List<Expression<Func<Staff, object>>>
+                {
+                    s=> s.Assignments,
+                }
+                ).ToList();
         }
     }
 }

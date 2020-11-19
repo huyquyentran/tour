@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingClasses\StaffBinding.cs" />
     <Compile Include="Common\GUIExtensionMethod.cs" />
     <Compile Include="CustomUserControls\Statistic\Statistic.cs">
       <SubType>UserControl</SubType>
@@ -136,5 +137,6 @@
     <None Include="Resources\icons8_money_bag_50px.png" />
     <Content Include="Resources\icons8_user_groups_50px.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

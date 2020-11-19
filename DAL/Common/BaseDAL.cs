@@ -16,7 +16,7 @@ namespace Core.Common
             int? page = null,
             int? pageSize = null)
         {
-            using(var context = new TourDbContext())
+            using (var context = new TourDbContext())
             {
                 IQueryable<T> query = context.Set<T>();
 
@@ -42,7 +42,7 @@ namespace Core.Common
                 }
 
                 return query.AsNoTracking().ToList();
-            }    
+            }
         }
         public static T GetById(int id)
         {
@@ -50,7 +50,7 @@ namespace Core.Common
             {
 
                 return context.Set<T>().Find(id);
-            }    
+            }
         }
         public static IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
@@ -58,7 +58,7 @@ namespace Core.Common
             {
 
                 return context.Set<T>().Where(predicate).ToList();
-            }    
+            }
         }
         public static void Add(T entity)
         {
@@ -67,7 +67,7 @@ namespace Core.Common
                 context.Entry(entity).State = EntityState.Added;
                 context.Set<T>().Add(entity);
                 context.SaveChanges();
-            }    
+            }
         }
         public static void Remove(T entity)
         {
@@ -76,7 +76,7 @@ namespace Core.Common
                 context.Entry(entity).State = EntityState.Deleted;
                 context.Set<T>().Remove(entity);
                 context.SaveChanges();
-            }    
+            }
         }
         public static void AddRange(IEnumerable<T> entities)
         {
@@ -88,19 +88,19 @@ namespace Core.Common
                 }
                 context.Set<T>().AddRange(entities);
                 context.SaveChanges();
-            }    
+            }
         }
         public static void RemoveRange(IEnumerable<T> entities)
         {
             using (var context = new TourDbContext())
             {
-                foreach(T entity in entities)
+                foreach (T entity in entities)
                 {
                     context.Entry(entity).State = EntityState.Deleted;
-                }    
+                }
                 context.Set<T>().RemoveRange(entities);
                 context.SaveChanges();
-            }    
+            }
         }
         public static void Update(T entity)
         {
@@ -108,7 +108,7 @@ namespace Core.Common
             {
                 context.Entry(entity).State = EntityState.Modified;
                 context.SaveChanges();
-            }    
+            }
         }
     }
 }

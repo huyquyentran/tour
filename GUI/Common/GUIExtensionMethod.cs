@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,11 +21,11 @@ namespace GUI.Common
 
                 dgv.Columns.Add("Loading", "Loading...");
                 dgv.Columns["Loading"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            }    
+            }
             else
             {
                 //TODO
-            }    
+            }
 
             return dgv;
         }
@@ -37,6 +38,22 @@ namespace GUI.Common
                 message += Environment.NewLine;
             }
             MessageBox.Show(message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        public static void BindEnumToDataGridViewCombobox<T>(this DataGridViewComboBoxColumn comboBox)
+        {
+            var list = Enum.GetValues(typeof(T))
+                .Cast<T>()
+                .Select(value => new
+                {
+                    Description = (Attribute.GetCustomAttribute(value.GetType().GetField(value.ToString()), typeof(DescriptionAttribute)) as DescriptionAttribute)?.Description ?? value.ToString(),
+                    Value = value
+                })
+                .OrderBy(item => item.Value.ToString())
+                .ToList();
+
+            comboBox.DataSource = list;
+            comboBox.DisplayMember = "Description";
+            comboBox.ValueMember = "Value";
         }
     }
 }

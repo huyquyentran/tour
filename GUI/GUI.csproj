@@ -129,7 +129,11 @@
   <ItemGroup>
     <Content Include="Resources\icons8_adventure_50px.png" />
     <Content Include="Resources\icons8_baby_footprint_50px.png" />
+    <None Include="Resources\icons8_increase_50px.png" />
+    <None Include="Resources\icons8_initiate_money_transfer_50px.png" />
+    <None Include="Resources\icons8_low_price_50px.png" />
     <Content Include="Resources\icons8_management_50px.png" />
+    <None Include="Resources\icons8_money_bag_50px.png" />
     <Content Include="Resources\icons8_user_groups_50px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

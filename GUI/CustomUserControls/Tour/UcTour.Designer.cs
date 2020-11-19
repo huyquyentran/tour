@@ -373,12 +373,15 @@ namespace GUI.Tour
             // 
             this.dgvTourPriceList.AllowUserToAddRows = false;
             this.dgvTourPriceList.AllowUserToDeleteRows = false;
+            this.dgvTourPriceList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourPriceList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourPriceList.Location = new System.Drawing.Point(3, 46);
             this.dgvTourPriceList.Name = "dgvTourPriceList";
             this.dgvTourPriceList.ReadOnly = true;
+            this.dgvTourPriceList.RowHeadersVisible = false;
             this.dgvTourPriceList.RowHeadersWidth = 51;
             this.dgvTourPriceList.RowTemplate.Height = 24;
+            this.dgvTourPriceList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTourPriceList.Size = new System.Drawing.Size(530, 304);
             this.dgvTourPriceList.TabIndex = 0;
             this.dgvTourPriceList.SelectionChanged += new System.EventHandler(this.dgvTourPriceList_SelectionChanged);
@@ -446,11 +449,17 @@ namespace GUI.Tour
             // 
             // dgvTourLocationList
             // 
+            this.dgvTourLocationList.AllowUserToAddRows = false;
+            this.dgvTourLocationList.AllowUserToDeleteRows = false;
+            this.dgvTourLocationList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourLocationList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourLocationList.Location = new System.Drawing.Point(3, 18);
             this.dgvTourLocationList.Name = "dgvTourLocationList";
+            this.dgvTourLocationList.ReadOnly = true;
+            this.dgvTourLocationList.RowHeadersVisible = false;
             this.dgvTourLocationList.RowHeadersWidth = 51;
             this.dgvTourLocationList.RowTemplate.Height = 24;
+            this.dgvTourLocationList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTourLocationList.Size = new System.Drawing.Size(465, 222);
             this.dgvTourLocationList.TabIndex = 1;
             // 
@@ -518,12 +527,18 @@ namespace GUI.Tour
             // 
             // dgvTourLocationListAll
             // 
+            this.dgvTourLocationListAll.AllowUserToAddRows = false;
+            this.dgvTourLocationListAll.AllowUserToDeleteRows = false;
+            this.dgvTourLocationListAll.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourLocationListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourLocationListAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTourLocationListAll.Location = new System.Drawing.Point(3, 18);
             this.dgvTourLocationListAll.Name = "dgvTourLocationListAll";
+            this.dgvTourLocationListAll.ReadOnly = true;
+            this.dgvTourLocationListAll.RowHeadersVisible = false;
             this.dgvTourLocationListAll.RowHeadersWidth = 51;
             this.dgvTourLocationListAll.RowTemplate.Height = 24;
+            this.dgvTourLocationListAll.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTourLocationListAll.Size = new System.Drawing.Size(520, 199);
             this.dgvTourLocationListAll.TabIndex = 0;
             // 
@@ -802,12 +817,15 @@ namespace GUI.Tour
             // 
             this.dgvTourList.AllowUserToAddRows = false;
             this.dgvTourList.AllowUserToDeleteRows = false;
+            this.dgvTourList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourList.Location = new System.Drawing.Point(3, 46);
             this.dgvTourList.Name = "dgvTourList";
             this.dgvTourList.ReadOnly = true;
+            this.dgvTourList.RowHeadersVisible = false;
             this.dgvTourList.RowHeadersWidth = 51;
             this.dgvTourList.RowTemplate.Height = 24;
+            this.dgvTourList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTourList.Size = new System.Drawing.Size(548, 304);
             this.dgvTourList.TabIndex = 0;
             this.dgvTourList.SelectionChanged += new System.EventHandler(this.dgvTourList_SelectionChanged);

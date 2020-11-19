@@ -269,7 +269,7 @@ namespace GUI.Tour
             TourPriceId = data.Id;
             tbTourPriceID.Text = data.Id.ToString();
             tbTourPriceValue.Text = data.Price.ToString();
-            tbTourPriceNote.Text = data.Note.ToString();
+            tbTourPriceNote.Text = data.Note?.ToString();
 
             dtpTourPriceStartDate.Value = data.StartDate;
             dtpTourPriceEndDate.Value = data.EndDate;

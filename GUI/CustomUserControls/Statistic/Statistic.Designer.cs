@@ -29,9 +29,24 @@ namespace GUI.CustomUserControls.Statistic
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tpOverview = new System.Windows.Forms.TabPage();
+            this.tpStatisticOverview = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -66,10 +81,57 @@ namespace GUI.CustomUserControls.Statistic
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tpTour = new System.Windows.Forms.TabPage();
+            this.tpStatisticDetail = new System.Windows.Forms.TabPage();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvStatisticDetailTourList = new System.Windows.Forms.DataGridView();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tpCost = new System.Windows.Forms.TabPage();
+            this.tpProfit = new System.Windows.Forms.TabPage();
+            this.chartProfit = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tpGroupCount = new System.Windows.Forms.TabPage();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtpStatisticDetailStartDate = new System.Windows.Forms.DateTimePicker();
+            this.chbStatisticDetailAllTime = new System.Windows.Forms.CheckBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.dtpStatisticDetailEndDate = new System.Windows.Forms.DateTimePicker();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.cbStatisticDetailTimeType = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnStatisticDetail = new System.Windows.Forms.Button();
+            this.tpStatisticStaff = new System.Windows.Forms.TabPage();
+            this.chbStatisticPropertyRevenue = new System.Windows.Forms.CheckBox();
+            this.chbStatisticPropertyCost = new System.Windows.Forms.CheckBox();
+            this.chbStatisticPropertyProfit = new System.Windows.Forms.CheckBox();
+            this.chbStatisticPropertyGroupCount = new System.Windows.Forms.CheckBox();
+            this.tpRevenue = new System.Windows.Forms.TabPage();
+            this.chartRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartGroupCount = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tpCostDetail = new System.Windows.Forms.TabPage();
+            this.chartCostDetail = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartCost = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chbStatisticPropertyCostDetail = new System.Windows.Forms.CheckBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtpStatisticStaffStartDate = new System.Windows.Forms.DateTimePicker();
+            this.chbStatisticStaffAllTime = new System.Windows.Forms.CheckBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.dtpStatisticStaffEndDate = new System.Windows.Forms.DateTimePicker();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.cbStatisticStaffTimeType = new System.Windows.Forms.ComboBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnStatisticStaff = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dgvStatisticStaffList = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tpOverview.SuspendLayout();
+            this.tpStatisticOverview.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -80,6 +142,33 @@ namespace GUI.CustomUserControls.Statistic
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.tpStatisticDetail.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatisticDetailTourList)).BeginInit();
+            this.tabControl2.SuspendLayout();
+            this.tpCost.SuspendLayout();
+            this.tpProfit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartProfit)).BeginInit();
+            this.tpGroupCount.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.tpStatisticStaff.SuspendLayout();
+            this.tpRevenue.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartGroupCount)).BeginInit();
+            this.tpCostDetail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCostDetail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCost)).BeginInit();
+            this.panel12.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatisticStaffList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,25 +181,26 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tpOverview);
-            this.tabControl1.Controls.Add(this.tpTour);
+            this.tabControl1.Controls.Add(this.tpStatisticOverview);
+            this.tabControl1.Controls.Add(this.tpStatisticDetail);
+            this.tabControl1.Controls.Add(this.tpStatisticStaff);
             this.tabControl1.Location = new System.Drawing.Point(4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1113, 573);
             this.tabControl1.TabIndex = 0;
             // 
-            // tpOverview
+            // tpStatisticOverview
             // 
-            this.tpOverview.Controls.Add(this.tableLayoutPanel2);
-            this.tpOverview.Controls.Add(this.tableLayoutPanel1);
-            this.tpOverview.Location = new System.Drawing.Point(4, 25);
-            this.tpOverview.Name = "tpOverview";
-            this.tpOverview.Padding = new System.Windows.Forms.Padding(3);
-            this.tpOverview.Size = new System.Drawing.Size(1105, 544);
-            this.tpOverview.TabIndex = 0;
-            this.tpOverview.Text = "Tổng quan";
-            this.tpOverview.UseVisualStyleBackColor = true;
+            this.tpStatisticOverview.Controls.Add(this.tableLayoutPanel2);
+            this.tpStatisticOverview.Controls.Add(this.tableLayoutPanel1);
+            this.tpStatisticOverview.Location = new System.Drawing.Point(4, 25);
+            this.tpStatisticOverview.Name = "tpStatisticOverview";
+            this.tpStatisticOverview.Padding = new System.Windows.Forms.Padding(3);
+            this.tpStatisticOverview.Size = new System.Drawing.Size(1105, 544);
+            this.tpStatisticOverview.TabIndex = 0;
+            this.tpStatisticOverview.Text = "Tổng quan";
+            this.tpStatisticOverview.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -478,15 +568,579 @@ namespace GUI.CustomUserControls.Statistic
             this.label1.Text = "120";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tpTour
+            // tpStatisticDetail
             // 
-            this.tpTour.Location = new System.Drawing.Point(4, 25);
-            this.tpTour.Name = "tpTour";
-            this.tpTour.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTour.Size = new System.Drawing.Size(1105, 544);
-            this.tpTour.TabIndex = 1;
-            this.tpTour.Text = "Tour";
-            this.tpTour.UseVisualStyleBackColor = true;
+            this.tpStatisticDetail.Controls.Add(this.panel11);
+            this.tpStatisticDetail.Controls.Add(this.panel10);
+            this.tpStatisticDetail.Location = new System.Drawing.Point(4, 25);
+            this.tpStatisticDetail.Name = "tpStatisticDetail";
+            this.tpStatisticDetail.Padding = new System.Windows.Forms.Padding(3);
+            this.tpStatisticDetail.Size = new System.Drawing.Size(1105, 544);
+            this.tpStatisticDetail.TabIndex = 1;
+            this.tpStatisticDetail.Text = "Thống kê chi tiết";
+            this.tpStatisticDetail.UseVisualStyleBackColor = true;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.groupBox1);
+            this.panel11.Controls.Add(this.tabControl2);
+            this.panel11.Location = new System.Drawing.Point(353, 6);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(746, 532);
+            this.panel11.TabIndex = 2;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dgvStatisticDetailTourList);
+            this.groupBox1.Location = new System.Drawing.Point(3, 4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(740, 225);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Danh sách Tour";
+            // 
+            // dgvStatisticDetailTourList
+            // 
+            this.dgvStatisticDetailTourList.BackgroundColor = System.Drawing.Color.White;
+            this.dgvStatisticDetailTourList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStatisticDetailTourList.ColumnHeadersVisible = false;
+            this.dgvStatisticDetailTourList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvStatisticDetailTourList.Location = new System.Drawing.Point(3, 18);
+            this.dgvStatisticDetailTourList.Name = "dgvStatisticDetailTourList";
+            this.dgvStatisticDetailTourList.RowHeadersVisible = false;
+            this.dgvStatisticDetailTourList.RowHeadersWidth = 51;
+            this.dgvStatisticDetailTourList.RowTemplate.Height = 24;
+            this.dgvStatisticDetailTourList.Size = new System.Drawing.Size(734, 204);
+            this.dgvStatisticDetailTourList.TabIndex = 0;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tpRevenue);
+            this.tabControl2.Controls.Add(this.tpCost);
+            this.tabControl2.Controls.Add(this.tpCostDetail);
+            this.tabControl2.Controls.Add(this.tpProfit);
+            this.tabControl2.Controls.Add(this.tpGroupCount);
+            this.tabControl2.Location = new System.Drawing.Point(6, 235);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(734, 294);
+            this.tabControl2.TabIndex = 3;
+            // 
+            // tpCost
+            // 
+            this.tpCost.Controls.Add(this.chartCost);
+            this.tpCost.Location = new System.Drawing.Point(4, 25);
+            this.tpCost.Name = "tpCost";
+            this.tpCost.Padding = new System.Windows.Forms.Padding(3);
+            this.tpCost.Size = new System.Drawing.Size(726, 265);
+            this.tpCost.TabIndex = 0;
+            this.tpCost.Text = "Chi phí";
+            this.tpCost.UseVisualStyleBackColor = true;
+            // 
+            // tpProfit
+            // 
+            this.tpProfit.Controls.Add(this.chartProfit);
+            this.tpProfit.Location = new System.Drawing.Point(4, 25);
+            this.tpProfit.Name = "tpProfit";
+            this.tpProfit.Padding = new System.Windows.Forms.Padding(3);
+            this.tpProfit.Size = new System.Drawing.Size(726, 265);
+            this.tpProfit.TabIndex = 1;
+            this.tpProfit.Text = "Lợi nhuận";
+            this.tpProfit.UseVisualStyleBackColor = true;
+            // 
+            // chartProfit
+            // 
+            chartArea11.Name = "ChartArea1";
+            this.chartProfit.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.chartProfit.Legends.Add(legend11);
+            this.chartProfit.Location = new System.Drawing.Point(6, 3);
+            this.chartProfit.Name = "chartProfit";
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            series11.YValuesPerPoint = 4;
+            this.chartProfit.Series.Add(series11);
+            this.chartProfit.Size = new System.Drawing.Size(714, 256);
+            this.chartProfit.TabIndex = 0;
+            this.chartProfit.Text = "chart2";
+            // 
+            // tpGroupCount
+            // 
+            this.tpGroupCount.Controls.Add(this.chartGroupCount);
+            this.tpGroupCount.Location = new System.Drawing.Point(4, 25);
+            this.tpGroupCount.Name = "tpGroupCount";
+            this.tpGroupCount.Size = new System.Drawing.Size(726, 265);
+            this.tpGroupCount.TabIndex = 2;
+            this.tpGroupCount.Text = "Số đoàn tham quan";
+            this.tpGroupCount.UseVisualStyleBackColor = true;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.groupBox4);
+            this.panel10.Controls.Add(this.groupBox2);
+            this.panel10.Controls.Add(this.flowLayoutPanel2);
+            this.panel10.Location = new System.Drawing.Point(7, 7);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(340, 531);
+            this.panel10.TabIndex = 0;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.tableLayoutPanel3);
+            this.groupBox4.Location = new System.Drawing.Point(3, 3);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(331, 160);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Khoảng thời gian";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.dtpStatisticDetailStartDate, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.chbStatisticDetailAllTime, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label26, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.dtpStatisticDetailEndDate, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label25, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label27, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.cbStatisticDetailTimeType, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 4;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(325, 139);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // dtpStatisticDetailStartDate
+            // 
+            this.dtpStatisticDetailStartDate.CustomFormat = "M/yyyy";
+            this.dtpStatisticDetailStartDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpStatisticDetailStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpStatisticDetailStartDate.Location = new System.Drawing.Point(78, 37);
+            this.dtpStatisticDetailStartDate.Name = "dtpStatisticDetailStartDate";
+            this.dtpStatisticDetailStartDate.Size = new System.Drawing.Size(244, 22);
+            this.dtpStatisticDetailStartDate.TabIndex = 1;
+            // 
+            // chbStatisticDetailAllTime
+            // 
+            this.chbStatisticDetailAllTime.AutoSize = true;
+            this.chbStatisticDetailAllTime.Location = new System.Drawing.Point(78, 105);
+            this.chbStatisticDetailAllTime.Name = "chbStatisticDetailAllTime";
+            this.chbStatisticDetailAllTime.Size = new System.Drawing.Size(121, 21);
+            this.chbStatisticDetailAllTime.TabIndex = 5;
+            this.chbStatisticDetailAllTime.Text = "Toàn thời gian";
+            this.chbStatisticDetailAllTime.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(3, 34);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(25, 17);
+            this.label26.TabIndex = 3;
+            this.label26.Text = "Từ";
+            // 
+            // dtpStatisticDetailEndDate
+            // 
+            this.dtpStatisticDetailEndDate.CustomFormat = "M/yyyy";
+            this.dtpStatisticDetailEndDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpStatisticDetailEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpStatisticDetailEndDate.Location = new System.Drawing.Point(78, 71);
+            this.dtpStatisticDetailEndDate.Name = "dtpStatisticDetailEndDate";
+            this.dtpStatisticDetailEndDate.Size = new System.Drawing.Size(244, 22);
+            this.dtpStatisticDetailEndDate.TabIndex = 0;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(3, 68);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(28, 17);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Tới";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(3, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(35, 17);
+            this.label27.TabIndex = 6;
+            this.label27.Text = "Loại";
+            // 
+            // cbStatisticDetailTimeType
+            // 
+            this.cbStatisticDetailTimeType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbStatisticDetailTimeType.FormattingEnabled = true;
+            this.cbStatisticDetailTimeType.Items.AddRange(new object[] {
+            "Ngày",
+            "Tháng",
+            "Năm"});
+            this.cbStatisticDetailTimeType.Location = new System.Drawing.Point(78, 3);
+            this.cbStatisticDetailTimeType.Name = "cbStatisticDetailTimeType";
+            this.cbStatisticDetailTimeType.Size = new System.Drawing.Size(244, 24);
+            this.cbStatisticDetailTimeType.TabIndex = 7;
+            this.cbStatisticDetailTimeType.Text = "Tháng";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.chbStatisticPropertyCostDetail);
+            this.groupBox2.Controls.Add(this.chbStatisticPropertyGroupCount);
+            this.groupBox2.Controls.Add(this.chbStatisticPropertyProfit);
+            this.groupBox2.Controls.Add(this.chbStatisticPropertyCost);
+            this.groupBox2.Controls.Add(this.chbStatisticPropertyRevenue);
+            this.groupBox2.Location = new System.Drawing.Point(6, 169);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(331, 103);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thuộc tính muốn thống kê";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.btnStatisticDetail);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(4, 489);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(330, 39);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // btnStatisticDetail
+            // 
+            this.btnStatisticDetail.AutoSize = true;
+            this.btnStatisticDetail.Location = new System.Drawing.Point(208, 3);
+            this.btnStatisticDetail.Name = "btnStatisticDetail";
+            this.btnStatisticDetail.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnStatisticDetail.Size = new System.Drawing.Size(119, 31);
+            this.btnStatisticDetail.TabIndex = 0;
+            this.btnStatisticDetail.Text = "Thống kê ☭";
+            this.btnStatisticDetail.UseVisualStyleBackColor = true;
+            // 
+            // tpStatisticStaff
+            // 
+            this.tpStatisticStaff.Controls.Add(this.groupBox5);
+            this.tpStatisticStaff.Controls.Add(this.panel12);
+            this.tpStatisticStaff.Location = new System.Drawing.Point(4, 25);
+            this.tpStatisticStaff.Name = "tpStatisticStaff";
+            this.tpStatisticStaff.Size = new System.Drawing.Size(1105, 544);
+            this.tpStatisticStaff.TabIndex = 2;
+            this.tpStatisticStaff.Text = "Số lần đi tour của Nhân viên";
+            this.tpStatisticStaff.UseVisualStyleBackColor = true;
+            // 
+            // chbStatisticPropertyRevenue
+            // 
+            this.chbStatisticPropertyRevenue.AutoSize = true;
+            this.chbStatisticPropertyRevenue.Checked = true;
+            this.chbStatisticPropertyRevenue.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chbStatisticPropertyRevenue.Location = new System.Drawing.Point(6, 21);
+            this.chbStatisticPropertyRevenue.Name = "chbStatisticPropertyRevenue";
+            this.chbStatisticPropertyRevenue.Size = new System.Drawing.Size(96, 21);
+            this.chbStatisticPropertyRevenue.TabIndex = 4;
+            this.chbStatisticPropertyRevenue.Text = "Doanh thu";
+            this.chbStatisticPropertyRevenue.UseVisualStyleBackColor = true;
+            // 
+            // chbStatisticPropertyCost
+            // 
+            this.chbStatisticPropertyCost.AutoSize = true;
+            this.chbStatisticPropertyCost.Checked = true;
+            this.chbStatisticPropertyCost.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chbStatisticPropertyCost.Location = new System.Drawing.Point(108, 21);
+            this.chbStatisticPropertyCost.Name = "chbStatisticPropertyCost";
+            this.chbStatisticPropertyCost.Size = new System.Drawing.Size(73, 21);
+            this.chbStatisticPropertyCost.TabIndex = 5;
+            this.chbStatisticPropertyCost.Text = "Chi phí";
+            this.chbStatisticPropertyCost.UseVisualStyleBackColor = true;
+            // 
+            // chbStatisticPropertyProfit
+            // 
+            this.chbStatisticPropertyProfit.AutoSize = true;
+            this.chbStatisticPropertyProfit.Checked = true;
+            this.chbStatisticPropertyProfit.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chbStatisticPropertyProfit.Location = new System.Drawing.Point(6, 49);
+            this.chbStatisticPropertyProfit.Name = "chbStatisticPropertyProfit";
+            this.chbStatisticPropertyProfit.Size = new System.Drawing.Size(93, 21);
+            this.chbStatisticPropertyProfit.TabIndex = 6;
+            this.chbStatisticPropertyProfit.Text = "Lợi nhuận";
+            this.chbStatisticPropertyProfit.UseVisualStyleBackColor = true;
+            // 
+            // chbStatisticPropertyGroupCount
+            // 
+            this.chbStatisticPropertyGroupCount.AutoSize = true;
+            this.chbStatisticPropertyGroupCount.Checked = true;
+            this.chbStatisticPropertyGroupCount.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chbStatisticPropertyGroupCount.Location = new System.Drawing.Point(6, 76);
+            this.chbStatisticPropertyGroupCount.Name = "chbStatisticPropertyGroupCount";
+            this.chbStatisticPropertyGroupCount.Size = new System.Drawing.Size(154, 21);
+            this.chbStatisticPropertyGroupCount.TabIndex = 7;
+            this.chbStatisticPropertyGroupCount.Text = "Số đoàn tham quan";
+            this.chbStatisticPropertyGroupCount.UseVisualStyleBackColor = true;
+            // 
+            // tpRevenue
+            // 
+            this.tpRevenue.Controls.Add(this.chartRevenue);
+            this.tpRevenue.Location = new System.Drawing.Point(4, 25);
+            this.tpRevenue.Name = "tpRevenue";
+            this.tpRevenue.Size = new System.Drawing.Size(726, 265);
+            this.tpRevenue.TabIndex = 3;
+            this.tpRevenue.Text = "Doanh thu";
+            this.tpRevenue.UseVisualStyleBackColor = true;
+            // 
+            // chartRevenue
+            // 
+            chartArea12.Name = "ChartArea1";
+            this.chartRevenue.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.chartRevenue.Legends.Add(legend12);
+            this.chartRevenue.Location = new System.Drawing.Point(6, 4);
+            this.chartRevenue.Name = "chartRevenue";
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            series12.YValuesPerPoint = 4;
+            this.chartRevenue.Series.Add(series12);
+            this.chartRevenue.Size = new System.Drawing.Size(714, 256);
+            this.chartRevenue.TabIndex = 1;
+            this.chartRevenue.Text = "chart3";
+            // 
+            // chartGroupCount
+            // 
+            chartArea13.Name = "ChartArea1";
+            this.chartGroupCount.ChartAreas.Add(chartArea13);
+            legend13.Name = "Legend1";
+            this.chartGroupCount.Legends.Add(legend13);
+            this.chartGroupCount.Location = new System.Drawing.Point(6, 4);
+            this.chartGroupCount.Name = "chartGroupCount";
+            series13.ChartArea = "ChartArea1";
+            series13.Legend = "Legend1";
+            series13.Name = "Series1";
+            series13.YValuesPerPoint = 4;
+            this.chartGroupCount.Series.Add(series13);
+            this.chartGroupCount.Size = new System.Drawing.Size(714, 256);
+            this.chartGroupCount.TabIndex = 1;
+            this.chartGroupCount.Text = "chart4";
+            // 
+            // tpCostDetail
+            // 
+            this.tpCostDetail.Controls.Add(this.chartCostDetail);
+            this.tpCostDetail.Location = new System.Drawing.Point(4, 25);
+            this.tpCostDetail.Name = "tpCostDetail";
+            this.tpCostDetail.Size = new System.Drawing.Size(726, 265);
+            this.tpCostDetail.TabIndex = 4;
+            this.tpCostDetail.Text = "Chi phí từng mục";
+            this.tpCostDetail.UseVisualStyleBackColor = true;
+            // 
+            // chartCostDetail
+            // 
+            chartArea14.Name = "ChartArea1";
+            this.chartCostDetail.ChartAreas.Add(chartArea14);
+            this.chartCostDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend14.Name = "Legend1";
+            this.chartCostDetail.Legends.Add(legend14);
+            this.chartCostDetail.Location = new System.Drawing.Point(0, 0);
+            this.chartCostDetail.Name = "chartCostDetail";
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series14.Legend = "Legend1";
+            series14.Name = "Series1";
+            this.chartCostDetail.Series.Add(series14);
+            this.chartCostDetail.Size = new System.Drawing.Size(726, 265);
+            this.chartCostDetail.TabIndex = 3;
+            this.chartCostDetail.Text = "chartTourCostDetail";
+            // 
+            // chartCost
+            // 
+            chartArea15.Name = "ChartArea1";
+            this.chartCost.ChartAreas.Add(chartArea15);
+            legend15.Name = "Legend1";
+            this.chartCost.Legends.Add(legend15);
+            this.chartCost.Location = new System.Drawing.Point(6, 4);
+            this.chartCost.Name = "chartCost";
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series15.Legend = "Legend1";
+            series15.Name = "Series1";
+            series15.YValuesPerPoint = 4;
+            this.chartCost.Series.Add(series15);
+            this.chartCost.Size = new System.Drawing.Size(714, 256);
+            this.chartCost.TabIndex = 2;
+            this.chartCost.Text = "chart1";
+            // 
+            // chbStatisticPropertyCostDetail
+            // 
+            this.chbStatisticPropertyCostDetail.AutoSize = true;
+            this.chbStatisticPropertyCostDetail.Checked = true;
+            this.chbStatisticPropertyCostDetail.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chbStatisticPropertyCostDetail.Location = new System.Drawing.Point(108, 49);
+            this.chbStatisticPropertyCostDetail.Name = "chbStatisticPropertyCostDetail";
+            this.chbStatisticPropertyCostDetail.Size = new System.Drawing.Size(135, 21);
+            this.chbStatisticPropertyCostDetail.TabIndex = 8;
+            this.chbStatisticPropertyCostDetail.Text = "Chi phí từng mục";
+            this.chbStatisticPropertyCostDetail.UseVisualStyleBackColor = true;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.groupBox3);
+            this.panel12.Controls.Add(this.flowLayoutPanel1);
+            this.panel12.Location = new System.Drawing.Point(3, 6);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(340, 535);
+            this.panel12.TabIndex = 1;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tableLayoutPanel4);
+            this.groupBox3.Location = new System.Drawing.Point(3, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(334, 160);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Khoảng thời gian";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.dtpStatisticStaffStartDate, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.chbStatisticStaffAllTime, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.label28, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.dtpStatisticStaffEndDate, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label29, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label30, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.cbStatisticStaffTimeType, 1, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 4;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(328, 139);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // dtpStatisticStaffStartDate
+            // 
+            this.dtpStatisticStaffStartDate.CustomFormat = "M/yyyy";
+            this.dtpStatisticStaffStartDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpStatisticStaffStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpStatisticStaffStartDate.Location = new System.Drawing.Point(78, 37);
+            this.dtpStatisticStaffStartDate.Name = "dtpStatisticStaffStartDate";
+            this.dtpStatisticStaffStartDate.Size = new System.Drawing.Size(247, 22);
+            this.dtpStatisticStaffStartDate.TabIndex = 1;
+            // 
+            // chbStatisticStaffAllTime
+            // 
+            this.chbStatisticStaffAllTime.AutoSize = true;
+            this.chbStatisticStaffAllTime.Location = new System.Drawing.Point(78, 105);
+            this.chbStatisticStaffAllTime.Name = "chbStatisticStaffAllTime";
+            this.chbStatisticStaffAllTime.Size = new System.Drawing.Size(121, 21);
+            this.chbStatisticStaffAllTime.TabIndex = 5;
+            this.chbStatisticStaffAllTime.Text = "Toàn thời gian";
+            this.chbStatisticStaffAllTime.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(3, 34);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(25, 17);
+            this.label28.TabIndex = 3;
+            this.label28.Text = "Từ";
+            // 
+            // dtpStatisticStaffEndDate
+            // 
+            this.dtpStatisticStaffEndDate.CustomFormat = "M/yyyy";
+            this.dtpStatisticStaffEndDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpStatisticStaffEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpStatisticStaffEndDate.Location = new System.Drawing.Point(78, 71);
+            this.dtpStatisticStaffEndDate.Name = "dtpStatisticStaffEndDate";
+            this.dtpStatisticStaffEndDate.Size = new System.Drawing.Size(247, 22);
+            this.dtpStatisticStaffEndDate.TabIndex = 0;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(3, 68);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(28, 17);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "Tới";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(3, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(35, 17);
+            this.label30.TabIndex = 6;
+            this.label30.Text = "Loại";
+            // 
+            // cbStatisticStaffTimeType
+            // 
+            this.cbStatisticStaffTimeType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbStatisticStaffTimeType.FormattingEnabled = true;
+            this.cbStatisticStaffTimeType.Items.AddRange(new object[] {
+            "Ngày",
+            "Tháng",
+            "Năm"});
+            this.cbStatisticStaffTimeType.Location = new System.Drawing.Point(78, 3);
+            this.cbStatisticStaffTimeType.Name = "cbStatisticStaffTimeType";
+            this.cbStatisticStaffTimeType.Size = new System.Drawing.Size(247, 24);
+            this.cbStatisticStaffTimeType.TabIndex = 7;
+            this.cbStatisticStaffTimeType.Text = "Tháng";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnStatisticStaff);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 496);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(334, 39);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // btnStatisticStaff
+            // 
+            this.btnStatisticStaff.AutoSize = true;
+            this.btnStatisticStaff.Location = new System.Drawing.Point(212, 3);
+            this.btnStatisticStaff.Name = "btnStatisticStaff";
+            this.btnStatisticStaff.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnStatisticStaff.Size = new System.Drawing.Size(119, 31);
+            this.btnStatisticStaff.TabIndex = 0;
+            this.btnStatisticStaff.Text = "Thống kê ☭";
+            this.btnStatisticStaff.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dgvStatisticStaffList);
+            this.groupBox5.Location = new System.Drawing.Point(349, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(753, 535);
+            this.groupBox5.TabIndex = 2;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Danh sách Nhân viên";
+            // 
+            // dgvStatisticStaffList
+            // 
+            this.dgvStatisticStaffList.BackgroundColor = System.Drawing.Color.White;
+            this.dgvStatisticStaffList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStatisticStaffList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvStatisticStaffList.Location = new System.Drawing.Point(3, 18);
+            this.dgvStatisticStaffList.Name = "dgvStatisticStaffList";
+            this.dgvStatisticStaffList.RowHeadersVisible = false;
+            this.dgvStatisticStaffList.RowHeadersWidth = 51;
+            this.dgvStatisticStaffList.RowTemplate.Height = 24;
+            this.dgvStatisticStaffList.Size = new System.Drawing.Size(747, 514);
+            this.dgvStatisticStaffList.TabIndex = 0;
             // 
             // Statistic
             // 
@@ -497,7 +1151,7 @@ namespace GUI.CustomUserControls.Statistic
             this.Size = new System.Drawing.Size(1128, 587);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tpOverview.ResumeLayout(false);
+            this.tpStatisticOverview.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -508,6 +1162,38 @@ namespace GUI.CustomUserControls.Statistic
             this.panel5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.tpStatisticDetail.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatisticDetailTourList)).EndInit();
+            this.tabControl2.ResumeLayout(false);
+            this.tpCost.ResumeLayout(false);
+            this.tpProfit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartProfit)).EndInit();
+            this.tpGroupCount.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.tpStatisticStaff.ResumeLayout(false);
+            this.tpRevenue.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartGroupCount)).EndInit();
+            this.tpCostDetail.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartCostDetail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCost)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatisticStaffList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -516,8 +1202,8 @@ namespace GUI.CustomUserControls.Statistic
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tpOverview;
-        private System.Windows.Forms.TabPage tpTour;
+        private System.Windows.Forms.TabPage tpStatisticOverview;
+        private System.Windows.Forms.TabPage tpStatisticDetail;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -552,5 +1238,52 @@ namespace GUI.CustomUserControls.Statistic
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TabPage tpStatisticStaff;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dgvStatisticDetailTourList;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Button btnStatisticDetail;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.DateTimePicker dtpStatisticDetailEndDate;
+        private System.Windows.Forms.DateTimePicker dtpStatisticDetailStartDate;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tpCost;
+        private System.Windows.Forms.TabPage tpProfit;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartProfit;
+        private System.Windows.Forms.TabPage tpGroupCount;
+        private System.Windows.Forms.CheckBox chbStatisticDetailAllTime;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.ComboBox cbStatisticDetailTimeType;
+        private System.Windows.Forms.CheckBox chbStatisticPropertyCost;
+        private System.Windows.Forms.CheckBox chbStatisticPropertyRevenue;
+        private System.Windows.Forms.CheckBox chbStatisticPropertyGroupCount;
+        private System.Windows.Forms.CheckBox chbStatisticPropertyProfit;
+        private System.Windows.Forms.TabPage tpRevenue;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartRevenue;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartCost;
+        private System.Windows.Forms.TabPage tpCostDetail;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartCostDetail;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartGroupCount;
+        private System.Windows.Forms.CheckBox chbStatisticPropertyCostDetail;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.DateTimePicker dtpStatisticStaffStartDate;
+        private System.Windows.Forms.CheckBox chbStatisticStaffAllTime;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.DateTimePicker dtpStatisticStaffEndDate;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.ComboBox cbStatisticStaffTimeType;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnStatisticStaff;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.DataGridView dgvStatisticStaffList;
     }
 }

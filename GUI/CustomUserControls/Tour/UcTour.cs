@@ -200,6 +200,12 @@ namespace GUI.Tour
                 GUIExtensionMethod.HandleError(ex);
             }
         }
+        private void btnTourDelete_Click(object sender, EventArgs e)
+        {
+            TourBLL.Delete(TourId.Value);
+            Thread threadLoadTourDataGridView = new Thread(new ThreadStart(() => LoadTourDataGridView()));
+            threadLoadTourDataGridView.Start();
+        }
         // Handle Event Price
         public void LoadTourPriceDataGridView(DateTime? StartDate = null)
         {
@@ -322,6 +328,12 @@ namespace GUI.Tour
             {
                 GUIExtensionMethod.HandleError(ex);
             }
+        }
+        private void btnTourPriceDelete_Click(object sender, EventArgs e)
+        {
+            TourPriceBLL.Delete(Int32.Parse(tbTourPriceID.Text));
+            Thread threadLoadTourPriceDataGridView = new Thread(new ThreadStart(() => LoadTourPriceDataGridView()));
+            threadLoadTourPriceDataGridView.Start();
         }
         // Handle Event Tour Location
         public void LoadAllLocationDataGridView()

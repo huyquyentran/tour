@@ -80,5 +80,11 @@ namespace BLL
                 throw ex;
             }
         }
+        public static void Delete(int id)
+        {
+            var sourceTour = TourDAL.GetById(id);
+            if (sourceTour == null) throw new Exception("Mã tour không tồn tại");
+            TourDAL.Remove(sourceTour);
+        }
     }
 }

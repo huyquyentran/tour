@@ -206,6 +206,7 @@ namespace GUI.Tour
             this.btnTourPriceDelete.TabIndex = 2;
             this.btnTourPriceDelete.Text = "Xóa 🗑";
             this.btnTourPriceDelete.UseVisualStyleBackColor = true;
+            this.btnTourPriceDelete.Click += new System.EventHandler(this.btnTourPriceDelete_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -592,6 +593,7 @@ namespace GUI.Tour
             this.btnTourDelete.TabIndex = 2;
             this.btnTourDelete.Text = "Xóa 🗑";
             this.btnTourDelete.UseVisualStyleBackColor = true;
+            this.btnTourDelete.Click += new System.EventHandler(this.btnTourDelete_Click);
             // 
             // tableLayoutPanel1
             // 

@@ -66,5 +66,11 @@ namespace BLL
                 throw ex;
             }
         }
+        public static void Delete(int id)
+        {
+            var sourceTourPrice = TourPriceDAL.GetById(id);
+            if (sourceTourPrice == null) throw new Exception("Mã giá không tồn tại");
+            TourPriceDAL.Remove(sourceTourPrice);
+        }
     }
 }

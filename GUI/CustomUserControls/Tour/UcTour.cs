@@ -96,14 +96,10 @@ namespace GUI.Tour
         }
         private void btnTourSearch_Click(object sender, EventArgs e)
         {
-            var type = ((KeyValuePair<string, string>) cbTourSearchBy.SelectedItem).Key;
+            var type = ((KeyValuePair<string, string>)cbTourSearchBy.SelectedItem).Key;
             string value = tbTourSearchInput.Text;
             LoadTourDataGridView(type, value);
         }
-        //private void cbTourSearchBy_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    MessageBox.Show(((KeyValuePair<string, string>)cbTourSearchBy.SelectedItem).Key);
-        //}
         private void dgvTourList_SelectionChanged(object sender, EventArgs e)
         {
             if (dgvTourList.SelectedRows.Count > 0)

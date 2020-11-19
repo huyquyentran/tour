@@ -9,7 +9,6 @@ namespace Core.Common
 {
     public class BaseDAL<T> where T : class
     {
-        private static TourDbContext context = new TourDbContext();
         public static IEnumerable<T> Get(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
@@ -17,6 +16,8 @@ namespace Core.Common
             int? page = null,
             int? pageSize = null)
         {
+            using(var context = new TourDbContext())
+            {
             IQueryable<T> query = context.Set<T>();
 
             if (includeProperties != null)
@@ -41,39 +42,68 @@ namespace Core.Common
             }
 
             return query.AsNoTracking().ToList();
+            }    
         }
         public static T GetById(int id)
         {
-            return context.Set<T>().Find(id);
+            using (var context = new TourDbContext())
+            {
+
+                return context.Set<T>().Find(id);
+            }    
         }
         public static IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
-            return context.Set<T>().Where(predicate).ToList();
+            using (var context = new TourDbContext())
+            {
+
+                return context.Set<T>().Where(predicate).ToList();
+            }    
         }
         public static void Add(T entity)
         {
-            context.Set<T>().Add(entity);
+            using (var context = new TourDbContext())
+            {
+
+                context.Set<T>().Add(entity);
             context.SaveChanges();
+            }    
         }
         public static void Remove(T entity)
         {
-            context.Set<T>().Remove(entity);
+            using (var context = new TourDbContext())
+            {
+
+                context.Set<T>().Remove(entity);
             context.SaveChanges();
+            }    
         }
         public static void AddRange(IEnumerable<T> entities)
         {
-            context.Set<T>().AddRange(entities);
+            using (var context = new TourDbContext())
+            {
+
+                context.Set<T>().AddRange(entities);
             context.SaveChanges();
+            }    
         }
         public static void RemoveRange(IEnumerable<T> entities)
         {
-            context.Set<T>().RemoveRange(entities);
+            using (var context = new TourDbContext())
+            {
+
+                context.Set<T>().RemoveRange(entities);
             context.SaveChanges();
+            }    
         }
         public static void Update(T entity)
         {
-            context.Entry(entity).State = EntityState.Modified;
+            using (var context = new TourDbContext())
+            {
+
+                context.Entry(entity).State = EntityState.Modified;
             context.SaveChanges();
+            }    
         }
     }
 }

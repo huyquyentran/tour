@@ -437,13 +437,13 @@ namespace GUI.Tour
             if (dgvTourLocationList.SelectedRows.Count > 0)
             {
                 var tourLocationItem = (TourLocationDataSource)dgvTourLocationList.SelectedRows[0].DataBoundItem;
-                var tourLocationRemove = tourLocations.SingleOrDefault(tl => tl.LocationId == tourLocationItem.LocationId);
-                tourLocations.Remove(tourLocationRemove);
-                var dataSource = tourLocations.Select((t, index) => new TourLocationDataSource(
+                int index = dgvTourLocationList.CurrentCell.RowIndex;
+                tourLocations.RemoveAt(index);
+                var dataSource = tourLocations.Select((t, i) => new TourLocationDataSource(
                                             t.TourId,
                                             t.LocationId,
                                             t.Location.Name,
-                                            index + 1)).ToList();
+                                            i + 1)).ToList();
                 dgvTourLocationList.DataSource = dataSource;
                 dgvTourLocationList.ClearSelection();
             }
@@ -457,7 +457,7 @@ namespace GUI.Tour
             if (dgvTourLocationList.SelectedRows.Count > 0)
             {
                 var tourLocationItem = (TourLocationDataSource)dgvTourLocationList.SelectedRows[0].DataBoundItem;
-                int index = tourLocations.ToList().FindIndex(t => t.LocationId == tourLocationItem.LocationId);
+                int index = dgvTourLocationList.CurrentCell.RowIndex;
                 if (index == 0)
                 {
                     MessageBox.Show("Không thể up");
@@ -485,7 +485,7 @@ namespace GUI.Tour
             if (dgvTourLocationList.SelectedRows.Count > 0)
             {
                 var tourLocationItem = (TourLocationDataSource)dgvTourLocationList.SelectedRows[0].DataBoundItem;
-                int index = tourLocations.ToList().FindIndex(t => t.LocationId == tourLocationItem.LocationId);
+                int index = dgvTourLocationList.CurrentCell.RowIndex;
                 if (index == tourLocations.Count - 1)
                 {
                     MessageBox.Show("Không thể down");
@@ -549,7 +549,6 @@ namespace GUI.Tour
             Name = name;
             Order = order;
         }
-
         public int TourId { get; set; }
         public int LocationId { get; set; }
         public string Name { get; set; }

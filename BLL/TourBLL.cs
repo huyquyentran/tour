@@ -20,8 +20,9 @@ namespace BLL
             return TourDAL.Get(
                 t => type == null || (
                         (type == "Id" && isNumeric && t.Id == valueInt) ||
-                        (type == "Name" && t.Name.Contains(value)) ||
-                        (type == "Description" && t.Description.Contains(value))
+                        (type == "Name" && t.Name.Contains(value.Trim())) ||
+                        (type == "Description" && t.Description.Contains(value.Trim())) ||
+                        (type == "TourTypeName" && t.TourType.Name.Contains(value.Trim()))
                     ),
                 null,
                 new List<Expression<Func<Tour, object>>>

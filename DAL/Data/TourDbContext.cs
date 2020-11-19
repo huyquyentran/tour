@@ -17,7 +17,6 @@ namespace Core.Data
             base.OnModelCreating(builder);
             builder.Entity<Assignment>().HasKey(a => new { a.GroupId, a.StaffId });
             builder.Entity<CustomerGroups>().HasKey(cg => new { cg.CustomerId, cg.GroupId });
-            builder.Entity<TourLocations>().HasKey(tl => new { tl.TourId, tl.LocationId });
         }
         public DbSet<Tour> Tours { get; set; }
         public DbSet<TourLocations> TourLocations { get; set; }

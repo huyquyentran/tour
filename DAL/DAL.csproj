@@ -77,6 +77,10 @@
     <Compile Include="Migrations\202011181503462_ChangeTableGroup.designer.cs">
       <DependentUpon>202011181503462_ChangeTableGroup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011191520359_ChangeTourLocations.cs" />
+    <Compile Include="Migrations\202011191520359_ChangeTourLocations.designer.cs">
+      <DependentUpon>202011191520359_ChangeTourLocations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaffDAL.cs" />
@@ -102,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011181503462_ChangeTableGroup.resx">
       <DependentUpon>202011181503462_ChangeTableGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011191520359_ChangeTourLocations.resx">
+      <DependentUpon>202011191520359_ChangeTourLocations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

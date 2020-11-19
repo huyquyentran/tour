@@ -3,6 +3,7 @@
     public class TourLocations
     {
         public TourLocations () { }
+        public int Id { get; set; }
         public int TourId { get; set; }
         public Tour Tour { get; set; }
         public int LocationId { get; set; }

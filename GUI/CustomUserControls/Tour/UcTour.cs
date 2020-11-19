@@ -36,7 +36,7 @@ namespace GUI.Tour
         }
         private void UcTour_Load(object sender, EventArgs e)
         {
-            Thread threadLoadTourDataGridView = new Thread(new ThreadStart(()=>LoadTourDataGridView()));
+            Thread threadLoadTourDataGridView = new Thread(new ThreadStart(() => LoadTourDataGridView()));
             threadLoadTourDataGridView.Start();
             Thread threadLoadComboBoxTourType = new Thread(new ThreadStart(() => LoadComboBoxTourType()));
             threadLoadComboBoxTourType.Start();
@@ -108,15 +108,17 @@ namespace GUI.Tour
         {
             if (InvokeRequired)
             {
-                BeginInvoke(new Action(() => {
+                BeginInvoke(new Action(() =>
+                {
                     cbTourType.Text = "Loading ...";
                 }));
             }
             var tourTypes = TourTypeBLL.ListTourTypes();
             if (InvokeRequired)
             {
-                BeginInvoke(new Action(() =>{
-            
+                BeginInvoke(new Action(() =>
+                {
+
                     cbTourType.DataSource = tourTypes;
                     cbTourType.DisplayMember = "Name";
                     cbTourType.ValueMember = "Id";
@@ -236,8 +238,8 @@ namespace GUI.Tour
                         dgvTourPriceList.Columns["Note"].HeaderText = "Ghi chú";
                     }));
                 }
-               
-                
+
+
             }
             else
             {
@@ -410,29 +412,20 @@ namespace GUI.Tour
             if (dgvTourLocationListAll.SelectedRows.Count > 0)
             {
                 var locationItem = (Location)dgvTourLocationListAll.SelectedRows[0].DataBoundItem;
-                var tourLocationItem = tourLocations.SingleOrDefault(tl => tl.LocationId == locationItem.Id);
-                if (tourLocationItem == null)
+                var newTourLocation = new TourLocations
                 {
-                    var newTourLocation = new TourLocations
-                    {
-                        TourId = TourId.Value,
-                        LocationId = locationItem.Id,
-                        Location = LocationBLL.LocationById(locationItem.Id),
-                    };
-                    tourLocations.Add(newTourLocation);
-                    var dataSource = tourLocations.Select((t, index) => new TourLocationDataSource(
-                                        t.TourId,
-                                        t.LocationId,
-                                        t.Location.Name,
-                                        index + 1)).ToList();
-                    dgvTourLocationList.DataSource = dataSource;
-                    dgvTourLocationListAll.ClearSelection();
-                }
-                else
-                {
-                    MessageBox.Show("Đã có địa điểm này");
-                }
-
+                    TourId = TourId.Value,
+                    LocationId = locationItem.Id,
+                    Location = LocationBLL.LocationById(locationItem.Id),
+                };
+                tourLocations.Add(newTourLocation);
+                var dataSource = tourLocations.Select((t, index) => new TourLocationDataSource(
+                                    t.TourId,
+                                    t.LocationId,
+                                    t.Location.Name,
+                                    index + 1)).ToList();
+                dgvTourLocationList.DataSource = dataSource;
+                dgvTourLocationListAll.ClearSelection();
             }
             else
             {

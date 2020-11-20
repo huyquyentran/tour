@@ -1,4 +1,5 @@
-﻿using BLL.Statistic;
+﻿using BLL;
+using BLL.Statistic;
 using GUI.BindingClasses;
 using GUI.Common;
 using System;
@@ -16,17 +17,19 @@ namespace GUI.CustomUserControls.Statistic
 {
     public partial class Statistic : UserControl
     {
+        public IEnumerable<TourWithGroups> _tourWithGroups;
         public Statistic()
         {
             InitializeComponent();
         }
-
         private void Statistic_Load(object sender, EventArgs e)
         {
             Thread threadLoadTourStatistic = new Thread(new ThreadStart(() => LoadTourStatistic()));
             threadLoadTourStatistic.Start();
             Thread threadLoadOverviewInformation = new Thread(new ThreadStart(() => LoadOverviewInformation()));
             threadLoadOverviewInformation.Start();
+
+            chbStatisticDetailAllTime.Checked = true;
         }
         private void LoadOverviewInformation()
         {
@@ -54,7 +57,6 @@ namespace GUI.CustomUserControls.Statistic
                 }));
             }
         }
-
         private void LoadTourStatistic(DateTime? StartDate = null, DateTime? EndDate = null)
         {
             try
@@ -67,6 +69,7 @@ namespace GUI.CustomUserControls.Statistic
                     }));
                 }
                 var tourWithGroups = TourStatistic.ListTourWithGroups(StartDate, EndDate);
+                _tourWithGroups = tourWithGroups;
                 var tourStatistics = tourWithGroups.Select(ele => new TourStatisticBinding(
                         ele.Tour.Id,
                         ele.Tour.Name,
@@ -95,7 +98,97 @@ namespace GUI.CustomUserControls.Statistic
                 GUIExtensionMethod.HandleError(ex);
             }
         }
+        private void LoadGroupsJoin(TourStatisticBinding tourStatisticBinding)
+        {
+            //Back to main thread update UI
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() =>
+                {
+                    dgvStatisticGroupDetail.ShowLoading(true);
+                }));
+            }
 
+            //Fill DataTable
+            var groups = _tourWithGroups.FirstOrDefault(t => t.Tour.Id == tourStatisticBinding.TourId).Groups;
+            List<object> data = new List<object>();
+            foreach (var group in groups)
+            {
+                data.Add(new
+                {
+                    group.Id,
+                    group.Name,
+                    Tour = group.Tour.Name,
+                    group.StartDate,
+                    group.EndDate,
+                    PriceTour = GroupBLL.GetPriceTourOfGroup(group),
+                    Revenue = GroupBLL.GetRevenueOfGroup(group),
+                    Cost = GroupBLL.GetTotalCostOfGroup(group),
+
+                });
+            }
+
+            //Back to main thread update UI
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() =>
+                {
+                    //Clear loading column
+                    dgvStatisticGroupDetail.Columns.Clear();
+
+                    dgvStatisticGroupDetail.Columns.Add("Id", "Mã");
+                    dgvStatisticGroupDetail.Columns.Add("Name", "Tên đoàn");
+                    dgvStatisticGroupDetail.Columns.Add("Tour", "Tour");
+                    dgvStatisticGroupDetail.Columns.Add("StartDate", "Ngày đi");
+                    dgvStatisticGroupDetail.Columns.Add("EndDate", "Ngày về");
+                    dgvStatisticGroupDetail.Columns.Add("PriceTour", "Giá vé");
+                    dgvStatisticGroupDetail.Columns.Add("Revenue", "Doanh Thu");
+                    dgvStatisticGroupDetail.Columns.Add("Cost", "Chi phí");
+
+                    dgvStatisticGroupDetail.Columns["StartDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                    dgvStatisticGroupDetail.Columns["EndDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+                    foreach (DataGridViewColumn column in dgvStatisticGroupDetail.Columns)
+                    {
+                        column.DataPropertyName = column.Name;
+                    }
+
+                    dgvStatisticGroupDetail.DataSource = data;
+                }));
+            }
+        }
+       
+        private void LoadTourCostDetailGraph(DateTime? StartDate = null, DateTime? EndDate = null)
+        {
+            //reset your chart series and legends
+            chartCostDetail.Series.Clear();
+            chartCostDetail.Legends.Clear();
+
+            //Add a new Legend(if needed) and do some formating
+            chartCostDetail.Legends.Add("LegendCostDetail");
+            chartCostDetail.Legends[0].LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Table;
+            // chartCostDetail.Legends[0].Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            // chartCostDetail.Legends[0].Alignment = StringAlignment.Center;
+            chartCostDetail.Legends[0].Title = "Mục";
+            chartCostDetail.Legends[0].BorderColor = Color.Black;
+
+            //Add a new chart-series
+            string seriesname = "SeriesCostDetail";
+            chartCostDetail.Series.Add(seriesname);
+            //set the chart-type to "Pie"
+            chartCostDetail.Series[seriesname].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+
+            //Add some datapoints so the series. in this case you can pass the values to this method
+
+            // TODO: gọi hàm của Quyền
+            // List<CostStatistic> costDetail = CostBLL.GetCostStatisticsByTourId(1, StartDate, EndDate);
+
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName", 100000);
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName1", 543000);
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName2", 70000);
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName3", 60000);
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName4", 1000000);
+        }
         private void btnStatisticDetail_Click(object sender, EventArgs e)
         {
             if(chbStatisticDetailAllTime.Checked)
@@ -107,6 +200,29 @@ namespace GUI.CustomUserControls.Statistic
             {
                 Thread threadLoadTourStatistic = new Thread(new ThreadStart(() => LoadTourStatistic(dtpStatisticDetailStartDate.Value, dtpStatisticDetailEndDate.Value)));
                 threadLoadTourStatistic.Start();
+            }    
+        }
+        private void chbStatisticDetailAllTime_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chbStatisticDetailAllTime.Checked == true)
+            {
+                dtpStatisticDetailStartDate.Enabled = false;
+                dtpStatisticDetailEndDate.Enabled = false;
+            }    
+            else
+            {
+                dtpStatisticDetailStartDate.Enabled = true;
+                dtpStatisticDetailEndDate.Enabled = true;
+            }    
+        }
+        private void dgvStatisticDetailTourList_SelectionChanged(object sender, EventArgs e)
+        {
+            if(dgvStatisticDetailTourList.SelectedRows.Count > 0)
+            {
+                var row = dgvStatisticDetailTourList.SelectedRows[0];
+                var data = (TourStatisticBinding )row.DataBoundItem;
+                Thread threadLoadGroupsJoin = new Thread(new ThreadStart(() => LoadGroupsJoin(data)));
+                threadLoadGroupsJoin.Start();
             }    
         }
     }

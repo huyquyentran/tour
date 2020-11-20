@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BindingClasses\StaffBinding.cs" />
+    <Compile Include="BindingClasses\TourStatisticBinding.cs" />
     <Compile Include="Common\GUIExtensionMethod.cs" />
     <Compile Include="CustomUserControls\Statistic\Statistic.cs">
       <SubType>UserControl</SubType>

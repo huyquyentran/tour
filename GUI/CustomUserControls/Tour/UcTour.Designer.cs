@@ -37,6 +37,7 @@ namespace GUI.Tour
             this.btnTourPriceAdd = new System.Windows.Forms.Button();
             this.btnTourPriceEdit = new System.Windows.Forms.Button();
             this.btnTourPriceDelete = new System.Windows.Forms.Button();
+            this.btnCancelTourPrice = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.tbTourPriceID = new System.Windows.Forms.TextBox();
@@ -73,6 +74,7 @@ namespace GUI.Tour
             this.btnTourAdd = new System.Windows.Forms.Button();
             this.btnTourEdit = new System.Windows.Forms.Button();
             this.btnTourDelete = new System.Windows.Forms.Button();
+            this.btnCancelTour = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tbTourID = new System.Windows.Forms.TextBox();
@@ -172,6 +174,7 @@ namespace GUI.Tour
             this.flowLayoutPanel12.Controls.Add(this.btnTourPriceAdd);
             this.flowLayoutPanel12.Controls.Add(this.btnTourPriceEdit);
             this.flowLayoutPanel12.Controls.Add(this.btnTourPriceDelete);
+            this.flowLayoutPanel12.Controls.Add(this.btnCancelTourPrice);
             this.flowLayoutPanel12.Location = new System.Drawing.Point(0, 119);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
             this.flowLayoutPanel12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -207,6 +210,19 @@ namespace GUI.Tour
             this.btnTourPriceDelete.Text = "Xóa 🗑";
             this.btnTourPriceDelete.UseVisualStyleBackColor = true;
             this.btnTourPriceDelete.Click += new System.EventHandler(this.btnTourPriceDelete_Click);
+            // 
+            // btnCancelTourPrice
+            // 
+            this.btnCancelTourPrice.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnCancelTourPrice.Location = new System.Drawing.Point(206, 2);
+            this.btnCancelTourPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancelTourPrice.Name = "btnCancelTourPrice";
+            this.btnCancelTourPrice.Size = new System.Drawing.Size(75, 30);
+            this.btnCancelTourPrice.TabIndex = 4;
+            this.btnCancelTourPrice.Text = "Hủy";
+            this.btnCancelTourPrice.UseVisualStyleBackColor = true;
+            this.btnCancelTourPrice.Visible = false;
+            this.btnCancelTourPrice.Click += new System.EventHandler(this.btnCancelTourPrice_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -559,6 +575,7 @@ namespace GUI.Tour
             this.flowLayoutPanel1.Controls.Add(this.btnTourAdd);
             this.flowLayoutPanel1.Controls.Add(this.btnTourEdit);
             this.flowLayoutPanel1.Controls.Add(this.btnTourDelete);
+            this.flowLayoutPanel1.Controls.Add(this.btnCancelTour);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 136);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -594,6 +611,19 @@ namespace GUI.Tour
             this.btnTourDelete.Text = "Xóa 🗑";
             this.btnTourDelete.UseVisualStyleBackColor = true;
             this.btnTourDelete.Click += new System.EventHandler(this.btnTourDelete_Click);
+            // 
+            // btnCancelTour
+            // 
+            this.btnCancelTour.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnCancelTour.Location = new System.Drawing.Point(218, 2);
+            this.btnCancelTour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancelTour.Name = "btnCancelTour";
+            this.btnCancelTour.Size = new System.Drawing.Size(75, 30);
+            this.btnCancelTour.TabIndex = 4;
+            this.btnCancelTour.Text = "Hủy";
+            this.btnCancelTour.UseVisualStyleBackColor = true;
+            this.btnCancelTour.Visible = false;
+            this.btnCancelTour.Click += new System.EventHandler(this.btnCancelTour_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -946,5 +976,7 @@ namespace GUI.Tour
         private System.Windows.Forms.DataGridView dgvTourLocationList;
         private System.Windows.Forms.Button btnTourLocationMoveUp;
         private System.Windows.Forms.Button btnTourLocationMoveDown;
+        private System.Windows.Forms.Button btnCancelTourPrice;
+        private System.Windows.Forms.Button btnCancelTour;
     }
 }

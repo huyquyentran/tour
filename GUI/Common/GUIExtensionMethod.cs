@@ -32,12 +32,17 @@ namespace GUI.Common
         public static void HandleError(Exception ex)
         {
             string message = "";
+            if(ex.Data.Count == 0 )
+            {
+                MessageBox.Show(ex.Message, "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }                
             foreach (DictionaryEntry item in ex.Data)
             {
                 message += item.Value?.ToString();
                 message += Environment.NewLine;
             }
-            MessageBox.Show(message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         public static void BindEnumToDataGridViewCombobox<T>(this DataGridViewComboBoxColumn comboBox)
         {

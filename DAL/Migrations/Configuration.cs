@@ -18,6 +18,11 @@ namespace Core.Migrations
 
         protected override void Seed(TourDbContext context)
         {
+            //context.Database.Delete();
+            if (context.Database.Exists())
+            {
+                return;
+            }    
             if (!context.Staffs.Any())
             {
                 IEnumerable<Staff> staffs = new List<Staff>
@@ -350,7 +355,7 @@ namespace Core.Migrations
                 context.Assignments.AddRange(assignments);
                 context.SaveChanges();
             }
-            //context.Database.Delete();
+
         }
     }
 }

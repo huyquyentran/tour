@@ -61,20 +61,12 @@ namespace BLL
                 throw ex;
             }
         }
-        public static void Update(int id, Tour tour)
+        public static void Update(Tour tour)
         {
             try
             {
-                IsValid(tour, id);
-
-                var sourceTour = TourDAL.GetById(id);
-                if (sourceTour == null) throw new Exception("Mã tour không tồn tại");
-
-                sourceTour.Name = tour.Name;
-                sourceTour.Description = tour.Description;
-                sourceTour.CurrentPrice = tour.CurrentPrice;
-                sourceTour.TourTypeId = tour.TourTypeId;
-                TourDAL.Update(sourceTour);
+                IsValid(tour, tour.Id);
+                TourDAL.Update(tour);
             }
             catch (Exception ex)
             {

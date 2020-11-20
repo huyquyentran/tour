@@ -54,11 +54,11 @@ namespace BLL
             }
         }
 
-        public static void Update(int? id, TourPrice tourPrice)
+        public static void Update(TourPrice tourPrice)
         {
             try
             {
-                IsValid(tourPrice, id);
+                IsValid(tourPrice, tourPrice.Id);
                 TourPriceDAL.Update(tourPrice);
             }
             catch (Exception ex)

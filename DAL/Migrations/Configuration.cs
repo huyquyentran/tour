@@ -19,48 +19,55 @@ namespace Core.Migrations
         protected override void Seed(TourDbContext context)
         {
             //context.Database.Delete();
-            if (context.Database.Exists())
-            {
-                return;
-            }    
+//            if (context.Database.Exists())
+  //          {
+    //            return;
+      //      }    
             if (!context.Staffs.Any())
             {
                 IEnumerable<Staff> staffs = new List<Staff>
                 {
                     new Staff {
-                        Name = "Nhân viên 1",
-                        Address="Địa chỉ 1",
-                        IdentificationNumber="111111111",
-                        PhoneNumber="08311111111",
+                        Name = "Nguyễn Nhân Viên",
+                        Address="Quận 1",
+                        IdentificationNumber="025025025",
+                        PhoneNumber="0909090909",
                         Gender = Enums.Gender.Nam,
                     },
                     new Staff {
-                        Name = "Nhân viên 2",
-                        Address="Địa chỉ 2",
-                        IdentificationNumber="222222222",
-                        PhoneNumber="08322222222",
+                        Name = "Võ Nhân Viên",
+                        Address="Quận 2",
+                        IdentificationNumber="025025022",
+                        PhoneNumber="0832522622",
                         Gender = Enums.Gender.Nam,
                     },
                     new Staff {
-                        Name = "Nhân viên 3",
-                        Address="Địa chỉ 3",
-                        IdentificationNumber="333333333",
+                        Name = "Trần Nhân Viên",
+                        Address="Quận 3",
+                        IdentificationNumber="025025023",
                         PhoneNumber="08333333333",
-                        Gender = Enums.Gender.Nam,
-                    },
-                    new Staff {
-                        Name = "Nhân viên 4",
-                        Address="Địa chỉ 4",
-                        IdentificationNumber="444444444",
-                        PhoneNumber="08344444444",
                         Gender = Enums.Gender.Nu,
                     },
                     new Staff {
-                        Name = "Nhân viên 5",
-                        Address="Địa chỉ 5",
-                        IdentificationNumber="555555555",
+                        Name = "Trương Nhân Viên",
+                        Address="Quận 4",
+                        IdentificationNumber="012151313",
+                        PhoneNumber="0909090999",
+                        Gender = Enums.Gender.Nu,
+                    },
+                    new Staff {
+                        Name = "Nguyễn Làm Công",
+                        Address="Quận 5",
+                        IdentificationNumber="0512025215",
                         PhoneNumber="08355555555",
                         Gender = Enums.Gender.Nam,
+                    },
+                    new Staff {
+                        Name = "Trần Làm Công",
+                        Address="Quận 6",
+                        IdentificationNumber="1235136514",
+                        PhoneNumber="08355523525",
+                        Gender = Enums.Gender.Nu,
                     },
                 };
                 context.Staffs.AddRange(staffs);
@@ -71,38 +78,66 @@ namespace Core.Migrations
                 IEnumerable<Customer> customers = new List<Customer>
                 {
                     new Customer {
-                        Name = "Khách hàng 1",
-                        Address="Địa chỉ 1",
-                        IdentificationNumber="111111111",
-                        PhoneNumber="08311111111",
+                        Name = "Trần Văn Hoàng",
+                        Address="Tân Bình",
+                        IdentificationNumber="3117410000",
+                        PhoneNumber="0909090909",
                         Gender = Enums.Gender.Nam,
                     },
                     new Customer {
-                        Name = "Khách hàng 2",
-                        Address="Địa chỉ 2",
-                        IdentificationNumber="222222222",
-                        PhoneNumber="08322222222",
+                        Name = "Trần Lê Huy Quyền",
+                        Address="Nhà Bè",
+                        IdentificationNumber="0253522565",
+                        PhoneNumber="083254666",
                         Gender = Enums.Gender.Nam,
                     },
                     new Customer {
-                        Name = "Khách hàng 3",
-                        Address="Địa chỉ 3",
-                        IdentificationNumber="333333333",
-                        PhoneNumber="08333333333",
-                        Gender = Enums.Gender.Nam,
-                    },
-                    new Customer {
-                        Name = "Khách hàng 4",
-                        Address="Địa chỉ 4",
-                        IdentificationNumber="444444444",
-                        PhoneNumber="08344444444",
+                        Name = "Trương Đình Thiện",
+                        Address="Củ Chi",
+                        IdentificationNumber="025025023",
+                        PhoneNumber="0834525253",
                         Gender = Enums.Gender.Nu,
                     },
                     new Customer {
-                        Name = "Khách hàng 5",
-                        Address="Địa chỉ 5",
-                        IdentificationNumber="555555555",
-                        PhoneNumber="08355555555",
+                        Name = "Nguyễn Thiên Hữu",
+                        Address="Phú Thọ",
+                        IdentificationNumber="025025022",
+                        PhoneNumber="083487524",
+                        Gender = Enums.Gender.Nu,
+                    },
+                    new Customer {
+                        Name = "Nguyễn Văn A",
+                        Address="Buôn Ma Thuộc",
+                        IdentificationNumber="025456023",
+                        PhoneNumber="083558555",
+                        Gender = Enums.Gender.Nam,
+                    },
+                    new Customer {
+                        Name = "Nguyễn Văn B",
+                        Address="Gò Vấp",
+                        IdentificationNumber="025456023",
+                        PhoneNumber="083558555",
+                        Gender = Enums.Gender.Nam,
+                    },
+                    new Customer {
+                        Name = "Nguyễn Văn C",
+                        Address="Hồ Chí Minh",
+                        IdentificationNumber="025456023",
+                        PhoneNumber="083558555",
+                        Gender = Enums.Gender.Nam,
+                    },
+                    new Customer {
+                        Name = "Nguyễn Văn D",
+                        Address="Gia Lai",
+                        IdentificationNumber="025456023",
+                        PhoneNumber="083558555",
+                        Gender = Enums.Gender.Nam,
+                    },
+                    new Customer {
+                        Name = "Nguyễn Văn Phú",
+                        Address="Phú Nhuận",
+                        IdentificationNumber="025456023",
+                        PhoneNumber="083558555",
                         Gender = Enums.Gender.Nam,
                     },
                 };
@@ -113,11 +148,11 @@ namespace Core.Migrations
             {
                 IEnumerable<TourType> tourTypes = new List<TourType>
                 {
-                    new TourType( "Thể loại tour 1"),
-                    new TourType( "Thể loại tour 2"),
-                    new TourType( "Thể loại tour 3"),
-                    new TourType( "Thể loại tour 4"),
-                    new TourType( "Thể loại tour 5")
+                    new TourType( "Du lịch tham quan"),
+                    new TourType( "Du lịch ẩm thực"),
+                    new TourType( "Du lịch văn hóa"),
+                    new TourType( "Du lịch MICE"),
+                    new TourType( "Team building")
                 };
                 context.TourTypes.AddRange(tourTypes);
                 context.SaveChanges();
@@ -126,11 +161,26 @@ namespace Core.Migrations
             {
                 IEnumerable<Location> locations = new List<Location>
                 {
-                    new Location( "Địa điểm 1"),
-                    new Location( "Địa điểm 2"),
-                    new Location( "Địa điểm 3"),
-                    new Location( "Địa điểm 4"),
-                    new Location( "Địa điểm 5")
+                    new Location( "Vườn Quốc Gia Ba Bể"),
+                    new Location( "Động Nàng Tiên"),
+                    new Location( "Động Puông"),
+                    new Location( "Thác Đầu Đẳng"),
+                    new Location( "Chùa Thạch Long"),
+                    new Location( "Thác Đầu Đẳng"),
+                    new Location( "Chợ Đông Kinh"),
+                    new Location( "Hồ Núi Cốc"),
+                    new Location( "Bảo tàng dân tộc Việt Nam"),
+                    new Location( "Suối Mỏ Gà"),
+                    new Location( "Hang Phượng Hoàng"),
+                    new Location( "Đồi chè Tân Cương"),
+                    new Location( "Khu di tích Suối Mỡ"),
+                    new Location( "Hồ Cấm Sơn"),
+                    new Location( "Làng rượu Vân Hà"),
+                    new Location( "Vịnh Hạ Long"),
+                    new Location( "Đảo Tuần Châu"),
+                    new Location( "Núi Yên Tử"),
+                    new Location( "Đền Quốc Mẫu Âu Cơ"),
+                    new Location( "Chùa Thạch Long")
                 };
                 context.Locations.AddRange(locations);
                 context.SaveChanges();
@@ -139,11 +189,12 @@ namespace Core.Migrations
             {
                 IEnumerable<CostType> costTypes = new List<CostType>
                 {
-                    new CostType( "Thể loại chi phí 1"),
+                    new CostType( "Ăn sáng"),
                     new CostType( "Khách sạn"),
-                    new CostType( "Thể loại chi phí 3"),
-                    new CostType( "Thể loại chi phí 4"),
-                    new CostType( "Thể loại chi phí 5")
+                    new CostType( "Ăn trưa"),
+                    new CostType( "Sửa xe"),
+                    new CostType( "Phát sinh"),
+                    new CostType( "Ăn tối")
                 };
                 context.CostTypes.AddRange(costTypes);
                 context.SaveChanges();
@@ -152,11 +203,11 @@ namespace Core.Migrations
             {
                 IEnumerable<Tour> tours = new List<Tour>
                 {
-                    new Tour("Tour thứ 1",1111111,"Mô tả tour 1",1),
-                    new Tour("Tour thứ 2",2222222,"Mô tả tour 2",2),
-                    new Tour("Tour thứ 3",3333333,"Mô tả tour 3",3),
-                    new Tour("Tour thứ 4",4444444,"Mô tả tour 4",4),
-                    new Tour("Tour thứ 5",5555555,"Mô tả tour 5",5)
+                    new Tour("Tham quan đảo khỉ",1000000,"Có kèo solo với khỉ",1),
+                    new Tour("Tham quan Tây Nguyên",2000000,"Có kèo solo với người Tây Nguyên",3),
+                    new Tour("Tham quan Master Chief",5000000,"Gạ kèo solo Gordon Ramsey",2),
+                    new Tour("Tham quan Củ Chi",10000000,"Một ngày ăn ngủ dưới địa đạo",4),
+                    new Tour("Tham quan Nhà Trắng",900000000,"Một ngày ngủ thử giường tổng thống",5)
                 };
                 context.Tours.AddRange(tours);
                 context.SaveChanges();
@@ -165,12 +216,15 @@ namespace Core.Migrations
             {
                 IEnumerable<TourPrice> tourPrices = new List<TourPrice>
                 {
-                    new TourPrice(1, new DateTime(2020, 7, 20), new DateTime(2020, 8, 20), 3000000,"Chú thích 1"),
-                    new TourPrice(1, new DateTime(2020, 9, 20), new DateTime(2020, 11, 20), 4000000,"Chú thích 2"),
-                    new TourPrice(2, new DateTime(2020, 7, 20), new DateTime(2020, 8, 20), 2000000,"Chú thích 3"),
-                    new TourPrice(3, new DateTime(2020, 8, 20), new DateTime(2020, 9, 20), 5000000,"Chú thích 4"),
-                    new TourPrice(4, new DateTime(2020, 7, 20), new DateTime(2020, 10, 20), 1500000,"Chú thích 5"),
-                    new TourPrice(5, new DateTime(2020, 7, 20), new DateTime(2020, 10, 20), 1500000,"Chú thích 6"),
+                    new TourPrice(1, new DateTime(2020, 7, 20), new DateTime(2020, 8, 20), 3000000,"Giảm giá đặc biệt"),
+                    new TourPrice(1, new DateTime(2020, 9, 20), new DateTime(2020, 11, 20), 4000000,"Giá khởi điểm"),
+                    new TourPrice(2, new DateTime(2020, 7, 20), new DateTime(2020, 8, 20), 2000000,"Giá khởi điểm"),
+                    new TourPrice(2, new DateTime(2020, 8, 21), new DateTime(2020, 8, 25), 1000000,"Giảm giá nhẹ"),
+                    new TourPrice(2, new DateTime(2020, 8, 26), new DateTime(2020, 8, 30), 500000,"Giảm thêm tí"),
+                    new TourPrice(3, new DateTime(2020, 8, 20), new DateTime(2020, 9, 20), 5000000,"Giá khởi điểm"),
+                    new TourPrice(3, new DateTime(2020, 9, 21), new DateTime(2020, 9, 26), 2500000,"Giảm giá giữa tháng"),
+                    new TourPrice(4, new DateTime(2020, 7, 20), new DateTime(2020, 10, 20), 1500000,"Giá khởi điểm"),
+                    new TourPrice(5, new DateTime(2020, 7, 20), new DateTime(2020, 10, 20), 1500000,"Giá khởi điểm6"),
                 };
                 context.TourPrices.AddRange(tourPrices);
                 context.SaveChanges();
@@ -224,6 +278,47 @@ namespace Core.Migrations
                         TourId=3,
                         Order=2,
                     },
+
+                    new TourLocations{
+                        LocationId=6,
+                        TourId=2,
+                        Order=2,
+                    },
+                    new TourLocations{
+                        LocationId=8,
+                        TourId=2,
+                        Order=3,
+                    },
+                    new TourLocations{
+                        LocationId=7,
+                        TourId=2,
+                        Order=4,
+                    },
+                    new TourLocations{
+                        LocationId=10,
+                        TourId=2,
+                        Order=5,
+                    },
+                    new TourLocations{
+                        LocationId=9,
+                        TourId=3,
+                        Order=2,
+                    },
+                    new TourLocations{
+                        LocationId=12,
+                        TourId=3,
+                        Order=3,
+                    },
+                    new TourLocations{
+                        LocationId=11,
+                        TourId=3,
+                        Order=4,
+                    },
+                    new TourLocations{
+                        LocationId=6,
+                        TourId=3,
+                        Order=5,
+                    },
                 };
                 context.TourLocations.AddRange(tourLocations);
                 context.SaveChanges();
@@ -232,18 +327,18 @@ namespace Core.Migrations
             {
                 IEnumerable<Group> groups = new List<Group>
                 {
-                    new Group("Đoàn 1", new DateTime(2020, 7, 20), new DateTime(2020, 7, 24), 1),
-                    new Group("Đoàn 2", new DateTime(2020, 8, 11), new DateTime(2020, 8, 15), 1),
-                    new Group("Đoàn 3", new DateTime(2020, 7, 25), new DateTime(2020, 7, 29), 2),
-                    new Group("Đoàn 4", new DateTime(2020, 10, 11), new DateTime(2020, 10, 15), 2),
-                    new Group("Đoàn 5", new DateTime(2020, 11, 1), new DateTime(2020, 11, 2), 2),
-                    new Group("Đoàn 6", new DateTime(2020, 7, 30), new DateTime(2020, 8, 5), 3),
-                    new Group("Đoàn 7", new DateTime(2020, 7, 20), new DateTime(2020, 7, 22), 4),
-                    new Group("Đoàn 8", new DateTime(2020, 11, 5), new DateTime(2020, 10, 8), 4),
-                    new Group("Đoàn 9", new DateTime(2020, 11, 5), new DateTime(2020, 11, 8), 4),
-                    new Group("Đoàn 10", new DateTime(2020, 7, 20), new DateTime(2020, 7, 27), 5),
-                    new Group("Đoàn 11", new DateTime(2020, 9, 20), new DateTime(2020, 9, 21), 5),
-                    new Group("Đoàn 12", new DateTime(2020,11, 1), new DateTime(2020, 11, 6), 5),
+                    new Group("Đoàn Khỉ 1", new DateTime(2020, 7, 20), new DateTime(2020, 7, 24), 1),
+                    new Group("Đoàn Khỉ 2", new DateTime(2020, 8, 11), new DateTime(2020, 8, 15), 1),
+                    new Group("Đoàn Tây Nguyên 1", new DateTime(2020, 7, 25), new DateTime(2020, 7, 29), 2),
+                    new Group("Đoàn Tây Nguyên 2", new DateTime(2020, 10, 11), new DateTime(2020, 10, 15), 2),
+                    new Group("Đoàn Ramsey 1", new DateTime(2020, 11, 1), new DateTime(2020, 11, 2), 3),
+                    new Group("Đoàn Ramsey 2", new DateTime(2020, 7, 30), new DateTime(2020, 8, 5), 3),
+                    new Group("Đoàn Củ Chi 1", new DateTime(2020, 7, 20), new DateTime(2020, 7, 22), 4),
+                    new Group("Đoàn Củ Chi 2", new DateTime(2020, 11, 5), new DateTime(2020, 10, 8), 4),
+                    new Group("Đoàn Củ Chi 3", new DateTime(2020, 11, 5), new DateTime(2020, 11, 8), 4),
+                    new Group("Đoàn Nhà Trắng 1", new DateTime(2020, 7, 20), new DateTime(2020, 7, 27), 5),
+                    new Group("Đoàn Nhà Trắng 2", new DateTime(2020, 9, 20), new DateTime(2020, 9, 21), 5),
+                    new Group("Đoàn Nhà Trắng 3", new DateTime(2020,11, 1), new DateTime(2020, 11, 6), 5),
                 };
                 context.Groups.AddRange(groups);
                 context.SaveChanges();
@@ -256,37 +351,103 @@ namespace Core.Migrations
                         CostTypeId=1,
                         GroupId=1,
                         Price=20000,
-                        Note="Note của Cost 1",
+                        Note="Ăn bánh mì",
                     },
                     new Cost{
-                        CostTypeId=1,
+                        CostTypeId=2,
                         GroupId=1,
-                        Price=30000,
-                        Note="Note của Cost 2",
+                        Price=80000,
+                        Note="Khách muốn đổi phòng",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=1,
+                        Price=80000,
+                        Note="Bánh bao",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=1,
+                        Price=80000,
+                        Note="Bánh bao",
                     },
                     new Cost{
                         CostTypeId=2,
                         GroupId=2,
+                        Price=200000,
+                        Note="Nhận phòng trễ bị phạt thêm",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=2,
                         Price=20000,
-                        Note="Note của Cost 3",
+                        Note="Ăn bánh mì",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=2,
+                        Price=80000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=2,
+                        Price=80000,
+                        Note="Bánh bao",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=3,
+                        Price=80000,
+                        Note="Bánh bao",
                     },
                     new Cost{
                         CostTypeId=3,
                         GroupId=3,
-                        Price=20000,
-                        Note="Note của Cost 4",
+                        Price=500000,
+                        Note="",
                     },
                     new Cost{
-                        CostTypeId=5,
-                        GroupId=4,
+                        CostTypeId=6,
+                        GroupId=3,
                         Price=20000,
-                        Note="Note của Cost 5",
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=4,
+                        Price=30000,
+                        Note="",
                     },
                     new Cost{
                         CostTypeId=3,
-                        GroupId=1,
-                        Price=20000,
-                        Note="Note của Cost 6",
+                        GroupId=4,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=4,
+                        Price=50000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=5,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=5,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=5,
+                        Price=50000,
+                        Note="",
                     },
 
                 };
@@ -311,6 +472,19 @@ namespace Core.Migrations
                     new CustomerGroups(3,3,DateTime.UtcNow),
                     new CustomerGroups(3,4,DateTime.UtcNow),
                     new CustomerGroups(3,5,DateTime.UtcNow),
+                    new CustomerGroups(3,6,DateTime.UtcNow),
+                    new CustomerGroups(4,7,DateTime.UtcNow),
+                    new CustomerGroups(4,8,DateTime.UtcNow),
+                    new CustomerGroups(4,9,DateTime.UtcNow),
+                    new CustomerGroups(4,1,DateTime.UtcNow),
+                    new CustomerGroups(5,2,DateTime.UtcNow),
+                    new CustomerGroups(5,3,DateTime.UtcNow),
+                    new CustomerGroups(8,3,DateTime.UtcNow),
+                    new CustomerGroups(9,4,DateTime.UtcNow),
+                    new CustomerGroups(6,5,DateTime.UtcNow),
+                    new CustomerGroups(7,4,DateTime.UtcNow),
+                    new CustomerGroups(8,4,DateTime.UtcNow),
+                    new CustomerGroups(7,5,DateTime.UtcNow),
                 };
                 context.CustomerGroups.AddRange(customerGroups);
                 context.SaveChanges();
@@ -342,12 +516,102 @@ namespace Core.Migrations
                     },
                     new Assignment{
                         GroupId=2,
-                        StaffId=3,
-                        Position=Enums.Position.TaiXe,
+                        StaffId=5,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=2,
+                        StaffId=6,
+                        Position=Enums.Position.HuongDanVien,
                     },
                     new Assignment{
                         GroupId=2,
                         StaffId=1,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=2,
+                        StaffId=2,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=3,
+                        StaffId=3,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=3,
+                        StaffId=4,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=3,
+                        StaffId=5,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=3,
+                        StaffId=6,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=4,
+                        StaffId=1,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=4,
+                        StaffId=2,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=4,
+                        StaffId=3,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=4,
+                        StaffId=4,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=5,
+                        StaffId=5,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=5,
+                        StaffId=6,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=5,
+                        StaffId=1,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=5,
+                        StaffId=2,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=6,
+                        StaffId=3,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=6,
+                        StaffId=4,
+                        Position=Enums.Position.HuongDanVien,
+                    },
+                    new Assignment{
+                        GroupId=6,
+                        StaffId=5,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=6,
+                        StaffId=6,
                         Position=Enums.Position.TruongDoan,
                     },
 

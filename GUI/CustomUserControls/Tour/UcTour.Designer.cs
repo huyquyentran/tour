@@ -390,6 +390,8 @@ namespace GUI.Tour
             // 
             this.dgvTourPriceList.AllowUserToAddRows = false;
             this.dgvTourPriceList.AllowUserToDeleteRows = false;
+            this.dgvTourPriceList.AllowUserToOrderColumns = true;
+            this.dgvTourPriceList.AllowUserToResizeRows = false;
             this.dgvTourPriceList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourPriceList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourPriceList.Location = new System.Drawing.Point(3, 46);
@@ -469,6 +471,8 @@ namespace GUI.Tour
             // 
             this.dgvTourLocationList.AllowUserToAddRows = false;
             this.dgvTourLocationList.AllowUserToDeleteRows = false;
+            this.dgvTourLocationList.AllowUserToOrderColumns = true;
+            this.dgvTourLocationList.AllowUserToResizeRows = false;
             this.dgvTourLocationList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourLocationList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourLocationList.Location = new System.Drawing.Point(3, 18);
@@ -548,6 +552,8 @@ namespace GUI.Tour
             // 
             this.dgvTourLocationListAll.AllowUserToAddRows = false;
             this.dgvTourLocationListAll.AllowUserToDeleteRows = false;
+            this.dgvTourLocationListAll.AllowUserToOrderColumns = true;
+            this.dgvTourLocationListAll.AllowUserToResizeRows = false;
             this.dgvTourLocationListAll.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourLocationListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourLocationListAll.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -852,6 +858,8 @@ namespace GUI.Tour
             // 
             this.dgvTourList.AllowUserToAddRows = false;
             this.dgvTourList.AllowUserToDeleteRows = false;
+            this.dgvTourList.AllowUserToOrderColumns = true;
+            this.dgvTourList.AllowUserToResizeRows = false;
             this.dgvTourList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourList.Location = new System.Drawing.Point(3, 46);

@@ -611,6 +611,8 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // dgvStatisticDetailTourList
             // 
+            this.dgvStatisticDetailTourList.AllowUserToOrderColumns = true;
+            this.dgvStatisticDetailTourList.AllowUserToResizeRows = false;
             this.dgvStatisticDetailTourList.BackgroundColor = System.Drawing.Color.White;
             this.dgvStatisticDetailTourList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStatisticDetailTourList.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -814,6 +816,8 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // dgvStaff
             // 
+            this.dgvStaff.AllowUserToOrderColumns = true;
+            this.dgvStaff.AllowUserToResizeRows = false;
             this.dgvStaff.BackgroundColor = System.Drawing.Color.White;
             this.dgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStaff.Location = new System.Drawing.Point(6, 6);

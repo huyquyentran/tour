@@ -319,6 +319,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.cbGroupTour.Name = "cbGroupTour";
             this.cbGroupTour.Size = new System.Drawing.Size(183, 24);
             this.cbGroupTour.TabIndex = 5;
+            this.cbGroupTour.Click += new System.EventHandler(this.cbGroupTour_Click);
             // 
             // label4
             // 

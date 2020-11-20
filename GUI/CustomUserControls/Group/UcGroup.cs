@@ -1126,5 +1126,10 @@ namespace GUI.CustomUserControls.TourGroup
             Thread threadLoadTourDataGridView = new Thread(() => LoadCosts(groupId, type, value));
             threadLoadTourDataGridView.Start();
         }
+
+        private void cbGroupTour_Click(object sender, EventArgs e)
+        {
+            new Thread(new ThreadStart(LoadTours)).Start();
+        }
     }
 }

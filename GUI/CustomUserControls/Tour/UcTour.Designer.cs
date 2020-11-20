@@ -393,6 +393,7 @@ namespace GUI.Tour
             this.dgvTourPriceList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourPriceList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourPriceList.Location = new System.Drawing.Point(3, 46);
+            this.dgvTourPriceList.MultiSelect = false;
             this.dgvTourPriceList.Name = "dgvTourPriceList";
             this.dgvTourPriceList.ReadOnly = true;
             this.dgvTourPriceList.RowHeadersVisible = false;
@@ -471,6 +472,7 @@ namespace GUI.Tour
             this.dgvTourLocationList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourLocationList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourLocationList.Location = new System.Drawing.Point(3, 18);
+            this.dgvTourLocationList.MultiSelect = false;
             this.dgvTourLocationList.Name = "dgvTourLocationList";
             this.dgvTourLocationList.ReadOnly = true;
             this.dgvTourLocationList.RowHeadersVisible = false;
@@ -550,6 +552,7 @@ namespace GUI.Tour
             this.dgvTourLocationListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourLocationListAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTourLocationListAll.Location = new System.Drawing.Point(3, 18);
+            this.dgvTourLocationListAll.MultiSelect = false;
             this.dgvTourLocationListAll.Name = "dgvTourLocationListAll";
             this.dgvTourLocationListAll.ReadOnly = true;
             this.dgvTourLocationListAll.RowHeadersVisible = false;
@@ -852,6 +855,7 @@ namespace GUI.Tour
             this.dgvTourList.BackgroundColor = System.Drawing.Color.White;
             this.dgvTourList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTourList.Location = new System.Drawing.Point(3, 46);
+            this.dgvTourList.MultiSelect = false;
             this.dgvTourList.Name = "dgvTourList";
             this.dgvTourList.ReadOnly = true;
             this.dgvTourList.RowHeadersVisible = false;

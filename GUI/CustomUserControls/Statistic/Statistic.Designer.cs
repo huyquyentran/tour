@@ -613,13 +613,15 @@ namespace GUI.CustomUserControls.Statistic
             // 
             this.dgvStatisticDetailTourList.BackgroundColor = System.Drawing.Color.White;
             this.dgvStatisticDetailTourList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStatisticDetailTourList.ColumnHeadersVisible = false;
             this.dgvStatisticDetailTourList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStatisticDetailTourList.Location = new System.Drawing.Point(3, 18);
+            this.dgvStatisticDetailTourList.MultiSelect = false;
             this.dgvStatisticDetailTourList.Name = "dgvStatisticDetailTourList";
+            this.dgvStatisticDetailTourList.ReadOnly = true;
             this.dgvStatisticDetailTourList.RowHeadersVisible = false;
             this.dgvStatisticDetailTourList.RowHeadersWidth = 51;
             this.dgvStatisticDetailTourList.RowTemplate.Height = 24;
+            this.dgvStatisticDetailTourList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStatisticDetailTourList.Size = new System.Drawing.Size(757, 187);
             this.dgvStatisticDetailTourList.TabIndex = 0;
             // 

@@ -1,4 +1,5 @@
 ﻿using Core;
+using Core.Dtos;
 using Core.Models;
 using DAL;
 using System;
@@ -29,6 +30,11 @@ namespace BLL
                     s=> s.Assignments,
                 }
                 ).ToList();
+        }
+
+        public static List<TourCountOfStaff> GetTourCountOfStaffs(DateTime? startDate, DateTime? endDate)
+        {
+            return StaffDAL.GetTourCountOfStaffs(startDate, endDate);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Core.Models;
+﻿using Core.Dtos;
+using Core.Models;
 using DAL;
 using System;
 using System.Collections.Generic;
@@ -100,6 +101,11 @@ namespace BLL
         {
             var cost = CostDAL.GetById(id);
             CostDAL.Remove(cost);
+        }
+
+        public static List<CostStatistic> GetCostStatisticsByTourId(int tourId, DateTime? startDate, DateTime? endDate)
+        {
+            return CostDAL.GetCostStatisticsByTourId(tourId, startDate, endDate);
         }
     }
 }

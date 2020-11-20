@@ -852,6 +852,7 @@ namespace GUI.CustomUserControls.Statistic
             this.btnStatisticDetail.TabIndex = 0;
             this.btnStatisticDetail.Text = "Thống kê ☭";
             this.btnStatisticDetail.UseVisualStyleBackColor = true;
+            this.btnStatisticDetail.Click += new System.EventHandler(this.btnStatisticDetail_Click);
             // 
             // groupBox4
             // 

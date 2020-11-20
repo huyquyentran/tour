@@ -641,10 +641,10 @@ namespace GUI.Tour
                                         t.Location.Name,
                                         i + 1)).ToList();
                 dgvTourLocationList.DataSource = dataSource;
-                if (index > 0)
+                if (index > -1)
                 {
                     dgvTourLocationList.Rows[0].Selected = false;
-                    dgvTourLocationList.Rows[index - 1].Selected = true;
+                    dgvTourLocationList.Rows[index + 1].Selected = true;
                 }
             }
             else

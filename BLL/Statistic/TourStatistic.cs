@@ -1,4 +1,5 @@
-﻿using Core.Models;
+﻿using Core.Common;
+using Core.Models;
 using DAL;
 using System;
 using System.Collections.Generic;
@@ -11,22 +12,41 @@ namespace BLL.Statistic
 {
     public class TourStatistic
     {
-        public static IEnumerable<TourWithGroups> ListTourWithGroups()
+        public static IEnumerable<TourWithGroups> ListTourWithGroups(DateTime? StartDate = null, DateTime? EndDate = null)
         {
-            var listTours = TourDAL.Get();
-            var listTourWithGroups = listTours.Select(t => new TourWithGroups { Tour = t }).ToList();
-            //Check filter date in this listGroups;
-            var listGroups = GroupBLL.ListGroups();
-            foreach (var group in listGroups)
-            {
-                int foundIndex = listTourWithGroups.FindIndex(ele => ele.Tour.Id == group.Tour.Id);
-                if (foundIndex != -1)
+            try
+            { 
+                if(StartDate.HasValue && EndDate.HasValue)
                 {
-                    listTourWithGroups[foundIndex].Groups.Add(group);
+                    new DateRange(StartDate.Value, EndDate.Value);
+                }    
+                var listTours = TourDAL.Get();
+                var listTourWithGroups = listTours.Select(t => new TourWithGroups { Tour = t }).ToList();
+                //Check filter date in this listGroups;
+                var listGroups = GroupDAL.Get(
+                    filter: g => (!StartDate.HasValue || !EndDate.HasValue) || (StartDate.Value <= g.StartDate && g.StartDate <= EndDate.Value),
+                    includeProperties: new List<Expression<Func<Group, object>>>
+                    {
+                        g=> g.Tour,
+                        g => g.Costs,
+                        g => g.CustomerGroups,
+                    }
+                    ).ToList();
+                foreach (var group in listGroups)
+                {
+                    int foundIndex = listTourWithGroups.FindIndex(ele => ele.Tour.Id == group.Tour.Id);
+                    if (foundIndex != -1)
+                    {
+                        listTourWithGroups[foundIndex].Groups.Add(group);
+                    }
                 }
-            }
             
-            return listTourWithGroups;
+                return listTourWithGroups;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public static int GetRevenueOfTourWithGroups(TourWithGroups tourWithGroups)

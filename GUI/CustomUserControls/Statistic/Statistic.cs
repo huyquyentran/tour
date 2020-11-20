@@ -157,6 +157,38 @@ namespace GUI.CustomUserControls.Statistic
                 }));
             }
         }
+       
+        private void LoadTourCostDetailGraph(DateTime? StartDate = null, DateTime? EndDate = null)
+        {
+            //reset your chart series and legends
+            chartCostDetail.Series.Clear();
+            chartCostDetail.Legends.Clear();
+
+            //Add a new Legend(if needed) and do some formating
+            chartCostDetail.Legends.Add("LegendCostDetail");
+            chartCostDetail.Legends[0].LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Table;
+            // chartCostDetail.Legends[0].Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            // chartCostDetail.Legends[0].Alignment = StringAlignment.Center;
+            chartCostDetail.Legends[0].Title = "Mục";
+            chartCostDetail.Legends[0].BorderColor = Color.Black;
+
+            //Add a new chart-series
+            string seriesname = "SeriesCostDetail";
+            chartCostDetail.Series.Add(seriesname);
+            //set the chart-type to "Pie"
+            chartCostDetail.Series[seriesname].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+
+            //Add some datapoints so the series. in this case you can pass the values to this method
+
+            // TODO: gọi hàm của Quyền
+            // List<CostStatistic> costDetail = CostBLL.GetCostStatisticsByTourId(1, StartDate, EndDate);
+
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName", 100000);
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName1", 543000);
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName2", 70000);
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName3", 60000);
+            chartCostDetail.Series[seriesname].Points.AddXY("MyPointName4", 1000000);
+        }
         private void btnStatisticDetail_Click(object sender, EventArgs e)
         {
             if(chbStatisticDetailAllTime.Checked)

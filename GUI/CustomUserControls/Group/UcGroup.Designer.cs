@@ -150,7 +150,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupRefresh
             // 
             this.btnGroupRefresh.Location = new System.Drawing.Point(331, 3);
-            this.btnGroupRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupRefresh.Name = "btnGroupRefresh";
             this.btnGroupRefresh.Size = new System.Drawing.Size(71, 24);
             this.btnGroupRefresh.TabIndex = 3;
@@ -161,17 +161,18 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupSearch
             // 
             this.btnGroupSearch.Location = new System.Drawing.Point(270, 3);
-            this.btnGroupSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupSearch.Name = "btnGroupSearch";
             this.btnGroupSearch.Size = new System.Drawing.Size(56, 24);
             this.btnGroupSearch.TabIndex = 2;
             this.btnGroupSearch.Text = "Tìm ⌕";
             this.btnGroupSearch.UseVisualStyleBackColor = true;
+            this.btnGroupSearch.Click += new System.EventHandler(this.btnGroupSearch_Click);
             // 
             // tbGroupSearchInput
             // 
             this.tbGroupSearchInput.Location = new System.Drawing.Point(3, 6);
-            this.tbGroupSearchInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupSearchInput.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupSearchInput.Name = "tbGroupSearchInput";
             this.tbGroupSearchInput.Size = new System.Drawing.Size(165, 20);
             this.tbGroupSearchInput.TabIndex = 0;
@@ -183,7 +184,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.panel4.Controls.Add(this.cbGroupSearchBy);
             this.panel4.Controls.Add(this.tbGroupSearchInput);
             this.panel4.Location = new System.Drawing.Point(2, 2);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(404, 30);
             this.panel4.TabIndex = 0;
@@ -200,7 +201,7 @@ namespace GUI.CustomUserControls.TourGroup
             "Ngày về",
             "Tổng phí"});
             this.cbGroupSearchBy.Location = new System.Drawing.Point(172, 6);
-            this.cbGroupSearchBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbGroupSearchBy.Margin = new System.Windows.Forms.Padding(2);
             this.cbGroupSearchBy.Name = "cbGroupSearchBy";
             this.cbGroupSearchBy.Size = new System.Drawing.Size(95, 21);
             this.cbGroupSearchBy.TabIndex = 1;
@@ -213,7 +214,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dgvGroupList.BackgroundColor = System.Drawing.Color.White;
             this.dgvGroupList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroupList.Location = new System.Drawing.Point(2, 36);
-            this.dgvGroupList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvGroupList.Margin = new System.Windows.Forms.Padding(2);
             this.dgvGroupList.MultiSelect = false;
             this.dgvGroupList.Name = "dgvGroupList";
             this.dgvGroupList.ReadOnly = true;
@@ -259,7 +260,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.tbGroupRevenue, 1, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 18);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -275,7 +276,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGroupID.Enabled = false;
             this.tbGroupID.Location = new System.Drawing.Point(62, 2);
-            this.tbGroupID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupID.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupID.Name = "tbGroupID";
             this.tbGroupID.Size = new System.Drawing.Size(138, 20);
             this.tbGroupID.TabIndex = 3;
@@ -295,7 +296,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGroupName.Enabled = false;
             this.tbGroupName.Location = new System.Drawing.Point(264, 2);
-            this.tbGroupName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupName.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupName.Name = "tbGroupName";
             this.tbGroupName.Size = new System.Drawing.Size(140, 20);
             this.tbGroupName.TabIndex = 4;
@@ -317,7 +318,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.cbGroupTour.Enabled = false;
             this.cbGroupTour.FormattingEnabled = true;
             this.cbGroupTour.Location = new System.Drawing.Point(62, 29);
-            this.cbGroupTour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbGroupTour.Margin = new System.Windows.Forms.Padding(2);
             this.cbGroupTour.Name = "cbGroupTour";
             this.cbGroupTour.Size = new System.Drawing.Size(138, 21);
             this.cbGroupTour.TabIndex = 5;
@@ -339,7 +340,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dtpGroupStartDate.Enabled = false;
             this.dtpGroupStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpGroupStartDate.Location = new System.Drawing.Point(62, 56);
-            this.dtpGroupStartDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpGroupStartDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpGroupStartDate.Name = "dtpGroupStartDate";
             this.dtpGroupStartDate.Size = new System.Drawing.Size(138, 20);
             this.dtpGroupStartDate.TabIndex = 9;
@@ -361,7 +362,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dtpGroupEndDate.Enabled = false;
             this.dtpGroupEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpGroupEndDate.Location = new System.Drawing.Point(264, 56);
-            this.dtpGroupEndDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpGroupEndDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpGroupEndDate.Name = "dtpGroupEndDate";
             this.dtpGroupEndDate.Size = new System.Drawing.Size(140, 20);
             this.dtpGroupEndDate.TabIndex = 10;
@@ -381,7 +382,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGroupPrice.Enabled = false;
             this.tbGroupPrice.Location = new System.Drawing.Point(264, 29);
-            this.tbGroupPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupPrice.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupPrice.Name = "tbGroupPrice";
             this.tbGroupPrice.Size = new System.Drawing.Size(140, 20);
             this.tbGroupPrice.TabIndex = 12;
@@ -391,7 +392,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupTotalCost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGroupTotalCost.Enabled = false;
             this.tbGroupTotalCost.Location = new System.Drawing.Point(264, 83);
-            this.tbGroupTotalCost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupTotalCost.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupTotalCost.Name = "tbGroupTotalCost";
             this.tbGroupTotalCost.Size = new System.Drawing.Size(140, 20);
             this.tbGroupTotalCost.TabIndex = 14;
@@ -421,7 +422,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGroupRevenue.Enabled = false;
             this.tbGroupRevenue.Location = new System.Drawing.Point(62, 83);
-            this.tbGroupRevenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupRevenue.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupRevenue.Name = "tbGroupRevenue";
             this.tbGroupRevenue.Size = new System.Drawing.Size(138, 20);
             this.tbGroupRevenue.TabIndex = 16;
@@ -429,7 +430,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupAdd
             // 
             this.btnGroupAdd.Location = new System.Drawing.Point(348, 2);
-            this.btnGroupAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupAdd.Name = "btnGroupAdd";
             this.btnGroupAdd.Size = new System.Drawing.Size(56, 24);
             this.btnGroupAdd.TabIndex = 0;
@@ -441,7 +442,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.btnGroupEdit.Enabled = false;
             this.btnGroupEdit.Location = new System.Drawing.Point(288, 2);
-            this.btnGroupEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupEdit.Name = "btnGroupEdit";
             this.btnGroupEdit.Size = new System.Drawing.Size(56, 24);
             this.btnGroupEdit.TabIndex = 1;
@@ -456,7 +457,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel1.Controls.Add(this.btnGroupDelete);
             this.flowLayoutPanel1.Controls.Add(this.btnCancel);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 131);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(406, 31);
@@ -467,7 +468,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.btnGroupDelete.Enabled = false;
             this.btnGroupDelete.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnGroupDelete.Location = new System.Drawing.Point(228, 2);
-            this.btnGroupDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupDelete.Name = "btnGroupDelete";
             this.btnGroupDelete.Size = new System.Drawing.Size(56, 24);
             this.btnGroupDelete.TabIndex = 2;
@@ -479,7 +480,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnCancel.Location = new System.Drawing.Point(168, 2);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(56, 24);
             this.btnCancel.TabIndex = 3;
@@ -493,9 +494,9 @@ namespace GUI.CustomUserControls.TourGroup
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Location = new System.Drawing.Point(2, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(411, 162);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -505,9 +506,9 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.tbCustomer.Controls.Add(this.flowLayoutPanel5);
             this.tbCustomer.Location = new System.Drawing.Point(4, 22);
-            this.tbCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.tbCustomer.Name = "tbCustomer";
-            this.tbCustomer.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCustomer.Padding = new System.Windows.Forms.Padding(2);
             this.tbCustomer.Size = new System.Drawing.Size(404, 428);
             this.tbCustomer.TabIndex = 0;
             this.tbCustomer.Text = "Khách trong Đoàn";
@@ -519,7 +520,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel5.Controls.Add(this.flowLayoutPanel7);
             this.flowLayoutPanel5.Controls.Add(this.groupBox3);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(4, 6);
-            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(400, 420);
             this.flowLayoutPanel5.TabIndex = 4;
@@ -528,9 +529,9 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.groupBox2.Controls.Add(this.dgvGroupCustomerList);
             this.groupBox2.Location = new System.Drawing.Point(2, 2);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(394, 197);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -545,7 +546,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dgvGroupCustomerList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGroupCustomerList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgvGroupCustomerList.Location = new System.Drawing.Point(2, 15);
-            this.dgvGroupCustomerList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvGroupCustomerList.Margin = new System.Windows.Forms.Padding(2);
             this.dgvGroupCustomerList.MultiSelect = false;
             this.dgvGroupCustomerList.Name = "dgvGroupCustomerList";
             this.dgvGroupCustomerList.ReadOnly = true;
@@ -563,7 +564,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel7.Controls.Add(this.btnGroupCustomerSave);
             this.flowLayoutPanel7.Controls.Add(this.btnGroupCustomerCancel);
             this.flowLayoutPanel7.Location = new System.Drawing.Point(2, 203);
-            this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel7.Size = new System.Drawing.Size(392, 32);
@@ -572,7 +573,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupCustomerRemove
             // 
             this.btnGroupCustomerRemove.Location = new System.Drawing.Point(334, 2);
-            this.btnGroupCustomerRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCustomerRemove.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCustomerRemove.Name = "btnGroupCustomerRemove";
             this.btnGroupCustomerRemove.Size = new System.Drawing.Size(56, 24);
             this.btnGroupCustomerRemove.TabIndex = 0;
@@ -583,7 +584,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupCustomerAdd
             // 
             this.btnGroupCustomerAdd.Location = new System.Drawing.Point(274, 2);
-            this.btnGroupCustomerAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCustomerAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCustomerAdd.Name = "btnGroupCustomerAdd";
             this.btnGroupCustomerAdd.Size = new System.Drawing.Size(56, 24);
             this.btnGroupCustomerAdd.TabIndex = 1;
@@ -594,7 +595,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupCustomerSave
             // 
             this.btnGroupCustomerSave.Location = new System.Drawing.Point(182, 2);
-            this.btnGroupCustomerSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCustomerSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCustomerSave.Name = "btnGroupCustomerSave";
             this.btnGroupCustomerSave.Size = new System.Drawing.Size(88, 24);
             this.btnGroupCustomerSave.TabIndex = 2;
@@ -605,7 +606,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupCustomerCancel
             // 
             this.btnGroupCustomerCancel.Location = new System.Drawing.Point(82, 2);
-            this.btnGroupCustomerCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCustomerCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCustomerCancel.Name = "btnGroupCustomerCancel";
             this.btnGroupCustomerCancel.Size = new System.Drawing.Size(96, 24);
             this.btnGroupCustomerCancel.TabIndex = 3;
@@ -617,9 +618,9 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.groupBox3.Controls.Add(this.dgvGroupCustomerListAll);
             this.groupBox3.Location = new System.Drawing.Point(2, 239);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(394, 179);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
@@ -633,7 +634,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dgvGroupCustomerListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroupCustomerListAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGroupCustomerListAll.Location = new System.Drawing.Point(2, 15);
-            this.dgvGroupCustomerListAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvGroupCustomerListAll.Margin = new System.Windows.Forms.Padding(2);
             this.dgvGroupCustomerListAll.MultiSelect = false;
             this.dgvGroupCustomerListAll.Name = "dgvGroupCustomerListAll";
             this.dgvGroupCustomerListAll.ReadOnly = true;
@@ -648,9 +649,9 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.tabStaff.Controls.Add(this.flowLayoutPanel8);
             this.tabStaff.Location = new System.Drawing.Point(4, 22);
-            this.tabStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabStaff.Margin = new System.Windows.Forms.Padding(2);
             this.tabStaff.Name = "tabStaff";
-            this.tabStaff.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabStaff.Padding = new System.Windows.Forms.Padding(2);
             this.tabStaff.Size = new System.Drawing.Size(404, 428);
             this.tabStaff.TabIndex = 1;
             this.tabStaff.Text = "Nhân viên trong Đoàn";
@@ -662,7 +663,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel8.Controls.Add(this.flowLayoutPanel9);
             this.flowLayoutPanel8.Controls.Add(this.groupBox5);
             this.flowLayoutPanel8.Location = new System.Drawing.Point(4, 6);
-            this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(398, 420);
             this.flowLayoutPanel8.TabIndex = 5;
@@ -671,9 +672,9 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.groupBox4.Controls.Add(this.dgvGroupStaffList);
             this.groupBox4.Location = new System.Drawing.Point(2, 2);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(394, 197);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
@@ -687,7 +688,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dgvGroupStaffList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroupStaffList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGroupStaffList.Location = new System.Drawing.Point(2, 15);
-            this.dgvGroupStaffList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvGroupStaffList.Margin = new System.Windows.Forms.Padding(2);
             this.dgvGroupStaffList.Name = "dgvGroupStaffList";
             this.dgvGroupStaffList.RowHeadersVisible = false;
             this.dgvGroupStaffList.RowHeadersWidth = 51;
@@ -704,7 +705,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel9.Controls.Add(this.btnGroupStaffSave);
             this.flowLayoutPanel9.Controls.Add(this.btnGroupStaffCancel);
             this.flowLayoutPanel9.Location = new System.Drawing.Point(2, 203);
-            this.flowLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel9.Name = "flowLayoutPanel9";
             this.flowLayoutPanel9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel9.Size = new System.Drawing.Size(392, 32);
@@ -713,7 +714,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupStaffRemove
             // 
             this.btnGroupStaffRemove.Location = new System.Drawing.Point(334, 2);
-            this.btnGroupStaffRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupStaffRemove.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupStaffRemove.Name = "btnGroupStaffRemove";
             this.btnGroupStaffRemove.Size = new System.Drawing.Size(56, 24);
             this.btnGroupStaffRemove.TabIndex = 0;
@@ -724,7 +725,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupStaffAdd
             // 
             this.btnGroupStaffAdd.Location = new System.Drawing.Point(274, 2);
-            this.btnGroupStaffAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupStaffAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupStaffAdd.Name = "btnGroupStaffAdd";
             this.btnGroupStaffAdd.Size = new System.Drawing.Size(56, 24);
             this.btnGroupStaffAdd.TabIndex = 1;
@@ -735,7 +736,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupStaffSave
             // 
             this.btnGroupStaffSave.Location = new System.Drawing.Point(182, 2);
-            this.btnGroupStaffSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupStaffSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupStaffSave.Name = "btnGroupStaffSave";
             this.btnGroupStaffSave.Size = new System.Drawing.Size(88, 24);
             this.btnGroupStaffSave.TabIndex = 2;
@@ -746,7 +747,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupStaffCancel
             // 
             this.btnGroupStaffCancel.Location = new System.Drawing.Point(82, 2);
-            this.btnGroupStaffCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupStaffCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupStaffCancel.Name = "btnGroupStaffCancel";
             this.btnGroupStaffCancel.Size = new System.Drawing.Size(96, 24);
             this.btnGroupStaffCancel.TabIndex = 3;
@@ -758,9 +759,9 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.groupBox5.Controls.Add(this.dgvGroupStaffListAll);
             this.groupBox5.Location = new System.Drawing.Point(2, 239);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(394, 179);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
@@ -774,7 +775,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dgvGroupStaffListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroupStaffListAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGroupStaffListAll.Location = new System.Drawing.Point(2, 15);
-            this.dgvGroupStaffListAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvGroupStaffListAll.Margin = new System.Windows.Forms.Padding(2);
             this.dgvGroupStaffListAll.Name = "dgvGroupStaffListAll";
             this.dgvGroupStaffListAll.ReadOnly = true;
             this.dgvGroupStaffListAll.RowHeadersVisible = false;
@@ -791,7 +792,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tcChiPhiDiaDiem.Controls.Add(this.tabCost);
             this.tcChiPhiDiaDiem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcChiPhiDiaDiem.Location = new System.Drawing.Point(0, 0);
-            this.tcChiPhiDiaDiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tcChiPhiDiaDiem.Margin = new System.Windows.Forms.Padding(2);
             this.tcChiPhiDiaDiem.Name = "tcChiPhiDiaDiem";
             this.tcChiPhiDiaDiem.SelectedIndex = 0;
             this.tcChiPhiDiaDiem.Size = new System.Drawing.Size(412, 454);
@@ -801,7 +802,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.tabCost.Controls.Add(this.flowLayoutPanel10);
             this.tabCost.Location = new System.Drawing.Point(4, 22);
-            this.tabCost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCost.Margin = new System.Windows.Forms.Padding(2);
             this.tabCost.Name = "tabCost";
             this.tabCost.Size = new System.Drawing.Size(404, 428);
             this.tabCost.TabIndex = 2;
@@ -813,7 +814,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel11);
             this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel13);
             this.flowLayoutPanel10.Location = new System.Drawing.Point(2, 2);
-            this.flowLayoutPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel10.Name = "flowLayoutPanel10";
             this.flowLayoutPanel10.Size = new System.Drawing.Size(402, 426);
             this.flowLayoutPanel10.TabIndex = 3;
@@ -822,7 +823,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.flowLayoutPanel11.Controls.Add(this.groupBox6);
             this.flowLayoutPanel11.Location = new System.Drawing.Point(2, 2);
-            this.flowLayoutPanel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel11.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel11.Name = "flowLayoutPanel11";
             this.flowLayoutPanel11.Size = new System.Drawing.Size(400, 134);
             this.flowLayoutPanel11.TabIndex = 0;
@@ -832,9 +833,9 @@ namespace GUI.CustomUserControls.TourGroup
             this.groupBox6.Controls.Add(this.flowLayoutPanel12);
             this.groupBox6.Controls.Add(this.tableLayoutPanel2);
             this.groupBox6.Location = new System.Drawing.Point(2, 2);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox6.Size = new System.Drawing.Size(398, 132);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
@@ -847,7 +848,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel12.Controls.Add(this.btnGroupCostDelete);
             this.flowLayoutPanel12.Controls.Add(this.btnGroupCostCancel);
             this.flowLayoutPanel12.Location = new System.Drawing.Point(0, 97);
-            this.flowLayoutPanel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel12.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
             this.flowLayoutPanel12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel12.Size = new System.Drawing.Size(395, 31);
@@ -857,7 +858,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.btnGroupCostAdd.Enabled = false;
             this.btnGroupCostAdd.Location = new System.Drawing.Point(337, 2);
-            this.btnGroupCostAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCostAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCostAdd.Name = "btnGroupCostAdd";
             this.btnGroupCostAdd.Size = new System.Drawing.Size(56, 24);
             this.btnGroupCostAdd.TabIndex = 0;
@@ -869,7 +870,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.btnGroupCostEdit.Enabled = false;
             this.btnGroupCostEdit.Location = new System.Drawing.Point(277, 2);
-            this.btnGroupCostEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCostEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCostEdit.Name = "btnGroupCostEdit";
             this.btnGroupCostEdit.Size = new System.Drawing.Size(56, 24);
             this.btnGroupCostEdit.TabIndex = 1;
@@ -881,7 +882,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.btnGroupCostDelete.Enabled = false;
             this.btnGroupCostDelete.Location = new System.Drawing.Point(217, 2);
-            this.btnGroupCostDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCostDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCostDelete.Name = "btnGroupCostDelete";
             this.btnGroupCostDelete.Size = new System.Drawing.Size(56, 24);
             this.btnGroupCostDelete.TabIndex = 2;
@@ -893,7 +894,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.btnGroupCostCancel.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnGroupCostCancel.Location = new System.Drawing.Point(157, 2);
-            this.btnGroupCostCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCostCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCostCancel.Name = "btnGroupCostCancel";
             this.btnGroupCostCancel.Size = new System.Drawing.Size(56, 24);
             this.btnGroupCostCancel.TabIndex = 4;
@@ -918,7 +919,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tableLayoutPanel2.Controls.Add(this.label12, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.tbGroupCostNote, 1, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 18);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -942,7 +943,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupCostID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGroupCostID.Enabled = false;
             this.tbGroupCostID.Location = new System.Drawing.Point(61, 2);
-            this.tbGroupCostID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupCostID.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupCostID.Name = "tbGroupCostID";
             this.tbGroupCostID.Size = new System.Drawing.Size(134, 20);
             this.tbGroupCostID.TabIndex = 3;
@@ -963,7 +964,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.cbGroupCostType.Enabled = false;
             this.cbGroupCostType.FormattingEnabled = true;
             this.cbGroupCostType.Location = new System.Drawing.Point(61, 26);
-            this.cbGroupCostType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbGroupCostType.Margin = new System.Windows.Forms.Padding(2);
             this.cbGroupCostType.Name = "cbGroupCostType";
             this.cbGroupCostType.Size = new System.Drawing.Size(134, 21);
             this.cbGroupCostType.TabIndex = 5;
@@ -983,7 +984,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupCostValue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGroupCostValue.Enabled = false;
             this.tbGroupCostValue.Location = new System.Drawing.Point(258, 26);
-            this.tbGroupCostValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupCostValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupCostValue.Name = "tbGroupCostValue";
             this.tbGroupCostValue.Size = new System.Drawing.Size(135, 20);
             this.tbGroupCostValue.TabIndex = 7;
@@ -1004,7 +1005,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.tbGroupCostNote.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGroupCostNote.Enabled = false;
             this.tbGroupCostNote.Location = new System.Drawing.Point(61, 50);
-            this.tbGroupCostNote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupCostNote.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupCostNote.Name = "tbGroupCostNote";
             this.tbGroupCostNote.Size = new System.Drawing.Size(332, 20);
             this.tbGroupCostNote.TabIndex = 9;
@@ -1014,7 +1015,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel13.Controls.Add(this.panel1);
             this.flowLayoutPanel13.Controls.Add(this.dgvGroupCostList);
             this.flowLayoutPanel13.Location = new System.Drawing.Point(2, 140);
-            this.flowLayoutPanel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel13.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
             this.flowLayoutPanel13.Size = new System.Drawing.Size(400, 284);
             this.flowLayoutPanel13.TabIndex = 1;
@@ -1026,7 +1027,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.panel1.Controls.Add(this.cbGroupCostSearchBy);
             this.panel1.Controls.Add(this.tbGroupCostSearch);
             this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(398, 30);
             this.panel1.TabIndex = 1;
@@ -1034,7 +1035,7 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupCostRefresh
             // 
             this.btnGroupCostRefresh.Location = new System.Drawing.Point(324, 3);
-            this.btnGroupCostRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCostRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCostRefresh.Name = "btnGroupCostRefresh";
             this.btnGroupCostRefresh.Size = new System.Drawing.Size(71, 24);
             this.btnGroupCostRefresh.TabIndex = 3;
@@ -1045,12 +1046,13 @@ namespace GUI.CustomUserControls.TourGroup
             // btnGroupCostSearch
             // 
             this.btnGroupCostSearch.Location = new System.Drawing.Point(263, 3);
-            this.btnGroupCostSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGroupCostSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnGroupCostSearch.Name = "btnGroupCostSearch";
             this.btnGroupCostSearch.Size = new System.Drawing.Size(56, 24);
             this.btnGroupCostSearch.TabIndex = 2;
             this.btnGroupCostSearch.Text = "Tìm ⌕";
             this.btnGroupCostSearch.UseVisualStyleBackColor = true;
+            this.btnGroupCostSearch.Click += new System.EventHandler(this.btnGroupCostSearch_Click);
             // 
             // cbGroupCostSearchBy
             // 
@@ -1061,7 +1063,7 @@ namespace GUI.CustomUserControls.TourGroup
             "Giá",
             "Ghi chú"});
             this.cbGroupCostSearchBy.Location = new System.Drawing.Point(165, 6);
-            this.cbGroupCostSearchBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbGroupCostSearchBy.Margin = new System.Windows.Forms.Padding(2);
             this.cbGroupCostSearchBy.Name = "cbGroupCostSearchBy";
             this.cbGroupCostSearchBy.Size = new System.Drawing.Size(95, 21);
             this.cbGroupCostSearchBy.TabIndex = 1;
@@ -1070,7 +1072,7 @@ namespace GUI.CustomUserControls.TourGroup
             // tbGroupCostSearch
             // 
             this.tbGroupCostSearch.Location = new System.Drawing.Point(3, 6);
-            this.tbGroupCostSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGroupCostSearch.Margin = new System.Windows.Forms.Padding(2);
             this.tbGroupCostSearch.Name = "tbGroupCostSearch";
             this.tbGroupCostSearch.Size = new System.Drawing.Size(158, 20);
             this.tbGroupCostSearch.TabIndex = 0;
@@ -1082,7 +1084,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dgvGroupCostList.BackgroundColor = System.Drawing.Color.White;
             this.dgvGroupCostList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroupCostList.Location = new System.Drawing.Point(2, 36);
-            this.dgvGroupCostList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvGroupCostList.Margin = new System.Windows.Forms.Padding(2);
             this.dgvGroupCostList.Name = "dgvGroupCostList";
             this.dgvGroupCostList.ReadOnly = true;
             this.dgvGroupCostList.RowHeadersVisible = false;
@@ -1097,7 +1099,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.flowLayoutPanel2.Controls.Add(this.panel3);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(422, 2);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(415, 463);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -1106,7 +1108,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             this.panel3.Controls.Add(this.tcChiPhiDiaDiem);
             this.panel3.Location = new System.Drawing.Point(2, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(412, 454);
             this.panel3.TabIndex = 1;
@@ -1116,7 +1118,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel4);
             this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel2);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(839, 470);
             this.flowLayoutPanel3.TabIndex = 2;
@@ -1126,7 +1128,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel4.Controls.Add(this.groupBox1);
             this.flowLayoutPanel4.Controls.Add(this.flowLayoutPanel6);
             this.flowLayoutPanel4.Location = new System.Drawing.Point(2, 2);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(416, 463);
             this.flowLayoutPanel4.TabIndex = 2;
@@ -1136,7 +1138,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.flowLayoutPanel6.Controls.Add(this.panel4);
             this.flowLayoutPanel6.Controls.Add(this.dgvGroupList);
             this.flowLayoutPanel6.Location = new System.Drawing.Point(2, 168);
-            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(413, 288);
             this.flowLayoutPanel6.TabIndex = 1;
@@ -1146,7 +1148,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UcTourGroup";
             this.Size = new System.Drawing.Size(844, 476);
             this.Load += new System.EventHandler(this.UcTourGroup_Load);

@@ -17,6 +17,22 @@ namespace GUI.CustomUserControls.TourGroup
     {
         private OperationType groupMode = OperationType.View;
         private OperationType costMode = OperationType.View;
+        public Dictionary<string, string> dictionaryGroupSearchBy = new Dictionary<string, string>()
+        {
+            {"Id", "Mã đoàn"},
+            {"Name", "Tên đoàn"},
+            {"TourName", "Tên Tour"},
+            {"StartDate", "Ngày đi" },
+            {"EndDate", "Ngày về" },
+        };
+
+        public Dictionary<string, string> dictionaryGroupCostSearchBy = new Dictionary<string, string>()
+        {
+            {"Id", "Mã"},
+            {"CostType", "Loại"},
+            {"Price", "Giá"},
+            {"Note", "Ghi chú" },
+        };
 
         public UcTourGroup()
         {
@@ -25,20 +41,38 @@ namespace GUI.CustomUserControls.TourGroup
 
         private void UcTourGroup_Load(object sender, EventArgs e)
         {
+            LoadComboBoxGroupSearchBy();
+            LoadComboBoxGroupCostSearchBy();
+
             dgvGroupList.AutoGenerateColumns = false;
             dgvGroupCustomerList.AutoGenerateColumns = false;
             dgvGroupCustomerListAll.AutoGenerateColumns = false;
             dgvGroupStaffList.AutoGenerateColumns = false;
             dgvGroupStaffListAll.AutoGenerateColumns = false;
-            Thread loadGroupsThread = new Thread(new ThreadStart(LoadGroups));
+            Thread loadGroupsThread = new Thread(() => LoadGroups());
             Thread loadToursThread = new Thread(new ThreadStart(LoadTours));
             Thread loadCostTypesThread = new Thread(new ThreadStart(LoadCostTypes));
             loadGroupsThread.Start();
             loadToursThread.Start();
             loadCostTypesThread.Start();
+
         }
 
-        private void LoadGroups()
+        public void LoadComboBoxGroupSearchBy()
+        {
+            cbGroupSearchBy.DataSource = new BindingSource(dictionaryGroupSearchBy, null);
+            cbGroupSearchBy.DisplayMember = "Value";
+            cbGroupSearchBy.ValueMember = "Key";
+        }
+
+        public void LoadComboBoxGroupCostSearchBy()
+        {
+            cbGroupCostSearchBy.DataSource = new BindingSource(dictionaryGroupCostSearchBy, null);
+            cbGroupCostSearchBy.DisplayMember = "Value";
+            cbGroupCostSearchBy.ValueMember = "Key";
+        }
+
+        private void LoadGroups(string type = null, string value = null)
         {
             //Back to main thread update UI
             if (InvokeRequired)
@@ -50,7 +84,7 @@ namespace GUI.CustomUserControls.TourGroup
             }
 
             //Fill DataTable
-            var groups = GroupBLL.ListGroups();
+            var groups = GroupBLL.ListGroups(type, value);
             List<object> data = new List<object>();
             foreach (var group in groups)
             {
@@ -361,7 +395,7 @@ namespace GUI.CustomUserControls.TourGroup
             }
         }
 
-        private void LoadCosts(int groupId)
+        private void LoadCosts(int groupId, string type = null, string value = null)
         {
             //Back to main thread update UI
             if (InvokeRequired)
@@ -373,7 +407,7 @@ namespace GUI.CustomUserControls.TourGroup
             }
 
             //Fill DataTable
-            var costs = CostBLL.ListCosts(groupId);
+            var costs = CostBLL.ListCosts(groupId, type, value);
             var data = new BindingList<object>();
             foreach (var cost in costs)
             {
@@ -500,8 +534,9 @@ namespace GUI.CustomUserControls.TourGroup
                 try
                 {
                     GroupBLL.CreateGroup(name, startDate, endDate, tourId);
-                    Thread loadGroupsThread = new Thread(new ThreadStart(LoadGroups));
+                    Thread loadGroupsThread = new Thread(() => LoadGroups());
                     loadGroupsThread.Start();
+                    MessageBox.Show("Thêm thành công");
                 }
                 catch (Exception ex)
                 {
@@ -555,8 +590,9 @@ namespace GUI.CustomUserControls.TourGroup
                 try
                 {
                     GroupBLL.EditGroup(id, name, startDate, endDate, tourId);
-                    Thread loadGroupsThread = new Thread(new ThreadStart(LoadGroups));
+                    Thread loadGroupsThread = new Thread(() => LoadGroups());
                     loadGroupsThread.Start();
+                    MessageBox.Show("Sửa thành công");
                 }
                 catch (Exception ex)
                 {
@@ -618,14 +654,15 @@ namespace GUI.CustomUserControls.TourGroup
             {
                 int id = int.Parse(tbGroupID.Text);
                 GroupBLL.RemoveGroup(id);
-                Thread loadGroupsThread = new Thread(new ThreadStart(LoadGroups));
+                Thread loadGroupsThread = new Thread(() => LoadGroups());
                 loadGroupsThread.Start();
+                MessageBox.Show("Xóa thành công");
             }
         }
 
         private void btnGroupRefresh_Click(object sender, EventArgs e)
         {
-            Thread loadGroupsThread = new Thread(new ThreadStart(LoadGroups));
+            Thread loadGroupsThread = new Thread(() => LoadGroups());
             loadGroupsThread.Start();
         }
 
@@ -1054,6 +1091,40 @@ namespace GUI.CustomUserControls.TourGroup
             var groupId = int.Parse(row.Cells["Id"].Value?.ToString());
             Thread loadCostsThread = new Thread(() => LoadCosts(groupId));
             loadCostsThread.Start();
+        }
+
+        private void btnGroupSearch_Click(object sender, EventArgs e)
+        {
+            var type = ((KeyValuePair<string, string>)cbGroupSearchBy.SelectedItem).Key;
+            string value = tbGroupSearchInput.Text;
+
+            bool isDateTime = DateTime.TryParse(value, out DateTime valueDateTime);
+            if ((type.Equals("StartDate") || type.Equals("EndDate")) && !isDateTime)
+            {
+                MessageBox.Show("Định dạng ngày phải là ngày/tháng/năm hoặc ngày-tháng-năm");
+                return;
+            }
+            Thread threadLoadTourDataGridView = new Thread(() => LoadGroups(type, value));
+            threadLoadTourDataGridView.Start();
+        }
+
+        private void btnGroupCostSearch_Click(object sender, EventArgs e)
+        {
+            if (dgvGroupList.SelectedRows.Count == 0 || dgvGroupList.SelectedRows[0].Index < 0)
+            {
+                MessageBox.Show("Vui lòng chọn đoàn");
+                return;
+            }
+
+            var rowIndex = dgvGroupList.SelectedRows[0].Index;
+            var row = dgvGroupList.Rows[rowIndex];
+            var groupId = int.Parse(row.Cells["Id"].Value?.ToString());
+
+            var type = ((KeyValuePair<string, string>)cbGroupCostSearchBy.SelectedItem).Key;
+            string value = tbGroupCostSearch.Text;
+
+            Thread threadLoadTourDataGridView = new Thread(() => LoadCosts(groupId, type, value));
+            threadLoadTourDataGridView.Start();
         }
     }
 }

@@ -46,6 +46,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Common\DateRange.cs" />
     <Compile Include="Common\ListExtensionMethod.cs" />
+    <Compile Include="Dtos\CostStatistic.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\OperationType.cs" />
     <Compile Include="Enums\Position.cs" />
@@ -63,5 +64,6 @@
     <Compile Include="Models\TourType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

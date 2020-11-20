@@ -68,6 +68,23 @@ namespace BLL
             return cost;
         }
 
+        public static Cost EditCost(int id, int groupId, int costTypeId, string price, string note)
+        {
+            ValidateCost(price, note);
+            var priceValue = int.Parse(price);
+            var cost = new Cost
+            {
+                Id = id,
+                GroupId = groupId,
+                CostTypeId = costTypeId,
+                Price = priceValue,
+                Note = note,
+            };
+
+            CostDAL.Update(cost);
+            return cost;
+        }
+
         public static void RemoveCost(int id)
         {
             var cost = CostDAL.GetById(id);

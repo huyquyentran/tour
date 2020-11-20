@@ -813,7 +813,7 @@ namespace GUI.CustomUserControls.TourGroup
                     LoadStaffsNotInGroup(groupId);
                 });
             loadStaffsThread.Start();
-            MessageBox.Show("Cập nhật danh sách khách hàng thành công");
+            MessageBox.Show("Cập nhật danh sách nhân viên thành công");
         }
 
         private void btnGroupStaffRemove_Click(object sender, EventArgs e)
@@ -992,12 +992,13 @@ namespace GUI.CustomUserControls.TourGroup
                 var row = dgvGroupList.Rows[rowIndex];
                 var groupId = int.Parse(row.Cells["Id"].Value?.ToString());
 
+                int id = int.Parse(tbGroupCostID.Text);
                 int costTypeId = (int)cbGroupCostType.SelectedValue;
                 var price = tbGroupCostValue.Text;
                 var note = tbGroupCostNote.Text;
                 try
                 {
-                    CostBLL.CreateCost(groupId, costTypeId, price, note);
+                    CostBLL.EditCost(id, groupId, costTypeId, price, note);
                     Thread loadCostsThread = new Thread(() => LoadCosts(groupId));
                     loadCostsThread.Start();
                 }
@@ -1039,6 +1040,20 @@ namespace GUI.CustomUserControls.TourGroup
                 Thread loadCostsThread = new Thread(() => LoadCosts(groupId));
                 loadCostsThread.Start();
             }
+        }
+
+        private void btnGroupCostRefresh_Click(object sender, EventArgs e)
+        {
+
+            if (dgvGroupList.SelectedRows.Count == 0 || dgvGroupList.SelectedRows[0].Index < 0)
+                return;
+
+            var rowIndex = dgvGroupList.SelectedRows[0].Index;
+            var row = dgvGroupList.Rows[rowIndex];
+
+            var groupId = int.Parse(row.Cells["Id"].Value?.ToString());
+            Thread loadCostsThread = new Thread(() => LoadCosts(groupId));
+            loadCostsThread.Start();
         }
     }
 }

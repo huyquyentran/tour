@@ -29,24 +29,21 @@ namespace GUI.CustomUserControls.Statistic
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpStatisticOverview = new System.Windows.Forms.TabPage();
@@ -99,9 +96,11 @@ namespace GUI.CustomUserControls.Statistic
             this.chartCostDetail = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tpProfit = new System.Windows.Forms.TabPage();
             this.chartProfit = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.tpGroupCount = new System.Windows.Forms.TabPage();
-            this.chartGroupCount = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tpGroup = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.chartStaff = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvStaff = new System.Windows.Forms.DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -116,15 +115,12 @@ namespace GUI.CustomUserControls.Statistic
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.chbStatisticPropertyStaffCount = new System.Windows.Forms.CheckBox();
             this.chbStatisticPropertyCostDetail = new System.Windows.Forms.CheckBox();
-            this.chbStatisticPropertyGroupCount = new System.Windows.Forms.CheckBox();
             this.chbStatisticPropertyProfit = new System.Windows.Forms.CheckBox();
             this.chbStatisticPropertyCost = new System.Windows.Forms.CheckBox();
             this.chbStatisticPropertyRevenue = new System.Windows.Forms.CheckBox();
             this.cbStatisticGraphTimeType = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpStatisticOverview.SuspendLayout();
@@ -153,16 +149,16 @@ namespace GUI.CustomUserControls.Statistic
             ((System.ComponentModel.ISupportInitialize)(this.chartCostDetail)).BeginInit();
             this.tpProfit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartProfit)).BeginInit();
-            this.tpGroupCount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartGroupCount)).BeginInit();
+            this.tpGroup.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartStaff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).BeginInit();
             this.panel10.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -633,11 +629,11 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // tabControl2
             // 
-            this.tabControl2.Controls.Add(this.tpRevenue);
-            this.tabControl2.Controls.Add(this.tpCost);
+            this.tabControl2.Controls.Add(this.tpGroup);
             this.tabControl2.Controls.Add(this.tpCostDetail);
+            this.tabControl2.Controls.Add(this.tpCost);
+            this.tabControl2.Controls.Add(this.tpRevenue);
             this.tabControl2.Controls.Add(this.tpProfit);
-            this.tabControl2.Controls.Add(this.tpGroupCount);
             this.tabControl2.Location = new System.Drawing.Point(6, 218);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -656,19 +652,19 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartRevenue
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartRevenue.ChartAreas.Add(chartArea1);
+            chartArea16.Name = "ChartArea1";
+            this.chartRevenue.ChartAreas.Add(chartArea16);
             this.chartRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chartRevenue.Legends.Add(legend1);
+            legend16.Name = "Legend1";
+            this.chartRevenue.Legends.Add(legend16);
             this.chartRevenue.Location = new System.Drawing.Point(0, 0);
             this.chartRevenue.Name = "chartRevenue";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series1.YValuesPerPoint = 4;
-            this.chartRevenue.Series.Add(series1);
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series16.Legend = "Legend1";
+            series16.Name = "Series1";
+            series16.YValuesPerPoint = 4;
+            this.chartRevenue.Series.Add(series16);
             this.chartRevenue.Size = new System.Drawing.Size(752, 255);
             this.chartRevenue.TabIndex = 1;
             this.chartRevenue.Text = "chart3";
@@ -686,19 +682,19 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartCost
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartCost.ChartAreas.Add(chartArea2);
+            chartArea17.Name = "ChartArea1";
+            this.chartCost.ChartAreas.Add(chartArea17);
             this.chartCost.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartCost.Legends.Add(legend2);
+            legend17.Name = "Legend1";
+            this.chartCost.Legends.Add(legend17);
             this.chartCost.Location = new System.Drawing.Point(3, 3);
             this.chartCost.Name = "chartCost";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            series2.YValuesPerPoint = 4;
-            this.chartCost.Series.Add(series2);
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series17.Legend = "Legend1";
+            series17.Name = "Series1";
+            series17.YValuesPerPoint = 4;
+            this.chartCost.Series.Add(series17);
             this.chartCost.Size = new System.Drawing.Size(746, 249);
             this.chartCost.TabIndex = 2;
             this.chartCost.Text = "chart1";
@@ -715,18 +711,18 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartCostDetail
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartCostDetail.ChartAreas.Add(chartArea3);
+            chartArea18.Name = "ChartArea1";
+            this.chartCostDetail.ChartAreas.Add(chartArea18);
             this.chartCostDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chartCostDetail.Legends.Add(legend3);
+            legend18.Name = "Legend1";
+            this.chartCostDetail.Legends.Add(legend18);
             this.chartCostDetail.Location = new System.Drawing.Point(0, 0);
             this.chartCostDetail.Name = "chartCostDetail";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartCostDetail.Series.Add(series3);
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series18.Legend = "Legend1";
+            series18.Name = "Series1";
+            this.chartCostDetail.Series.Add(series18);
             this.chartCostDetail.Size = new System.Drawing.Size(752, 255);
             this.chartCostDetail.TabIndex = 3;
             this.chartCostDetail.Text = "chartTourCostDetail";
@@ -744,50 +740,32 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartProfit
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartProfit.ChartAreas.Add(chartArea4);
+            chartArea19.Name = "ChartArea1";
+            this.chartProfit.ChartAreas.Add(chartArea19);
             this.chartProfit.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chartProfit.Legends.Add(legend4);
+            legend19.Name = "Legend1";
+            this.chartProfit.Legends.Add(legend19);
             this.chartProfit.Location = new System.Drawing.Point(3, 3);
             this.chartProfit.Name = "chartProfit";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            series4.YValuesPerPoint = 4;
-            this.chartProfit.Series.Add(series4);
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series19.Legend = "Legend1";
+            series19.Name = "Series1";
+            series19.YValuesPerPoint = 4;
+            this.chartProfit.Series.Add(series19);
             this.chartProfit.Size = new System.Drawing.Size(746, 249);
             this.chartProfit.TabIndex = 0;
             this.chartProfit.Text = "chart2";
             // 
-            // tpGroupCount
+            // tpGroup
             // 
-            this.tpGroupCount.Controls.Add(this.chartGroupCount);
-            this.tpGroupCount.Location = new System.Drawing.Point(4, 25);
-            this.tpGroupCount.Name = "tpGroupCount";
-            this.tpGroupCount.Size = new System.Drawing.Size(752, 255);
-            this.tpGroupCount.TabIndex = 2;
-            this.tpGroupCount.Text = "Số đoàn tham quan";
-            this.tpGroupCount.UseVisualStyleBackColor = true;
-            // 
-            // chartGroupCount
-            // 
-            chartArea5.Name = "ChartArea1";
-            this.chartGroupCount.ChartAreas.Add(chartArea5);
-            this.chartGroupCount.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.Name = "Legend1";
-            this.chartGroupCount.Legends.Add(legend5);
-            this.chartGroupCount.Location = new System.Drawing.Point(0, 0);
-            this.chartGroupCount.Name = "chartGroupCount";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            series5.YValuesPerPoint = 4;
-            this.chartGroupCount.Series.Add(series5);
-            this.chartGroupCount.Size = new System.Drawing.Size(752, 255);
-            this.chartGroupCount.TabIndex = 1;
-            this.chartGroupCount.Text = "chart4";
+            this.tpGroup.Controls.Add(this.dataGridView1);
+            this.tpGroup.Location = new System.Drawing.Point(4, 25);
+            this.tpGroup.Name = "tpGroup";
+            this.tpGroup.Size = new System.Drawing.Size(752, 255);
+            this.tpGroup.TabIndex = 2;
+            this.tpGroup.Text = "Đoàn tham quan";
+            this.tpGroup.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -802,19 +780,50 @@ namespace GUI.CustomUserControls.Statistic
             this.tabPage2.Text = "Nhân viên";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.comboBox1);
+            this.panel12.Controls.Add(this.label1);
+            this.panel12.Location = new System.Drawing.Point(502, 7);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(267, 223);
+            this.panel12.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Mặc định",
+            "Số lần đi Tour tăng dần",
+            "Số lần đi Tour giảm dần"});
+            this.comboBox1.Location = new System.Drawing.Point(100, 12);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(164, 24);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Sắp xếp theo";
+            // 
             // chartStaff
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartStaff.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chartStaff.Legends.Add(legend6);
+            chartArea20.Name = "ChartArea1";
+            this.chartStaff.ChartAreas.Add(chartArea20);
+            legend20.Name = "Legend1";
+            this.chartStaff.Legends.Add(legend20);
             this.chartStaff.Location = new System.Drawing.Point(6, 236);
             this.chartStaff.Name = "chartStaff";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chartStaff.Series.Add(series6);
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series20.Legend = "Legend1";
+            series20.Name = "Series1";
+            this.chartStaff.Series.Add(series20);
             this.chartStaff.Size = new System.Drawing.Size(763, 264);
             this.chartStaff.TabIndex = 1;
             this.chartStaff.Text = "chart1";
@@ -845,7 +854,7 @@ namespace GUI.CustomUserControls.Statistic
             // btnStatisticDetail
             // 
             this.btnStatisticDetail.AutoSize = true;
-            this.btnStatisticDetail.Location = new System.Drawing.Point(180, 317);
+            this.btnStatisticDetail.Location = new System.Drawing.Point(180, 307);
             this.btnStatisticDetail.Name = "btnStatisticDetail";
             this.btnStatisticDetail.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnStatisticDetail.Size = new System.Drawing.Size(119, 31);
@@ -937,7 +946,6 @@ namespace GUI.CustomUserControls.Statistic
             // 
             this.groupBox2.Controls.Add(this.chbStatisticPropertyStaffCount);
             this.groupBox2.Controls.Add(this.chbStatisticPropertyCostDetail);
-            this.groupBox2.Controls.Add(this.chbStatisticPropertyGroupCount);
             this.groupBox2.Controls.Add(this.chbStatisticPropertyProfit);
             this.groupBox2.Controls.Add(this.chbStatisticPropertyCost);
             this.groupBox2.Controls.Add(this.chbStatisticPropertyRevenue);
@@ -945,7 +953,7 @@ namespace GUI.CustomUserControls.Statistic
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Location = new System.Drawing.Point(6, 140);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(293, 171);
+            this.groupBox2.Size = new System.Drawing.Size(293, 161);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Biểu đồ";
@@ -955,7 +963,7 @@ namespace GUI.CustomUserControls.Statistic
             this.chbStatisticPropertyStaffCount.AutoSize = true;
             this.chbStatisticPropertyStaffCount.Checked = true;
             this.chbStatisticPropertyStaffCount.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chbStatisticPropertyStaffCount.Location = new System.Drawing.Point(6, 103);
+            this.chbStatisticPropertyStaffCount.Location = new System.Drawing.Point(6, 76);
             this.chbStatisticPropertyStaffCount.Name = "chbStatisticPropertyStaffCount";
             this.chbStatisticPropertyStaffCount.Size = new System.Drawing.Size(212, 21);
             this.chbStatisticPropertyStaffCount.TabIndex = 9;
@@ -973,18 +981,6 @@ namespace GUI.CustomUserControls.Statistic
             this.chbStatisticPropertyCostDetail.TabIndex = 8;
             this.chbStatisticPropertyCostDetail.Text = "Chi phí từng mục";
             this.chbStatisticPropertyCostDetail.UseVisualStyleBackColor = true;
-            // 
-            // chbStatisticPropertyGroupCount
-            // 
-            this.chbStatisticPropertyGroupCount.AutoSize = true;
-            this.chbStatisticPropertyGroupCount.Checked = true;
-            this.chbStatisticPropertyGroupCount.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chbStatisticPropertyGroupCount.Location = new System.Drawing.Point(6, 76);
-            this.chbStatisticPropertyGroupCount.Name = "chbStatisticPropertyGroupCount";
-            this.chbStatisticPropertyGroupCount.Size = new System.Drawing.Size(190, 21);
-            this.chbStatisticPropertyGroupCount.TabIndex = 7;
-            this.chbStatisticPropertyGroupCount.Text = "Số Đoàn tham quan Tour";
-            this.chbStatisticPropertyGroupCount.UseVisualStyleBackColor = true;
             // 
             // chbStatisticPropertyProfit
             // 
@@ -1030,7 +1026,7 @@ namespace GUI.CustomUserControls.Statistic
             "Ngày",
             "Tháng",
             "Năm"});
-            this.cbStatisticGraphTimeType.Location = new System.Drawing.Point(118, 141);
+            this.cbStatisticGraphTimeType.Location = new System.Drawing.Point(118, 120);
             this.cbStatisticGraphTimeType.Name = "cbStatisticGraphTimeType";
             this.cbStatisticGraphTimeType.Size = new System.Drawing.Size(113, 24);
             this.cbStatisticGraphTimeType.TabIndex = 7;
@@ -1038,42 +1034,25 @@ namespace GUI.CustomUserControls.Statistic
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(7, 144);
+            this.label27.Location = new System.Drawing.Point(7, 123);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(100, 17);
             this.label27.TabIndex = 6;
             this.label27.Text = "Thống kê theo";
             // 
-            // panel12
+            // dataGridView1
             // 
-            this.panel12.Controls.Add(this.comboBox1);
-            this.panel12.Controls.Add(this.label1);
-            this.panel12.Location = new System.Drawing.Point(502, 7);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(267, 223);
-            this.panel12.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sắp xếp theo";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Mặc định",
-            "Số lần đi Tour tăng dần",
-            "Số lần đi Tour giảm dần"});
-            this.comboBox1.Location = new System.Drawing.Point(100, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(164, 24);
-            this.comboBox1.TabIndex = 3;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(746, 249);
+            this.dataGridView1.TabIndex = 0;
             // 
             // Statistic
             // 
@@ -1111,9 +1090,10 @@ namespace GUI.CustomUserControls.Statistic
             ((System.ComponentModel.ISupportInitialize)(this.chartCostDetail)).EndInit();
             this.tpProfit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartProfit)).EndInit();
-            this.tpGroupCount.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartGroupCount)).EndInit();
+            this.tpGroup.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartStaff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).EndInit();
             this.panel10.ResumeLayout(false);
@@ -1123,8 +1103,7 @@ namespace GUI.CustomUserControls.Statistic
             this.tableLayoutPanel3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1185,20 +1164,18 @@ namespace GUI.CustomUserControls.Statistic
         private System.Windows.Forms.TabPage tpCost;
         private System.Windows.Forms.TabPage tpProfit;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartProfit;
-        private System.Windows.Forms.TabPage tpGroupCount;
+        private System.Windows.Forms.TabPage tpGroup;
         private System.Windows.Forms.CheckBox chbStatisticDetailAllTime;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.ComboBox cbStatisticGraphTimeType;
         private System.Windows.Forms.CheckBox chbStatisticPropertyCost;
         private System.Windows.Forms.CheckBox chbStatisticPropertyRevenue;
-        private System.Windows.Forms.CheckBox chbStatisticPropertyGroupCount;
         private System.Windows.Forms.CheckBox chbStatisticPropertyProfit;
         private System.Windows.Forms.TabPage tpRevenue;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartRevenue;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartCost;
         private System.Windows.Forms.TabPage tpCostDetail;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartCostDetail;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartGroupCount;
         private System.Windows.Forms.CheckBox chbStatisticPropertyCostDetail;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage1;
@@ -1209,5 +1186,6 @@ namespace GUI.CustomUserControls.Statistic
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

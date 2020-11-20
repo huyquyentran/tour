@@ -449,6 +449,132 @@ namespace Core.Migrations
                         Price=50000,
                         Note="",
                     },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=6,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=6,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=6,
+                        Price=50000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=7,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=7,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=7,
+                        Price=50000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=8,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=8,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=8,
+                        Price=50000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=9,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=9,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=9,
+                        Price=50000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=10,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=10,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=10,
+                        Price=50000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=11,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=11,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=11,
+                        Price=50000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=1,
+                        GroupId=12,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=3,
+                        GroupId=12,
+                        Price=30000,
+                        Note="",
+                    },
+                    new Cost{
+                        CostTypeId=6,
+                        GroupId=12,
+                        Price=50000,
+                        Note="",
+                    },
 
                 };
                 context.Costs.AddRange(costs);
@@ -484,7 +610,7 @@ namespace Core.Migrations
                     new CustomerGroups(6,5,DateTime.UtcNow),
                     new CustomerGroups(7,4,DateTime.UtcNow),
                     new CustomerGroups(8,4,DateTime.UtcNow),
-                    new CustomerGroups(7,5,DateTime.UtcNow),
+
                 };
                 context.CustomerGroups.AddRange(customerGroups);
                 context.SaveChanges();
@@ -611,6 +737,66 @@ namespace Core.Migrations
                     },
                     new Assignment{
                         GroupId=6,
+                        StaffId=6,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=7,
+                        StaffId=5,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=7,
+                        StaffId=6,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=8,
+                        StaffId=5,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=8,
+                        StaffId=6,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=9,
+                        StaffId=5,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=9,
+                        StaffId=6,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=10,
+                        StaffId=5,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=10,
+                        StaffId=6,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=11,
+                        StaffId=5,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=11,
+                        StaffId=6,
+                        Position=Enums.Position.TruongDoan,
+                    },
+                    new Assignment{
+                        GroupId=12,
+                        StaffId=5,
+                        Position=Enums.Position.TaiXe,
+                    },
+                    new Assignment{
+                        GroupId=12,
                         StaffId=6,
                         Position=Enums.Position.TruongDoan,
                     },

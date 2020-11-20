@@ -11,12 +11,23 @@ namespace BLL
 {
     public static class CostBLL
     {
-        public static IList<Cost> ListCosts(int groupId)
+        public static IList<Cost> ListCosts(int groupId, string type = null, string value = null)
         {
+            bool isNumeric = int.TryParse(value, out int valueInt);
+            bool isDateTime = DateTime.TryParse(value, out DateTime valueDateTime);
+
             return CostDAL.Get(
-                c => c.GroupId == groupId,
+                c => c.GroupId == groupId &&
+                (
+                    type == null || (
+                        (type == "Id" && isNumeric && c.Id == valueInt) ||
+                        (type == "CostType" && c.CostType.Name.Contains(value.Trim())) ||
+                        (type == "Price" && isNumeric && c.Price == valueInt) ||
+                        (type == "Note" && c.Note.Contains(value.Trim()))
+                        )
+                ),
                 null,
-                includeProperties: new List<Expression<Func<Cost, object>>>
+                new List<Expression<Func<Cost, object>>>
                 {
                         c => c.CostType,
                         c => c.Group
@@ -35,11 +46,11 @@ namespace BLL
             int priceValue;
             if (!int.TryParse(price, out priceValue))
             {
-                ex.Data.Add("Price", "Chi phí không hợp lệ");
+                ex.Data.Add("Price", "Giá không hợp lệ");
             }
             else if (priceValue < 0)
             {
-                ex.Data.Add("Price", "Chi phí không được nhỏ hơn 0");
+                ex.Data.Add("Price", "Giá không được nhỏ hơn 0");
             }
 
             if (note.Trim().Length > 255)

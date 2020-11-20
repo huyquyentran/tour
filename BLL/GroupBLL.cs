@@ -10,16 +10,9 @@ namespace BLL
 {
     public static class GroupBLL
     {
-        public static IList<Group> ListGroups()
+        public static IList<Group> ListGroups(string type = null, string value = null)
         {
-            return GroupDAL.Get(
-                includeProperties: new List<Expression<Func<Group, object>>>
-                {
-                    g=> g.Tour,
-                    g => g.Costs,
-                    g => g.CustomerGroups,
-                }
-                ).ToList();
+            return GroupDAL.Get(type, value);
         }
 
         private static void ValidateGroup(string name, DateTime startDate, DateTime endDate)

@@ -704,6 +704,7 @@ namespace GUI.Tour
             // 
             // cbTourType
             // 
+            this.cbTourType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTourType.FormattingEnabled = true;
             this.cbTourType.Location = new System.Drawing.Point(83, 39);
             this.cbTourType.Name = "cbTourType";
@@ -840,12 +841,12 @@ namespace GUI.Tour
             // 
             // cbTourSearchBy
             // 
+            this.cbTourSearchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTourSearchBy.FormattingEnabled = true;
             this.cbTourSearchBy.Location = new System.Drawing.Point(229, 8);
             this.cbTourSearchBy.Name = "cbTourSearchBy";
             this.cbTourSearchBy.Size = new System.Drawing.Size(125, 24);
             this.cbTourSearchBy.TabIndex = 1;
-            this.cbTourSearchBy.Text = "Tên tour";
             // 
             // tbTourSearchInput
             // 

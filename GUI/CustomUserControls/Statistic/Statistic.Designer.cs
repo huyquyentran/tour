@@ -122,6 +122,9 @@ namespace GUI.CustomUserControls.Statistic
             this.chbStatisticPropertyRevenue = new System.Windows.Forms.CheckBox();
             this.cbStatisticGraphTimeType = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpStatisticOverview.SuspendLayout();
@@ -159,6 +162,7 @@ namespace GUI.CustomUserControls.Statistic
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -787,6 +791,7 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.panel12);
             this.tabPage2.Controls.Add(this.chartStaff);
             this.tabPage2.Controls.Add(this.dgvStaff);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -803,14 +808,14 @@ namespace GUI.CustomUserControls.Statistic
             this.chartStaff.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.chartStaff.Legends.Add(legend6);
-            this.chartStaff.Location = new System.Drawing.Point(302, 88);
+            this.chartStaff.Location = new System.Drawing.Point(6, 236);
             this.chartStaff.Name = "chartStaff";
             series6.ChartArea = "ChartArea1";
             series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series6.Legend = "Legend1";
             series6.Name = "Series1";
             this.chartStaff.Series.Add(series6);
-            this.chartStaff.Size = new System.Drawing.Size(467, 336);
+            this.chartStaff.Size = new System.Drawing.Size(763, 264);
             this.chartStaff.TabIndex = 1;
             this.chartStaff.Text = "chart1";
             // 
@@ -824,7 +829,7 @@ namespace GUI.CustomUserControls.Statistic
             this.dgvStaff.Name = "dgvStaff";
             this.dgvStaff.RowHeadersWidth = 51;
             this.dgvStaff.RowTemplate.Height = 24;
-            this.dgvStaff.Size = new System.Drawing.Size(290, 496);
+            this.dgvStaff.Size = new System.Drawing.Size(490, 224);
             this.dgvStaff.TabIndex = 0;
             // 
             // panel10
@@ -1018,6 +1023,7 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // cbStatisticGraphTimeType
             // 
+            this.cbStatisticGraphTimeType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbStatisticGraphTimeType.FormattingEnabled = true;
             this.cbStatisticGraphTimeType.Items.AddRange(new object[] {
             "Ngày",
@@ -1027,7 +1033,6 @@ namespace GUI.CustomUserControls.Statistic
             this.cbStatisticGraphTimeType.Name = "cbStatisticGraphTimeType";
             this.cbStatisticGraphTimeType.Size = new System.Drawing.Size(113, 24);
             this.cbStatisticGraphTimeType.TabIndex = 7;
-            this.cbStatisticGraphTimeType.Text = "Tháng";
             // 
             // label27
             // 
@@ -1037,6 +1042,37 @@ namespace GUI.CustomUserControls.Statistic
             this.label27.Size = new System.Drawing.Size(100, 17);
             this.label27.TabIndex = 6;
             this.label27.Text = "Thống kê theo";
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.comboBox1);
+            this.panel12.Controls.Add(this.label1);
+            this.panel12.Location = new System.Drawing.Point(502, 7);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(267, 223);
+            this.panel12.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Sắp xếp theo";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Mặc định",
+            "Số lần đi Tour tăng dần",
+            "Số lần đi Tour giảm dần"});
+            this.comboBox1.Location = new System.Drawing.Point(100, 12);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(164, 24);
+            this.comboBox1.TabIndex = 3;
             // 
             // Statistic
             // 
@@ -1086,6 +1122,8 @@ namespace GUI.CustomUserControls.Statistic
             this.tableLayoutPanel3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1167,5 +1205,8 @@ namespace GUI.CustomUserControls.Statistic
         private System.Windows.Forms.DataGridView dgvStaff;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartStaff;
         private System.Windows.Forms.CheckBox chbStatisticPropertyStaffCount;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

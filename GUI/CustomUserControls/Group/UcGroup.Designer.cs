@@ -189,6 +189,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // cbGroupSearchBy
             // 
+            this.cbGroupSearchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGroupSearchBy.FormattingEnabled = true;
             this.cbGroupSearchBy.Items.AddRange(new object[] {
             "Mã đoàn",
@@ -203,7 +204,6 @@ namespace GUI.CustomUserControls.TourGroup
             this.cbGroupSearchBy.Name = "cbGroupSearchBy";
             this.cbGroupSearchBy.Size = new System.Drawing.Size(125, 24);
             this.cbGroupSearchBy.TabIndex = 1;
-            this.cbGroupSearchBy.Text = "Tên đoàn";
             // 
             // dgvGroupList
             // 
@@ -687,6 +687,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dgvGroupStaffList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGroupStaffList.Location = new System.Drawing.Point(3, 17);
             this.dgvGroupStaffList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvGroupStaffList.MultiSelect = false;
             this.dgvGroupStaffList.Name = "dgvGroupStaffList";
             this.dgvGroupStaffList.RowHeadersVisible = false;
             this.dgvGroupStaffList.RowHeadersWidth = 51;
@@ -776,6 +777,7 @@ namespace GUI.CustomUserControls.TourGroup
             this.dgvGroupStaffListAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGroupStaffListAll.Location = new System.Drawing.Point(3, 17);
             this.dgvGroupStaffListAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvGroupStaffListAll.MultiSelect = false;
             this.dgvGroupStaffListAll.Name = "dgvGroupStaffListAll";
             this.dgvGroupStaffListAll.ReadOnly = true;
             this.dgvGroupStaffListAll.RowHeadersVisible = false;
@@ -959,6 +961,7 @@ namespace GUI.CustomUserControls.TourGroup
             // cbGroupCostType
             // 
             this.cbGroupCostType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbGroupCostType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGroupCostType.Enabled = false;
             this.cbGroupCostType.FormattingEnabled = true;
             this.cbGroupCostType.Location = new System.Drawing.Point(82, 32);
@@ -1052,6 +1055,7 @@ namespace GUI.CustomUserControls.TourGroup
             // 
             // cbGroupCostSearchBy
             // 
+            this.cbGroupCostSearchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGroupCostSearchBy.FormattingEnabled = true;
             this.cbGroupCostSearchBy.Items.AddRange(new object[] {
             "Mã",
@@ -1063,7 +1067,6 @@ namespace GUI.CustomUserControls.TourGroup
             this.cbGroupCostSearchBy.Name = "cbGroupCostSearchBy";
             this.cbGroupCostSearchBy.Size = new System.Drawing.Size(125, 24);
             this.cbGroupCostSearchBy.TabIndex = 1;
-            this.cbGroupCostSearchBy.Text = "Loại";
             // 
             // tbGroupCostSearch
             // 

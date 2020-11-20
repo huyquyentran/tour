@@ -49,6 +49,7 @@
     <Compile Include="LocationBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaffBLL.cs" />
+    <Compile Include="Statistic\OverviewInformation.cs" />
     <Compile Include="Statistic\TourStatistic.cs" />
     <Compile Include="Statistic\TourWithGroups.cs" />
     <Compile Include="TourBLL.cs" />

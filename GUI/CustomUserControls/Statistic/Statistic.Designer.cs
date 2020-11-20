@@ -29,24 +29,24 @@ namespace GUI.CustomUserControls.Statistic
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpStatisticOverview = new System.Windows.Forms.TabPage();
@@ -54,36 +54,36 @@ namespace GUI.CustomUserControls.Statistic
             this.panel6 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lbPercentDevelop = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lbTotalProfit = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lbTotalCost = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.lbTotalRevenue = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbCountCustomer = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbCountStaff = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbCountGroup = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbCountTour = new System.Windows.Forms.Label();
             this.tpStatisticDetail = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -215,7 +215,7 @@ namespace GUI.CustomUserControls.Statistic
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
             this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.label14);
-            this.panel6.Controls.Add(this.label15);
+            this.panel6.Controls.Add(this.lbPercentDevelop);
             this.panel6.Location = new System.Drawing.Point(822, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(267, 114);
@@ -240,23 +240,23 @@ namespace GUI.CustomUserControls.Statistic
             this.label14.TabIndex = 3;
             this.label14.Text = "Tăng trưởng";
             // 
-            // label15
+            // lbPercentDevelop
             // 
-            this.label15.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(69, 62);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(194, 48);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "15%";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPercentDevelop.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPercentDevelop.ForeColor = System.Drawing.Color.White;
+            this.lbPercentDevelop.Location = new System.Drawing.Point(69, 62);
+            this.lbPercentDevelop.Name = "lbPercentDevelop";
+            this.lbPercentDevelop.Size = new System.Drawing.Size(194, 48);
+            this.lbPercentDevelop.TabIndex = 2;
+            this.lbPercentDevelop.Text = "15%";
+            this.lbPercentDevelop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(162)))), ((int)(((byte)(97)))));
             this.panel7.Controls.Add(this.label16);
             this.panel7.Controls.Add(this.label17);
-            this.panel7.Controls.Add(this.label18);
+            this.panel7.Controls.Add(this.lbTotalProfit);
             this.panel7.Location = new System.Drawing.Point(549, 3);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(267, 114);
@@ -281,23 +281,23 @@ namespace GUI.CustomUserControls.Statistic
             this.label17.TabIndex = 3;
             this.label17.Text = "Lợi nhuận";
             // 
-            // label18
+            // lbTotalProfit
             // 
-            this.label18.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(69, 62);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(194, 48);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "40.000.000đ";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbTotalProfit.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalProfit.ForeColor = System.Drawing.Color.White;
+            this.lbTotalProfit.Location = new System.Drawing.Point(69, 62);
+            this.lbTotalProfit.Name = "lbTotalProfit";
+            this.lbTotalProfit.Size = new System.Drawing.Size(194, 48);
+            this.lbTotalProfit.TabIndex = 2;
+            this.lbTotalProfit.Text = "40.000.000đ";
+            this.lbTotalProfit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
             this.panel8.Controls.Add(this.label19);
             this.panel8.Controls.Add(this.label20);
-            this.panel8.Controls.Add(this.label21);
+            this.panel8.Controls.Add(this.lbTotalCost);
             this.panel8.Location = new System.Drawing.Point(276, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(267, 114);
@@ -322,23 +322,23 @@ namespace GUI.CustomUserControls.Statistic
             this.label20.TabIndex = 3;
             this.label20.Text = "Chi phí";
             // 
-            // label21
+            // lbTotalCost
             // 
-            this.label21.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(69, 62);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(194, 48);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "80.000.000đ";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbTotalCost.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalCost.ForeColor = System.Drawing.Color.White;
+            this.lbTotalCost.Location = new System.Drawing.Point(69, 62);
+            this.lbTotalCost.Name = "lbTotalCost";
+            this.lbTotalCost.Size = new System.Drawing.Size(194, 48);
+            this.lbTotalCost.TabIndex = 2;
+            this.lbTotalCost.Text = "80.000.000đ";
+            this.lbTotalCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.panel9.Controls.Add(this.label22);
             this.panel9.Controls.Add(this.label23);
-            this.panel9.Controls.Add(this.label24);
+            this.panel9.Controls.Add(this.lbTotalRevenue);
             this.panel9.Location = new System.Drawing.Point(3, 3);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(267, 114);
@@ -363,16 +363,16 @@ namespace GUI.CustomUserControls.Statistic
             this.label23.TabIndex = 2;
             this.label23.Text = "Doanh thu";
             // 
-            // label24
+            // lbTotalRevenue
             // 
-            this.label24.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(69, 62);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(195, 48);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "120.000.000đ";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbTotalRevenue.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalRevenue.ForeColor = System.Drawing.Color.White;
+            this.lbTotalRevenue.Location = new System.Drawing.Point(69, 62);
+            this.lbTotalRevenue.Name = "lbTotalRevenue";
+            this.lbTotalRevenue.Size = new System.Drawing.Size(195, 48);
+            this.lbTotalRevenue.TabIndex = 1;
+            this.lbTotalRevenue.Text = "120.000.000đ";
+            this.lbTotalRevenue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel1
             // 
@@ -398,7 +398,7 @@ namespace GUI.CustomUserControls.Statistic
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(177)))), ((int)(((byte)(100)))));
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.lbCountCustomer);
             this.panel4.Location = new System.Drawing.Point(822, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(267, 114);
@@ -423,23 +423,23 @@ namespace GUI.CustomUserControls.Statistic
             this.label8.TabIndex = 3;
             this.label8.Text = "Khách hàng";
             // 
-            // label4
+            // lbCountCustomer
             // 
-            this.label4.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(69, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(194, 48);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "120";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbCountCustomer.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountCustomer.ForeColor = System.Drawing.Color.White;
+            this.lbCountCustomer.Location = new System.Drawing.Point(69, 62);
+            this.lbCountCustomer.Name = "lbCountCustomer";
+            this.lbCountCustomer.Size = new System.Drawing.Size(194, 48);
+            this.lbCountCustomer.TabIndex = 2;
+            this.lbCountCustomer.Text = "120";
+            this.lbCountCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(193)))), ((int)(((byte)(22)))));
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.lbCountStaff);
             this.panel5.Location = new System.Drawing.Point(549, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(267, 114);
@@ -464,23 +464,23 @@ namespace GUI.CustomUserControls.Statistic
             this.label7.TabIndex = 3;
             this.label7.Text = "Nhân viên";
             // 
-            // label3
+            // lbCountStaff
             // 
-            this.label3.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(69, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 48);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "120";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbCountStaff.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountStaff.ForeColor = System.Drawing.Color.White;
+            this.lbCountStaff.Location = new System.Drawing.Point(69, 62);
+            this.lbCountStaff.Name = "lbCountStaff";
+            this.lbCountStaff.Size = new System.Drawing.Size(194, 48);
+            this.lbCountStaff.TabIndex = 2;
+            this.lbCountStaff.Text = "120";
+            this.lbCountStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(67)))), ((int)(((byte)(53)))));
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lbCountGroup);
             this.panel2.Location = new System.Drawing.Point(276, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 114);
@@ -505,23 +505,23 @@ namespace GUI.CustomUserControls.Statistic
             this.label6.TabIndex = 3;
             this.label6.Text = "Đoàn";
             // 
-            // label2
+            // lbCountGroup
             // 
-            this.label2.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(69, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 48);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "120";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbCountGroup.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountGroup.ForeColor = System.Drawing.Color.White;
+            this.lbCountGroup.Location = new System.Drawing.Point(69, 62);
+            this.lbCountGroup.Name = "lbCountGroup";
+            this.lbCountGroup.Size = new System.Drawing.Size(194, 48);
+            this.lbCountGroup.TabIndex = 2;
+            this.lbCountGroup.Text = "120";
+            this.lbCountGroup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(140)))), ((int)(((byte)(245)))));
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.lbCountTour);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(267, 114);
@@ -546,16 +546,16 @@ namespace GUI.CustomUserControls.Statistic
             this.label5.TabIndex = 2;
             this.label5.Text = "Tour";
             // 
-            // label1
+            // lbCountTour
             // 
-            this.label1.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(69, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 48);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "120";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbCountTour.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountTour.ForeColor = System.Drawing.Color.White;
+            this.lbCountTour.Location = new System.Drawing.Point(69, 62);
+            this.lbCountTour.Name = "lbCountTour";
+            this.lbCountTour.Size = new System.Drawing.Size(195, 48);
+            this.lbCountTour.TabIndex = 1;
+            this.lbCountTour.Text = "120";
+            this.lbCountTour.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tpStatisticDetail
             // 
@@ -648,19 +648,19 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartRevenue
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chartRevenue.ChartAreas.Add(chartArea7);
+            chartArea1.Name = "ChartArea1";
+            this.chartRevenue.ChartAreas.Add(chartArea1);
             this.chartRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend7.Name = "Legend1";
-            this.chartRevenue.Legends.Add(legend7);
+            legend1.Name = "Legend1";
+            this.chartRevenue.Legends.Add(legend1);
             this.chartRevenue.Location = new System.Drawing.Point(0, 0);
             this.chartRevenue.Name = "chartRevenue";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            series7.YValuesPerPoint = 4;
-            this.chartRevenue.Series.Add(series7);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.YValuesPerPoint = 4;
+            this.chartRevenue.Series.Add(series1);
             this.chartRevenue.Size = new System.Drawing.Size(752, 255);
             this.chartRevenue.TabIndex = 1;
             this.chartRevenue.Text = "chart3";
@@ -678,19 +678,19 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartCost
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chartCost.ChartAreas.Add(chartArea8);
+            chartArea2.Name = "ChartArea1";
+            this.chartCost.ChartAreas.Add(chartArea2);
             this.chartCost.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend8.Name = "Legend1";
-            this.chartCost.Legends.Add(legend8);
+            legend2.Name = "Legend1";
+            this.chartCost.Legends.Add(legend2);
             this.chartCost.Location = new System.Drawing.Point(3, 3);
             this.chartCost.Name = "chartCost";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            series8.YValuesPerPoint = 4;
-            this.chartCost.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            series2.YValuesPerPoint = 4;
+            this.chartCost.Series.Add(series2);
             this.chartCost.Size = new System.Drawing.Size(746, 249);
             this.chartCost.TabIndex = 2;
             this.chartCost.Text = "chart1";
@@ -707,18 +707,18 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartCostDetail
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chartCostDetail.ChartAreas.Add(chartArea9);
+            chartArea3.Name = "ChartArea1";
+            this.chartCostDetail.ChartAreas.Add(chartArea3);
             this.chartCostDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend9.Name = "Legend1";
-            this.chartCostDetail.Legends.Add(legend9);
+            legend3.Name = "Legend1";
+            this.chartCostDetail.Legends.Add(legend3);
             this.chartCostDetail.Location = new System.Drawing.Point(0, 0);
             this.chartCostDetail.Name = "chartCostDetail";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chartCostDetail.Series.Add(series9);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartCostDetail.Series.Add(series3);
             this.chartCostDetail.Size = new System.Drawing.Size(752, 255);
             this.chartCostDetail.TabIndex = 3;
             this.chartCostDetail.Text = "chartTourCostDetail";
@@ -736,19 +736,19 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartProfit
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chartProfit.ChartAreas.Add(chartArea10);
+            chartArea4.Name = "ChartArea1";
+            this.chartProfit.ChartAreas.Add(chartArea4);
             this.chartProfit.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend10.Name = "Legend1";
-            this.chartProfit.Legends.Add(legend10);
+            legend4.Name = "Legend1";
+            this.chartProfit.Legends.Add(legend4);
             this.chartProfit.Location = new System.Drawing.Point(3, 3);
             this.chartProfit.Name = "chartProfit";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            series10.YValuesPerPoint = 4;
-            this.chartProfit.Series.Add(series10);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            series4.YValuesPerPoint = 4;
+            this.chartProfit.Series.Add(series4);
             this.chartProfit.Size = new System.Drawing.Size(746, 249);
             this.chartProfit.TabIndex = 0;
             this.chartProfit.Text = "chart2";
@@ -765,18 +765,18 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartGroupCount
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chartGroupCount.ChartAreas.Add(chartArea11);
+            chartArea5.Name = "ChartArea1";
+            this.chartGroupCount.ChartAreas.Add(chartArea5);
             this.chartGroupCount.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend11.Name = "Legend1";
-            this.chartGroupCount.Legends.Add(legend11);
+            legend5.Name = "Legend1";
+            this.chartGroupCount.Legends.Add(legend5);
             this.chartGroupCount.Location = new System.Drawing.Point(0, 0);
             this.chartGroupCount.Name = "chartGroupCount";
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            series11.YValuesPerPoint = 4;
-            this.chartGroupCount.Series.Add(series11);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            series5.YValuesPerPoint = 4;
+            this.chartGroupCount.Series.Add(series5);
             this.chartGroupCount.Size = new System.Drawing.Size(752, 255);
             this.chartGroupCount.TabIndex = 1;
             this.chartGroupCount.Text = "chart4";
@@ -795,17 +795,17 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartStaff
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chartStaff.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chartStaff.Legends.Add(legend12);
+            chartArea6.Name = "ChartArea1";
+            this.chartStaff.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartStaff.Legends.Add(legend6);
             this.chartStaff.Location = new System.Drawing.Point(302, 88);
             this.chartStaff.Name = "chartStaff";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            this.chartStaff.Series.Add(series12);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chartStaff.Series.Add(series6);
             this.chartStaff.Size = new System.Drawing.Size(467, 336);
             this.chartStaff.TabIndex = 1;
             this.chartStaff.Text = "chart1";
@@ -1094,11 +1094,11 @@ namespace GUI.CustomUserControls.Statistic
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbCountCustomer;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbCountStaff;
+        private System.Windows.Forms.Label lbCountGroup;
+        private System.Windows.Forms.Label lbCountTour;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -1111,19 +1111,19 @@ namespace GUI.CustomUserControls.Statistic
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lbPercentDevelop;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lbTotalProfit;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lbTotalCost;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lbTotalRevenue;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvStatisticDetailTourList;
         private System.Windows.Forms.Panel panel10;

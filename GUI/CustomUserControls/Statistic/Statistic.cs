@@ -25,6 +25,34 @@ namespace GUI.CustomUserControls.Statistic
         {
             Thread threadLoadTourStatistic = new Thread(new ThreadStart(() => LoadTourStatistic()));
             threadLoadTourStatistic.Start();
+            Thread threadLoadOverviewInformation = new Thread(new ThreadStart(() => LoadOverviewInformation()));
+            threadLoadOverviewInformation.Start();
+        }
+        private void LoadOverviewInformation()
+        {
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() =>
+                {
+                    lbCountTour.Text = "Loading ...";
+                }));
+            }
+            var overviewInformation = new OverviewInformation();
+
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action(() =>
+                {
+                    lbCountTour.Text = overviewInformation.CountTours.ToString();
+                    lbCountGroup.Text = overviewInformation.CountGroups.ToString();
+                    lbCountStaff.Text = overviewInformation.CountStaffs.ToString();
+                    lbCountCustomer.Text = overviewInformation.CountCustomers.ToString();
+                    lbTotalRevenue.Text = overviewInformation.TotalRevenue.ToString();
+                    lbTotalCost.Text = overviewInformation.TotalCosts.ToString();
+                    lbTotalProfit.Text = overviewInformation.TotalProfix.ToString();
+                    lbPercentDevelop.Text = $"{overviewInformation.PercentDevelop} %";
+                }));
+            }
         }
 
         private void LoadTourStatistic()

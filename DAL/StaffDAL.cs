@@ -21,7 +21,7 @@ namespace DAL
             {
                 query += string.Format(@"
                     AND Groups.StartDate >= CAST('{0}' as date) 
-                    AND Groups.EndDate <= CAST('{1}' as date) 
+                    AND Groups.StartDate <= CAST('{1}' as date) 
                     ", startDate.ToString(), endDate.ToString());
             }
 

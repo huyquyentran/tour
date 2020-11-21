@@ -192,8 +192,8 @@ namespace GUI.CustomUserControls.Statistic
             var costDetails = CostBLL.GetCostStatisticsByTourId(Id, StartDate, EndDate);
 
             foreach (var c in costDetails)
-            {
-                chartCostDetail.Series[seriesname].Points.AddXY(c.Name, c.Price);
+            { 
+                chartCostDetail.Series[seriesname].Points.AddXY(c.Name + "\n" + c.Price, c.Price);
             }
             
         }

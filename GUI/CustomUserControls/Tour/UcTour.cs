@@ -79,6 +79,8 @@ namespace GUI.Tour
                     dgvTourList.Columns["CurrentPrice"].HeaderText = "Giá gốc";
                     dgvTourList.Columns["TourTypeName"].HeaderText = "Loại";
                     dgvTourList.Columns["Description"].HeaderText = "Mô tả";
+
+                    dgvTourList.Columns["CurrentPrice"].DefaultCellStyle.Format = "N0";
                 }));
             }
 
@@ -303,6 +305,8 @@ namespace GUI.Tour
                         dgvTourPriceList.Columns["EndDate"].HeaderText = "Kết thúc";
                         dgvTourPriceList.Columns["Price"].HeaderText = "Giá";
                         dgvTourPriceList.Columns["Note"].HeaderText = "Ghi chú";
+
+                        dgvTourPriceList.Columns["Price"].DefaultCellStyle.Format = "N0";
                     }));
                 }
 

@@ -122,6 +122,10 @@ namespace GUI.CustomUserControls.TourGroup
                     dgvGroupList.Columns["StartDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
                     dgvGroupList.Columns["EndDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
+                    dgvGroupList.Columns["PriceTour"].DefaultCellStyle.Format = "N0";
+                    dgvGroupList.Columns["Revenue"].DefaultCellStyle.Format = "N0";
+                    dgvGroupList.Columns["Cost"].DefaultCellStyle.Format = "N0";
+
                     foreach (DataGridViewColumn column in dgvGroupList.Columns)
                     {
                         column.DataPropertyName = column.Name;
@@ -432,6 +436,8 @@ namespace GUI.CustomUserControls.TourGroup
                     dgvGroupCostList.Columns.Add("Type", "Loại");
                     dgvGroupCostList.Columns.Add("Price", "Giá");
                     dgvGroupCostList.Columns.Add("Note", "Ghi chú");
+
+                    dgvGroupCostList.Columns["Price"].DefaultCellStyle.Format = "N0";
 
                     foreach (DataGridViewColumn column in dgvGroupCostList.Columns)
                     {

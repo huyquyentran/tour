@@ -29,18 +29,9 @@ namespace GUI.CustomUserControls.Statistic
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea25 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend25 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea26 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend26 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea27 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend27 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea28 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend28 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpStatisticOverview = new System.Windows.Forms.TabPage();
@@ -89,12 +80,6 @@ namespace GUI.CustomUserControls.Statistic
             this.dgvStatisticGroupDetail = new System.Windows.Forms.DataGridView();
             this.tpCostDetail = new System.Windows.Forms.TabPage();
             this.chartCostDetail = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.tpCost = new System.Windows.Forms.TabPage();
-            this.chartCost = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.tpRevenue = new System.Windows.Forms.TabPage();
-            this.chartRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.tpProfit = new System.Windows.Forms.TabPage();
-            this.chartProfit = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvStaff = new System.Windows.Forms.DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -130,12 +115,6 @@ namespace GUI.CustomUserControls.Statistic
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatisticGroupDetail)).BeginInit();
             this.tpCostDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCostDetail)).BeginInit();
-            this.tpCost.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartCost)).BeginInit();
-            this.tpRevenue.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
-            this.tpProfit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartProfit)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).BeginInit();
             this.panel10.SuspendLayout();
@@ -614,9 +593,6 @@ namespace GUI.CustomUserControls.Statistic
             // 
             this.tabControl2.Controls.Add(this.tpGroup);
             this.tabControl2.Controls.Add(this.tpCostDetail);
-            this.tabControl2.Controls.Add(this.tpCost);
-            this.tabControl2.Controls.Add(this.tpRevenue);
-            this.tabControl2.Controls.Add(this.tpProfit);
             this.tabControl2.Location = new System.Drawing.Point(6, 218);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -660,110 +636,23 @@ namespace GUI.CustomUserControls.Statistic
             // 
             // chartCostDetail
             // 
-            chartArea25.Name = "ChartArea1";
-            this.chartCostDetail.ChartAreas.Add(chartArea25);
+            chartArea1.Name = "ChartArea1";
+            this.chartCostDetail.ChartAreas.Add(chartArea1);
             this.chartCostDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend25.Name = "Legend1";
-            this.chartCostDetail.Legends.Add(legend25);
+            legend1.Name = "Legend1";
+            this.chartCostDetail.Legends.Add(legend1);
             this.chartCostDetail.Location = new System.Drawing.Point(0, 0);
             this.chartCostDetail.Name = "chartCostDetail";
-            series25.ChartArea = "ChartArea1";
-            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series25.Legend = "Legend1";
-            series25.Name = "SeriesDetail";
-            this.chartCostDetail.Series.Add(series25);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.IsValueShownAsLabel = true;
+            series1.LabelFormat = "{0:0,}đ";
+            series1.Legend = "Legend1";
+            series1.Name = "SeriesDetail";
+            this.chartCostDetail.Series.Add(series1);
             this.chartCostDetail.Size = new System.Drawing.Size(752, 255);
             this.chartCostDetail.TabIndex = 3;
             this.chartCostDetail.Text = "chartTourCostDetail";
-            // 
-            // tpCost
-            // 
-            this.tpCost.Controls.Add(this.chartCost);
-            this.tpCost.Location = new System.Drawing.Point(4, 25);
-            this.tpCost.Name = "tpCost";
-            this.tpCost.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCost.Size = new System.Drawing.Size(752, 255);
-            this.tpCost.TabIndex = 0;
-            this.tpCost.Text = "Chi phí";
-            this.tpCost.UseVisualStyleBackColor = true;
-            // 
-            // chartCost
-            // 
-            chartArea26.Name = "ChartArea1";
-            this.chartCost.ChartAreas.Add(chartArea26);
-            this.chartCost.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend26.Name = "Legend1";
-            this.chartCost.Legends.Add(legend26);
-            this.chartCost.Location = new System.Drawing.Point(3, 3);
-            this.chartCost.Name = "chartCost";
-            series26.ChartArea = "ChartArea1";
-            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series26.Legend = "Legend1";
-            series26.Name = "Series1";
-            series26.YValuesPerPoint = 4;
-            this.chartCost.Series.Add(series26);
-            this.chartCost.Size = new System.Drawing.Size(746, 249);
-            this.chartCost.TabIndex = 2;
-            this.chartCost.Text = "chart1";
-            // 
-            // tpRevenue
-            // 
-            this.tpRevenue.Controls.Add(this.chartRevenue);
-            this.tpRevenue.Location = new System.Drawing.Point(4, 25);
-            this.tpRevenue.Name = "tpRevenue";
-            this.tpRevenue.Size = new System.Drawing.Size(752, 255);
-            this.tpRevenue.TabIndex = 3;
-            this.tpRevenue.Text = "Doanh thu";
-            this.tpRevenue.UseVisualStyleBackColor = true;
-            // 
-            // chartRevenue
-            // 
-            chartArea27.Name = "ChartArea1";
-            this.chartRevenue.ChartAreas.Add(chartArea27);
-            this.chartRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend27.Name = "Legend1";
-            this.chartRevenue.Legends.Add(legend27);
-            this.chartRevenue.Location = new System.Drawing.Point(0, 0);
-            this.chartRevenue.Name = "chartRevenue";
-            series27.ChartArea = "ChartArea1";
-            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series27.Legend = "Legend1";
-            series27.Name = "Series1";
-            series27.YValuesPerPoint = 4;
-            this.chartRevenue.Series.Add(series27);
-            this.chartRevenue.Size = new System.Drawing.Size(752, 255);
-            this.chartRevenue.TabIndex = 1;
-            this.chartRevenue.Text = "chart3";
-            // 
-            // tpProfit
-            // 
-            this.tpProfit.Controls.Add(this.chartProfit);
-            this.tpProfit.Location = new System.Drawing.Point(4, 25);
-            this.tpProfit.Name = "tpProfit";
-            this.tpProfit.Padding = new System.Windows.Forms.Padding(3);
-            this.tpProfit.Size = new System.Drawing.Size(752, 255);
-            this.tpProfit.TabIndex = 1;
-            this.tpProfit.Text = "Lợi nhuận";
-            this.tpProfit.UseVisualStyleBackColor = true;
-            // 
-            // chartProfit
-            // 
-            chartArea28.Name = "ChartArea1";
-            this.chartProfit.ChartAreas.Add(chartArea28);
-            this.chartProfit.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend28.Name = "Legend1";
-            this.chartProfit.Legends.Add(legend28);
-            this.chartProfit.Location = new System.Drawing.Point(3, 3);
-            this.chartProfit.Name = "chartProfit";
-            series28.ChartArea = "ChartArea1";
-            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series28.Legend = "Legend1";
-            series28.Name = "Series1";
-            series28.YValuesPerPoint = 4;
-            this.chartProfit.Series.Add(series28);
-            this.chartProfit.Size = new System.Drawing.Size(746, 249);
-            this.chartProfit.TabIndex = 0;
-            this.chartProfit.Text = "chart2";
             // 
             // tabPage2
             // 
@@ -925,12 +814,6 @@ namespace GUI.CustomUserControls.Statistic
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatisticGroupDetail)).EndInit();
             this.tpCostDetail.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartCostDetail)).EndInit();
-            this.tpCost.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartCost)).EndInit();
-            this.tpRevenue.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).EndInit();
-            this.tpProfit.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartProfit)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).EndInit();
             this.panel10.ResumeLayout(false);
@@ -994,14 +877,8 @@ namespace GUI.CustomUserControls.Statistic
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tpCost;
-        private System.Windows.Forms.TabPage tpProfit;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartProfit;
         private System.Windows.Forms.TabPage tpGroup;
         private System.Windows.Forms.CheckBox chbStatisticDetailAllTime;
-        private System.Windows.Forms.TabPage tpRevenue;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartRevenue;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartCost;
         private System.Windows.Forms.TabPage tpCostDetail;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartCostDetail;
         private System.Windows.Forms.TabControl tabControl3;

@@ -15,7 +15,8 @@ namespace DAL
             string query = @"
                 SELECT Staffs.Id AS StaffId, Staffs.Name AS StaffName, COUNT(GroupId) As TourCount
                 FROM Staffs LEFT JOIN Assignments ON Assignments.StaffId = Staffs.Id
-	            LEFT JOIN Groups ON Groups.Id = Assignments.GroupId";
+	            LEFT JOIN Groups ON Groups.Id = Assignments.GroupId
+                ";
 
             if (startDate != null && endDate != null)
             {
@@ -25,7 +26,7 @@ namespace DAL
                     ", startDate.ToString(), endDate.ToString());
             }
 
-            query += "GROUP BY Staffs.Id, Staffs.Name";
+            query += "Group BY Staffs.Id, Staffs.Name";
 
 
             using (var context = new TourDbContext())

@@ -73,8 +73,8 @@ namespace GUI.Tour
                     dgvTourList.ShowLoading(false);
                     dgvTourList.DataSource = dataSource;
                     //ConfigTourDataGridView
-                    dgvTourList.Columns["Id"].Visible = false;
                     dgvTourList.Columns["TourTypeId"].Visible = false;
+                    dgvTourList.Columns["Id"].HeaderText = "Mã";
                     dgvTourList.Columns["Name"].HeaderText = "Tên";
                     dgvTourList.Columns["CurrentPrice"].HeaderText = "Giá gốc";
                     dgvTourList.Columns["TourTypeName"].HeaderText = "Loại";
@@ -680,8 +680,8 @@ namespace GUI.Tour
 
         public int Id { get; set; }
         public int TourTypeId { get; set; }
-        public int CurrentPrice { get; set; }
         public string Name { get; set; }
+        public int CurrentPrice { get; set; }
         public string Description { get; set; }
         public string TourTypeName { get; set; }
     }
